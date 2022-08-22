@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+The programmer of this site is **[Edwin](https://github.com/EdwinKuttappi)** [^1] and he is somewhat new and trying really hard to code.
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]:The github profile of Edwin to see his latest projects.
