@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-The programmer of this site is **[Edwin](https://github.com/EdwinKuttappi)** [^1] and he is somewhat new and trying really hard to code.
+The programmer of this site is **[Edwin](https://github.com/EdwinKuttappi)** [^1] and he is somewhat new and trying really hard to code. He likes to play video games and participate in outdoor activities such as hiking.
 
 
 
