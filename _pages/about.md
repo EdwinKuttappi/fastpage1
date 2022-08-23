@@ -7,7 +7,7 @@ title: About Me Page
 ---
 # About Edwin
 
-Hi, my name is Edwin and I am currently a Junior at Del Norte High School and do have some experience in coding but nothing like this. I am very excited to do more projects like this, because it is a little fun
+Hi, my name is Edwin and I am currently a Junior at Del Norte High School and do have some experience in coding but nothing like this. I am very excited to do more projects like this, because it is a little fun.
 
 ## Github Link
 
