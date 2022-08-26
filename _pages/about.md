@@ -21,4 +21,4 @@ I have many hobbies such as playing video games, going outside with my friends, 
 
 My Favorite Food is Pizza and my Favorite Dessert are Brownies.
 
-As mentioned earlier, I love to learn about the latest technology, including learning about the latest software updates on phones and seeing the features added. Did you know that Apple has allowed you to use your smartphone's cameras as your macbook webcam, and it can even crop into your desk view!
+As mentioned earlier, I love to learn about the latest technology, including learning about the latest software updates on phones and seeing the features added. Did you know that Apple has allowed you to use your smartphone's cameras as your macbook's webcam, and it can even crop into your desk view!
