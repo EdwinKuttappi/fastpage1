@@ -13,7 +13,7 @@ Hi, my name is Edwin and I am currently a Junior at Del Norte High School and do
 
 The programmer of this site is **[Edwin](https://github.com/EdwinKuttappi)** [^1] and he is somewhat new and trying really hard to code. He likes to play video games and participate in outdoor activities such as hiking.
 
-[^1]:The github profile of Edwin to see his latest projects which can also be found on the bottom of the homepage
+[^1]:The github profile of Edwin to see his latest projects which can also be found on the bottom of the page.
 
 ## Hobbies and Favorites
 
