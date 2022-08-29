@@ -93,12 +93,20 @@
   
 
   
-
+      ,"page2": {
+          "title": "Vocabulary",
+          "content": "Vocabulary from CollegeBoard to help study . Sequence: Def: .",
+          "url": "https://edwinkuttappi.github.io/fastpage1/Vocabulary/overview",
+          "relUrl": "/Vocabulary/overview",
+          "date": ""
+      }
+      
   
 
   
 
   
+
   
 
   
@@ -114,7 +122,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://edwinkuttappi.github.io/fastpage1/robots.txt",
