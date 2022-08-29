@@ -1,5 +1,6 @@
 ---
 toc: true
+comments: true
 layout: page
 description: A page where you can learn more about the programmer, Edwin and his activities and hobbies.
 categories: [about]
