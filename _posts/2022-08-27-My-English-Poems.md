@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: One of Edwin's Blog Posts called Bash Kernel
-catergories: [bash]
+categories: [bash]
 title: American Literature 1 Poem
 author: Edwin Abraham
 show_tags: true
