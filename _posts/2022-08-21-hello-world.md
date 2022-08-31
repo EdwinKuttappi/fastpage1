@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: One of Edwin's Blog Posts called Hello World!
-catergories: [markdown]
+categories: [markdown, tri1, week0,]
 title: Hello World!
 author: Edwin Abraham
 show_tags: true

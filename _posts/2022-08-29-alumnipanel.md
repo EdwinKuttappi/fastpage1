@@ -4,7 +4,7 @@ layout: post
 toc: true
 title: Thoughts on the Alumni Panel
 description: This is my thoughts on the Alumni Panel today and what I learned from it
-categories: [alumni]
+categories: [alumni, tri1, week2]
 ---
 
 # AP Computer Science Principles and AP Computer Science A Alumni Panel
