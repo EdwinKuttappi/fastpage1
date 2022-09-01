@@ -1,6 +1,7 @@
 ---
 comments: true
 layout: post
+image: /images/group.jpg
 toc: true
 title: Thoughts on the Alumni Panel
 description: This is my thoughts on the Alumni Panel today and what I learned from it
