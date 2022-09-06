@@ -14,4 +14,4 @@ When you make a fastpage from fastai, if you want to change the style, you have 
 This was the error message I got when I changed the theme to something else, in this case, I did minimal instead of minima
 ![]({{ site.baseurl }}/images/errormessagecssstyle.png)
 
-In the above image we see that everything worked except the Jekyll build because it did not recognize that and it was not able to deploy it on the website so the actual appearence of the fastpage did not change
+In the above image we see that everything worked except the Jekyll build because it did not recognize that and it was not able to deploy it on the website so the actual appearance of the fastpage did not change
