@@ -79,6 +79,24 @@ default_badges:
 html_escape:
   description: false
 
+
+weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
+review_ticket_links: [
+  https://github.com/EdwinKuttappi/fastpage1/issues/2,
+  https://github.com/EdwinKuttappi/fastpage1/issues/3,
+  https://github.com/EdwinKuttappi/fastpage1/issues/4,
+]
+weekly_summaries: [
+  This week was the hardest week where we set up tools such as VSCode, Anaconda, and other tools. 
+  In this week we were supposed to make our first markdown post and make a jupyter notebook.,
+  We learned more about Python and how to install it and was able to make a quiz. 
+  We took a code from Mr. Mortensen and had to program a quiz that showed we knew CollegeBoard Terms.,
+  This week was the week that he had to write lists and dictionaries and use them in our codes. 
+  We had to take a database on information from us and our partners and made a list of them to output.
+  We were also introduced into changing the design of the websites such as making the background darker or a different color and styling with HTML.
+]
+
+
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima

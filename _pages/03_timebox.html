@@ -1,1 +1,30 @@
+---
+layout: default
+comments: true
+title: Timebox
+description: A place where you can review any activites from each sprite
+categories: [timebox, week]
+permalink: /timebox/
+---
 
+<h1> Trimester 1
+<table>
+    <tr>
+        <th>Week</th>
+        <th>Sprint</th>
+        <th>Review Tickets</th>
+        <th>Summary</th>
+    </tr>
+
+    {% assign week_number = 3 %}
+
+    {% for i in (0..week_number) %}
+    <tr>
+        <td> {{ i }}</td>
+        <td>{{ site.weekly_sprints [i] }}</td>
+        <td><a href="{{ site.review_ticket_links[i] }}">Review Ticket Week {{ i }}</a></td>
+        <td>{{ site.weekly_summaries[i] }}</td>
+    </tr>
+    [% endfor %]
+</table>
+</h1>
