@@ -16,5 +16,5 @@ This was the error message I got when I changed the theme to something else, in 
 
 In the above image we see that everything worked except the Jekyll build because it did not recognize that and it was not able to deploy it on the website so the actual appearance of the fastpage did not change
 
-After choosing a theme, I decided to choose slate and afterwards I realized my website did not work. The style was completely different and I liked it but one issue I found was that when I clicked on a post, I couldn't click the title to go back to the page
+After choosing a theme, I decided to choose slate and afterwards I realized my website did not work. The style was completely different and I liked it but one issue I found was that when I clicked on a post, I couldn't click the title to go back to the page and the home page was completely different and the posts' format was different as well
 ![]({{ site.baseurl }}/images/slatetheme.png)
