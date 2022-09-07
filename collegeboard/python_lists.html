@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -657,7 +657,7 @@ Hobbies: Playing Squash, Sleeping, Hiking, Cooking, Playing Basketball
 <span class="p">})</span>
 
 <span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">"Question "</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question "</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
@@ -665,8 +665,8 @@ Hobbies: Playing Squash, Sleeping, Hiking, Cooking, Playing Basketball
     <span class="n">score</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
     <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">Quiz</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Subject: "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="n">s</span><span class="p">])</span>
-        <span class="k">for</span> <span class="n">ques</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">subject</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">topic: "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="n">s</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">ques</span><span class="p">,</span> <span class="n">ans</span> <span class="ow">in</span> <span class="n">topic</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">ques</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="n">ans</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct! You gain one point"</span><span class="p">)</span>
@@ -676,8 +676,8 @@ Hobbies: Playing Squash, Sleeping, Hiking, Cooking, Playing Basketball
         <span class="n">s</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="nb">print</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Score in "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Quiz</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct answers in "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Quiz</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct answers in "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Quiz</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Score in "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Quiz</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Score in "</span> <span class="o">+</span> <span class="n">Topic</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s2">" out of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Quiz</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>
     <span class="k">return</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello everyone!, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" is our participant for today's trivia, Ready to test your wits?"</span><span class="p">)</span>
@@ -694,12 +694,29 @@ Hobbies: Playing Squash, Sleeping, Hiking, Cooking, Playing Basketball
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [2]</span>
-<span class="ansi-red-fg">    "Does .append allow you to add to a list? (T/F)" : "T"</span>
-                                                     ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello everyone!, sunny is our participant for today's trivia, Ready to test your wits?
+Spelling counts so make sure you check your spelling and capitalize the first letter!
+
+topic: Computer Science Principles
+Question : When using [], what are you using?
+Correct! You gain one point
+Question : Does .append allow you to add to a list? (T/F)
+Correct! You gain one point
+Question : What file can you find the remote_theme and change it?
+Correct! You gain one point
+
+topic: Trivia
+Question : What percent of people live in the northern hemisphere
+Correct! You gain one point
+
+topic: Technology
+Question : What day is the Apple Far Out Event (mm-dd-yyyy)
+Correct! You gain one point
+
+Score in Computer Science Principles: 3 out of 3
+Score in Trivia: 1 out of 1
+Score in Technology: 1 out of 1
 </pre>
 </div>
 </div>
