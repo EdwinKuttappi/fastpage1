@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "The Apple Far Out Event",
-            "content": "Code.org AppLab . We were told to design an app using Code.org with an App Lab. I opened the App Lab and then went to the design tab and added a button to start the quiz. This picture below shows what the window looked like and by the end of this app, I hope it looks much better .",
+            "title": "App Lab",
+            "content": "Code.org AppLab . We were told to design an app using Code.org with an App Lab. I opened the App Lab and then went to the design tab and added a button to start the quiz. This picture below shows what the window looked like and by the end of this app, I hope it looks much better . AppLab Part 1 - The Design of Homepage and Instructions . I also made a new screen for the rules and how to play page and I added code to make sure when the button was clicked it would switch to the rules and how to play the quiz. Here is a picture of what my homepage looks like . This is a picture of what my instruction page looks like and i used the same code as I did for the first button, I just changed it a little bit to make sure the code detected the right button. # .",
             "url": "https://edwinkuttappi.github.io/fastpage1/tri1/week3/2022/09/10/AppLab.html",
             "relUrl": "/tri1/week3/2022/09/10/AppLab.html",
             "date": " • Sep 10, 2022"
