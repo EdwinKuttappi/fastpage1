@@ -10,3 +10,4 @@ categories: [tri1, week3]
 ---
 
 # Plan for Creative Development Plan for AP Exam
+The plan for this is to make a task where the user can interact with this and make what they want to. It will require the input of the user.
