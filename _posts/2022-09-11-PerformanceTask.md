@@ -13,7 +13,7 @@ For the Performance Task, I have two options, either to make a game or to make a
 
 I have listed many of my ideas on a scrum board and what I plan on doing for each portion of the rubric in order to get the full amount of 6 points. 
 
-[Scrum Board Link](https://www.example.com)
+[Scrum Board Link](https://github.com/users/EdwinKuttappi/projects/1/views/1)
 
 ## Contents of the App
 - A Leaderboard
