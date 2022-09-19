@@ -27,4 +27,4 @@ It has been established that the skills you learn in AP Computer Science Princip
 
 One big thing that would be really helpful would be to update my Timebox each week so that way when it is time for the AP Exam, I can look at it and remember any important topics I need to study from that.
 
-I also hope to do really well on the College Board Quizzes and try on them to see what I really need to go back and review. Another really helpful tool could be my team and I should communicate with them as much as I can so that way, if I have any questions I can ask them and get any help I need with understanding a concept.
+I also hope to do really well on the College Board Quizzes and try on them to see what I really need to go back and review. Another really helpful tool could be my team and I should communicate with them as much as I can so that way, if I have any questions I can ask them and get any help I need with understanding a concept
