@@ -26,3 +26,7 @@ Video 2:
 - Asking Family and Friends to test out your program is a great way to get some feedback and find things from a new perspective
 
 ## CollegeBoard Quiz: Collaboration Quiz
+
+
+## Takeaways
+I have learned that Collaboration is a huge part of many different jobs. It does not matter if you are working in a field that is not computer science, collaboration is important to everyone and helps connect things to make one big thing. For example, the way many apps look how they look is because of collaboration, one person can not really do all that so many people from different areas share ideas to make a product that users will enjoy. On the apple website, they need software engineers to program the cool transitions, but they also need artists to design the product so that the programmers can animate it.
