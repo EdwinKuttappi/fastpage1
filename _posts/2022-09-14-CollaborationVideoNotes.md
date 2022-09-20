@@ -3,6 +3,7 @@ toc: true
 layout: post
 comments: true
 title: Collaboration 1.1 Videos and Quiz
+image: /images/collaborationvideo.png
 Description: Notes on the videos from CollegeBoard about Collaboration
 show_tags: true
 categories: [Notes, week4, tri1]
