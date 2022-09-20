@@ -38,7 +38,7 @@ For Human Day, we were instructed to watch a video by Laurie Santos, a popular p
 - People think things like Salary are important to happiness, but as you earn more money, you think you need more to enjoy
 - Helping other people can really help to improve your happiness
 - If you share what you are grateful for everyday, it can make your life much more happier
-- Getting distracted can make you less happy, and people do not really pay attention in what they are doing
+- Getting distracted can make you less happy, and people do not really pay much attention in what they are doing
 
 ## My Gratitude List
 - My Church and the community because they are all very nice and they are all supportive
