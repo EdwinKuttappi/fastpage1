@@ -26,3 +26,5 @@ Video 2:
 - Asking Family and Friends to test out your program is a great way to get some feedback and find things from a new perspective
 
 ## CollegeBoard Quiz: Collaboration Quiz
+I took the CollegeBoard quiz about Collaboration and out of the 3 questions, I got all 3 of the questions right showing that I understand the topic and I can use what I learned to make collaborating with my group more efficient.
+![]({{ site.baseurl }}/images/collaborationquiz.png)
