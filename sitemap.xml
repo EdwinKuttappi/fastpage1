@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/markdown/2020/01/14/test-markdown-post.html</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/markdown/week0/tri1/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/jupyter/2020/02/20/test.html</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/jupyter/week0/tri1/2020/02/20/test.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/2022/08/21/JupyterNotebook.html</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/week0/tri1/2022/08/21/JupyterNotebook.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/markdown/tri1/week0/2022/08/21/hello-world.html</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/markdown/week0/tri1/2022/08/21/hello-world.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/2022/08/26/Bash-Kernel.html</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/bash/week1/tri1/2022/08/26/Bash-Kernel.html</loc>
 <lastmod>2022-08-26T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -63,6 +63,10 @@
 <url>
 <loc>https://edwinkuttappi.github.io/fastpage1/notes/week4/tri1/2022/09/15/Human-Day-Notes.html</loc>
 <lastmod>2022-09-15T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://edwinkuttappi.github.io/fastpage1/notes/week5/tri1/2022/09/20/CollegeBoardVideo1-2.html</loc>
+<lastmod>2022-09-20T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://edwinkuttappi.github.io/fastpage1/_pages/00_about.html</loc>
