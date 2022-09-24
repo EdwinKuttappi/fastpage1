@@ -2,6 +2,7 @@
 keywords: fastai
 title: Checking to See if I have all the Bash Requirements
 nb_path: _notebooks/2022-08-26-Bash-Kernel.ipynb
+categories: [bash, week1, tri1]
 layout: notebook
 ---
 
