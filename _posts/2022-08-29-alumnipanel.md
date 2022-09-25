@@ -5,7 +5,7 @@ image: /images/group.jpg
 toc: true
 title: Thoughts on the Alumni Panel
 description: This is my thoughts on the Alumni Panel today and what I learned from it
-categories: [alumni, tri1, week2]
+categories: [extra, week2, tri1]
 ---
 
 # AP Computer Science Principles and AP Computer Science A Alumni Panel

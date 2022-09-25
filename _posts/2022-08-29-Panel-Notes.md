@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [week2, tri1]
+categories: [extra, week2, tri1]
 ---
 Computer Science is focused a lot on Problem Solving and if you find interest in the class, it is such a really good experience
 

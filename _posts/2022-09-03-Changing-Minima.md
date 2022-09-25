@@ -5,7 +5,7 @@ toc: true
 show_tags: true
 title: Changing Theme for Fastpage
 description: This is me trying to change the theme for the fastpage, but showing it doesn't work
-categories: [theme, tri1, week2]
+categories: [week2, tri1]
 ---
 
 When you make a fastpage from fastai, if you want to change the style, you have to go to the _sass folder but by default it is known as minima. I tried to change the minima but it resulted in an error message

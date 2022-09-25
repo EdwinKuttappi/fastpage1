@@ -4,7 +4,7 @@ layout: post
 comments: true
 title: CollegeBoard Section 1.1 Notes and Quiz
 image: /images/collaborationvideo.png
-Description: Notes on the videos from CollegeBoard about Collaboration
+Description: After watching the videos from CollegeBoard about Collaboration, here are some notes and my quiz results.
 show_tags: true
 categories: [Notes, week4, tri1]
 ---

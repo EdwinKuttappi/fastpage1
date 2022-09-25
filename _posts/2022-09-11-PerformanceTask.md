@@ -5,7 +5,7 @@ toc: true
 show_tags: true
 title: Performance Task
 description: For Week 3, we write a plan for the performance task
-categories: [tri1, week3]
+categories: [week3, tri1]
 ---
 
 # Performance Task Planning
