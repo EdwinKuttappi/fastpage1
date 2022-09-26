@@ -31,5 +31,9 @@ The idea that we all have is making a list of activites that a user inputs into 
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFNFD-Iypk&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFNFD-Iypk&#x2F;view?utm_content=DAFNFD-Iypk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Scrum Team Process - Emaad Mir, Edwin Abraham, Luka Van Den Boomen, Jishnu Singiresu</a> by Edwin Abraham, Emaad Mir, Jishnu Singiresu, and Luka Van Den Boomen
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFNFD-Iypk&#x2F;view?utm_content=DAFNFD-Iypk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Scrum Team Process</a> by Edwin Abraham, Emaad Mir, Jishnu Singiresu, and Luka Van Den Boomen
+
+## Scrum Team Plans from the Group 
+On our Group Repository, we made a new page that was focused on our Group Project
+![]({{ site.baseurl }}/images/groupplan.png)
 
