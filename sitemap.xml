@@ -83,10 +83,10 @@
 <loc>https://edwinkuttappi.github.io/fastpage1/categories/</loc>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/Vocabulary/overview</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/timebox/</loc>
 </url>
 <url>
-<loc>https://edwinkuttappi.github.io/fastpage1/timebox/</loc>
+<loc>https://edwinkuttappi.github.io/fastpage1/Vocabulary/overview</loc>
 </url>
 <url>
 <loc>https://edwinkuttappi.github.io/fastpage1/search/</loc>
@@ -96,5 +96,9 @@
 </url>
 <url>
 <loc>https://edwinkuttappi.github.io/fastpage1/page2/</loc>
+</url>
+<url>
+<loc>https://edwinkuttappi.github.io/fastpage1/_pages/01_javascript.html</loc>
+<lastmod>2022-09-26T03:40:16-05:00</lastmod>
 </url>
 </urlset>
