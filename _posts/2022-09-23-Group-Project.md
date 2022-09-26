@@ -8,6 +8,8 @@ show_tags: true
 image: /images/teamwork.png
 categories: [week5, tri1]
 ---
+# HTML Fragments:
+{% include javascript-table.html %}
 
 # Scrum Team Plans
 For our project, all four of 4 us decided to use on of Emaad's ideas he had for the Creative Development Portion of the AP Exam, but we changed it a bit. The program will ask for input and a list of activites, and it will randomize that into an agenda for the user to follow.
