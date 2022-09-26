@@ -2,7 +2,7 @@
 toc: true
 layout: post
 comments: true
-Title: Human Day Video Notes
+title: Human Day Video Notes
 Description: Notes that I took while watching Psychology and the Good Life by Laurie Santos
 show_tags: true
 image: /images/yalepsychology.jpg
