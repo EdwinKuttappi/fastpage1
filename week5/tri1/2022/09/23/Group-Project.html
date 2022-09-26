@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Group Project" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Scrum Team Plans For our project, all four of 4 us decided to use on of Emaad’s ideas he had for the Creative Development Portion of the AP Exam, but we changed it a bit. The program will ask for input and a list of activites, and it will randomize that into an agenda for the user to follow." />
-<meta property="og:description" content="Scrum Team Plans For our project, all four of 4 us decided to use on of Emaad’s ideas he had for the Creative Development Portion of the AP Exam, but we changed it a bit. The program will ask for input and a list of activites, and it will randomize that into an agenda for the user to follow." />
+<meta name="description" content="HTML Fragments:" />
+<meta property="og:description" content="HTML Fragments:" />
 <link rel="canonical" href="https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html" />
 <meta property="og:url" content="https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html" />
 <meta property="og:site_name" content="Edwin’s Blog" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://edwinkuttappi.github.io/fastpage1/images/teamwork.png" />
 <meta property="twitter:title" content="Group Project" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-23T00:00:00-05:00","datePublished":"2022-09-23T00:00:00-05:00","description":"Scrum Team Plans For our project, all four of 4 us decided to use on of Emaad’s ideas he had for the Creative Development Portion of the AP Exam, but we changed it a bit. The program will ask for input and a list of activites, and it will randomize that into an agenda for the user to follow.","headline":"Group Project","image":"https://edwinkuttappi.github.io/fastpage1/images/teamwork.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-23T00:00:00-05:00","datePublished":"2022-09-23T00:00:00-05:00","description":"HTML Fragments:","headline":"Group Project","image":"https://edwinkuttappi.github.io/fastpage1/images/teamwork.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/23/Group-Project.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpage1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://edwinkuttappi.github.io/fastpage1/feed.xml" title="Edwin's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpage1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -101,6 +101,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#html-fragments">HTML Fragments:</a></li>
 <li class="toc-entry toc-h1"><a href="#scrum-team-plans">Scrum Team Plans</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#roles">Roles</a></li>
@@ -109,7 +110,37 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#scrum-team-plans-from-the-group">Scrum Team Plans from the Group</a></li>
 </ul>
 </li>
-</ul><h1 id="scrum-team-plans">
+</ul><h1 id="html-fragments">
+<a class="anchor" href="#html-fragments" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTML Fragments:</h1>
+<div id="JavaScriptTable"> 
+</div>
+
+<script> 
+
+
+let teammates = ["Emaad", "Edwin", "Luka", "Jishnu"];
+
+
+const table = document.createElement("table");
+const row = document.createElement("tr");
+
+
+for (let i = 0; i < teammates.length; i++) {
+    let data = document.createElement("td");
+    let node = document.createTextNode(teammates[i]);
+    data.appendChild(node);
+    row.appendChild(data);
+}
+
+table.appendChild(row);
+const div = document.getElementById("JavaScriptTable");
+div.appendChild(table);
+
+
+
+</script>
+
+<h1 id="scrum-team-plans">
 <a class="anchor" href="#scrum-team-plans" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scrum Team Plans</h1>
 <p>For our project, all four of 4 us decided to use on of Emaad’s ideas he had for the Creative Development Portion of the AP Exam, but we changed it a bit. The program will ask for input and a list of activites, and it will randomize that into an agenda for the user to follow.</p>
 
