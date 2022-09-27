@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Customizing my Python Flask",
-            "content": "",
+            "content": "Changing and Customizing my own Python Flask Home Page . I went to the index.html file and I was able to learn what each code was doing and I saw that you could code a card and I decided to add another code under the heading About Me. I also went in to the headings and changed them to make them more about me and show what I wanted to focus on. . After adding another card on the bottom, I changed it to make it about me, so anyone reading the website can learn more about me. . Changing and Customizing my Stub.html file . I know that stub is just a generic term and that is just a word to name the file. For this page, I did not really have an idea for what to do, so I just wrote some quick things about me .",
             "url": "https://edwinkuttappi.github.io/fastpage1/week5/tri1/2022/09/25/PythonFlaskChanges.html",
             "relUrl": "/week5/tri1/2022/09/25/PythonFlaskChanges.html",
             "date": " • Sep 25, 2022"
