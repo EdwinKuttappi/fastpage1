@@ -2,6 +2,7 @@
 toc: true
 layout: post
 comments: true
+author: Edwin Abraham
 title: CollegeBoard Section 1.1 Notes and Quiz
 image: /images/collaborationvideo.png
 Description: After watching the videos from CollegeBoard about Collaboration, here are some notes and my quiz results.

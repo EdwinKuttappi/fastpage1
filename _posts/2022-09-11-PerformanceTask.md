@@ -3,6 +3,7 @@ comments: true
 layout: post
 toc: true
 show_tags: true
+author: Edwin Abraham
 title: Performance Task
 description: For Week 3, we write a plan for the performance task
 categories: [week3, tri1]

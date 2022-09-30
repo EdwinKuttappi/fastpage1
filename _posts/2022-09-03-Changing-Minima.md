@@ -2,6 +2,7 @@
 comments: true
 layout: post
 toc: true
+author: Edwin Abraham
 show_tags: true
 title: Changing Theme for Fastpage
 description: This is me trying to change the theme for the fastpage, but showing it doesn't work

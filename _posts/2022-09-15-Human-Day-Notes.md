@@ -5,6 +5,7 @@ comments: true
 title: Human Day Video Notes
 Description: Notes that I took while watching Psychology and the Good Life by Laurie Santos
 show_tags: true
+author: Edwin Abraham
 image: /images/yalepsychology.jpg
 categories: [Notes, week4, tri1]
 ---

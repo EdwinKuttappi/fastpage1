@@ -5,6 +5,7 @@ comments: true
 title: Group Project
 Description: This blog post has information about our group project and each person's role
 show_tags: true
+author: Edwin Abraham, Emaad Mir, Jishnu Singiresu, and Luka Van Den Boomen
 image: /images/teamwork.png
 categories: [week5, tri1]
 ---
