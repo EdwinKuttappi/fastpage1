@@ -1,1 +1,10 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+_posts/2022-
+_posts/2022-08-21-JupyterNotebook.md
+_posts/2022-08-26-Bash-Kernel.md
+_posts/2022-08-28-quiz.md
+_posts/2022-09-05-TP120-python_lists.md
+_posts/2022-09-25.javascript.md
