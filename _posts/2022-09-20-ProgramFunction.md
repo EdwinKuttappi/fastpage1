@@ -9,6 +9,7 @@ author: Edwin Abraham
 image: /images/collegeboardvideo2.png
 categories: [Notes, week5, tri1]
 ---
+{% include collegeboardnotes.html %}
 
 # CollegeBoard Unit: Program Function and Purpose
 All Computer Innovations are built for a purpose. CRD - 2.A.1 says that the purpose of computing innovations is to solve problems or to pursue interests through creative expression. CRD - 2.A.2 is an understanding of the purpose of a computing innovations provides developers with an improved ability to develop that computing innovation. CRD - 2.C.1 says that program inputs are data sent to a computer for processing by a program. Input can come in a variety of forms, such as tactile, audio, visual, or text. CRD - 2.D.1 says that program outputs are any data sent from a program to a device. Program output can come in a variety of forms, such as tactile, audio, visual, or text. Also, CRD - 2.B.1 says that a program is a collection of program statements that perform s a specific task when run by a computer. A program is often referred to as software.

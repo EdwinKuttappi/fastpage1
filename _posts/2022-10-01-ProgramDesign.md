@@ -9,6 +9,7 @@ author: Edwin Abraham
 image: /images/collegeboardvideo3.png
 categories: [Notes, week6, tri1]
 ---
+{% include collegeboardnotes.html %}
 
 # CollegeBoard Unit: Program Design and Development
 There is a lot of development that has to go into programs to make the user interactions easier. CRD - 2.E.1 says that a development process can be ordered and intentional or exploratory in nature. CRD 2.E.2 says that there are multiple development processes. the following phases are commonly used when developing a program: investigating and reflecting, designing, prototyping, and testing. CRD 2.F.3 also says that some ways investigation can be performed are with collecting data through surveys, user testing, interviews, and direct observations.
