@@ -11,7 +11,7 @@ categories: [Notes, week4, tri1]
 ---
 {% include collegeboardnotes.html %}
 
-# CollegeBoard Unit Collaboration
+# CollegeBoard Unit: Collaboration
 Collaboration is a very important skills and can be used in many different places. According to CRD - 1.A.3, Effective Collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it. Additionally CRD - 1.A.4 says that collaboration includes diverse perspectives that helps to avoid bias in the development of computing innovation, and CRD - 1.A.5 is about the consultation and communication with users are important aspects of the development of computing innovations. CRD - 1.A explains how computing innovations are improved through collaboration and CRD - 1.B explains how computing innovations are developed by groups of people.
 
 ## CollegeBoard Videos 1.1 Videos 1 and 2
