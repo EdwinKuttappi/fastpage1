@@ -9,6 +9,8 @@ author: Edwin Abraham, Emaad Mir, Jishnu Singiresu, and Luka Van Den Boomen
 image: /images/teamwork.png
 categories: [week5, tri1]
 ---
+{% include nav_frontend.html %}
+
 # HTML Fragments:
 {% include javascript-table.html %}
 
