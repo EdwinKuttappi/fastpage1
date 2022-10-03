@@ -12,7 +12,7 @@ categories: [Notes, week6, tri1]
 {% include collegeboardnotes.html %}
 
 # CollegeBoard Unit: Program Design and Development
-There is a lot of development that has to go into programs to make the user interactions easier. CRD - 2.E.1 says that a development process can be ordered and intentional or exploratory in nature. CRD 2.E.2 says that there are multiple development processes. the following phases are commonly used when developing a program: investigating and reflecting, designing, prototyping, and testing. CRD 2.F.3 also says that some ways investigation can be performed are with collecting data through surveys, user testing, interviews, and direct observations.
+There is a lot of development that has to go into programs to make the user interactions easier. CRD - 2.E.1 says that a development process can be ordered and intentional or exploratory in nature. CRD 2.E.2 says that there are multiple development processes. the following phases are commonly used when developing a program: investigating and reflecting, designing, prototyping, and testing. CRD 2.F.3 also says that some ways investigation can be performed are with collecting data through surveys, user testing, interviews, and direct observations. CRD - 2.H.1 says that it is important to acknowledge any code segments that were developed collaboratively or by another source.
 
 ## CollegeBoard Videos 1.3 Videos 1, 2, and 3
 
@@ -26,10 +26,11 @@ Video 1:
 - Developers have to choose how a program should behave and include a list of user interactions
 
 Video 2:
-- Programs take input in different ways
-- Inputs can usually affect what the output is
-- Tactile means touch input
-- Most programs are written in an event, which is activated when a specific action happens
+- Programs are developed by groups of people and groups use programming from other people and make it for themselves, but they must give credit
+- Different people or teams work on different components and they all work together as a team
+- When working in a team, credit must be given to people who were a part of the program, and documentation helps when fixing things and so that person gets credit
+- The program documentation should include the author's name and the source of the code segments used
+
 
 Video 3:
 - A program is a collection of statements, which is a single command
@@ -43,4 +44,4 @@ I took the CollegeBoard quiz about Collaboration and out of the 6 questions, I g
 ![]({{ site.baseurl }}/images/collegeboardquiz2.png)
 
 ## Takeaways
-I have learned that are there are so many different functions when using a program and that can really help people in their daily lives. I also learned that there are many different types of input, and based on what your input is, the output can change, and events can happen based on actions. There are many different types of computing innovation in our lives, and I should try to innovate on any inventions to help people. An idea I have is helping to make autonomous vehicles more accessible to people.
+There is a specific purpose for Developers when they are making a program and they have to do a lot of things. They also need to think about a lot and what they can add or change. They also need to do a lot of testing. Developers make a lot of additions based on feedback or they thought of improving something.
