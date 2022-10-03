@@ -3,7 +3,7 @@ toc: true
 layout: post
 comments: true
 title: Customizing my Python Flask
-Description: This is about how I customized my python flask to make it more like mine using HTML
+description: This is about how I customized my python flask to make it more like mine using HTML
 author: Edwin Abraham
 show_tags: true
 image: /images/flaskpage.png

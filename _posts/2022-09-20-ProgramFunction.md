@@ -3,7 +3,7 @@ toc: true
 layout: post
 comments: true
 title: CollegeBoard Big Idea 1.2 Notes and Quiz
-Description: After watching the videos from CollegeBoard about Program Function and Purpose, here are some notes and my quiz results.
+description: After watching the videos from CollegeBoard about Program Function and Purpose, here are some notes and my quiz results.
 show_tags: true
 author: Edwin Abraham
 image: /images/collegeboardvideo2.png
