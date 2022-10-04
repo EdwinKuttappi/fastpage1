@@ -5,7 +5,7 @@ comments: true
 author: Edwin Abraham
 title: CollegeBoard Big Idea 1.1 Notes and Quiz
 image: /images/collaborationvideo.png
-description: After watching the videos from CollegeBoard about Collaboration, here are some notes and my quiz results.
+description: After watching the videos from CollegeBoard about Collaboration, here are some notes and my quiz results, I also put things that I should try and do
 show_tags: true
 categories: [Notes, week4, tri1]
 ---
