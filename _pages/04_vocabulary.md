@@ -19,3 +19,5 @@ Input: This is what the user inputs into the code
 Output: Based on the user's output the code will give something to the user
 
 Procedural Abstraction: Grouping a sequence of commands and is used repeatedly
+
+Protocol: Something that helps you to send and receive data
