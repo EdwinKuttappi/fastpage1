@@ -4,6 +4,7 @@ description: Quick launch into Variables, Functions, Arrays, IJavaScript HTML, u
 title: JavaScript Notebook
 layout: default
 badges: false
+author: John Mortensen and Edwin Abraham
 permalink: /techtalk/javascript
 image: /images/javascript.png
 categories: [week5, tri1]
@@ -565,7 +566,7 @@ object ; { name: &#39;Mr M&#39;,
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;border: 3px solid blue;background-color:#FFFFE0;color:yellow;text-color:#FFFFFF;color:gold;box-shadow: 0.8em 0.4em 0.4em lime;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Year</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>Graduate</td><td>1977</td><td>Teacher</td><tr><tr><td>Edwin</td><td>EdwinKuttappi</td><td>Junior</td><td>2024</td><td>Student</td><tr><tr><td>Emaad</td><td>Emaad-Mir</td><td>Sophmore</td><td>2025</td><td>Student</td><tr><tr><td>Luka</td><td>LukaVDB</td><td>Junior</td><td>2024</td><td>Student</td><tr><tr><td>Jishnu</td><td>JishnuS420</td><td>Junior</td><td>2024</td><td>Student</td><tr></table></div>
+<div style='display:inline-block;border: 3px solid blue;background-color:#FFFFE0;color:yellow;text-color:#FFFFFF;color:blue;box-shadow: 0.8em 0.4em 0.4em lime;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Year</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>Graduate</td><td>1977</td><td>Teacher</td><tr><tr><td>Edwin</td><td>EdwinKuttappi</td><td>Junior</td><td>2024</td><td>Student</td><tr><tr><td>Emaad</td><td>Emaad-Mir</td><td>Sophmore</td><td>2025</td><td>Student</td><tr><tr><td>Luka</td><td>LukaVDB</td><td>Junior</td><td>2024</td><td>Student</td><tr><tr><td>Jishnu</td><td>JishnuS420</td><td>Junior</td><td>2024</td><td>Student</td><tr></table></div>
 </div>
 
 </div>

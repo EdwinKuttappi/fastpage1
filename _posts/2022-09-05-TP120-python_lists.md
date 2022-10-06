@@ -3,8 +3,10 @@ keywords: fastai
 description: An proof of knowledge to show how to use Data Abstraction with Python Lists [] and Python Dictionaries {}.
 title: Lists, Dictionaries, Iteration, and a Quiz
 toc: true
-categories: [lists,dictionaries,week2,tri1,]
+author: John Mortensen and Edwin Abraham
+categories: [week2,tri1,lists,dictionaries]
 permalink: /collegeboard/python_lists
+tags: [python]
 nb_path: _notebooks/2022-09-05-TP120-python_lists.ipynb
 layout: notebook
 ---
