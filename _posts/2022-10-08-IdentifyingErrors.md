@@ -2,7 +2,7 @@
 toc: true
 layout: post
 comments: true
-title: CollegeBoard Big Idea 1.3 Notes and Quiz
+title: CollegeBoard Big Idea 1.4 Notes and Quiz
 description: After watching the CollegeBoard Videos about Big Idea 1.4, I took some notes to help me remember and I applied my knowledge to a quiz.
 author: Edwin Abraham
 image: /images/collegeboardvideo4.png
