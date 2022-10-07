@@ -201,13 +201,15 @@ window.onload = wrap_img;
 <span class="sd">"""</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://corona-virus-world-and-india-data.p.rapidapi.com/api"</span>
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063"</span><span class="p">,</span>
+    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"2348020badmshecfd384514830c4p1f8a42jsn72e4bf449cdf"</span><span class="p">,</span>
     <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"corona-virus-world-and-india-data.p.rapidapi.com"</span>
 <span class="p">}</span>
 
 <span class="c1"># Request Covid Data</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 <span class="c1"># print(response.text)  # uncomment this line to see raw data</span>
+
+<span class="c1">#print(response.json())</span>
 
 <span class="c1"># This code looks for "world data"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"World Totals"</span><span class="p">)</span>
