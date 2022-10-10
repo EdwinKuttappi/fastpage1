@@ -5,8 +5,8 @@ title: Big Idea 1 'Identifying and Correcting Errors'
 layout: default
 badges: false
 author: Sean Yeung, John Mortensen, and Edwin Abraham
-permalink: /collegeboard/error
-image: /images/apcsp.png
+image: /images/fixingbugs.jpg
+permalink: /solving/code
 categories: [week7, tri1]
 nb_path: _notebooks/2022-10-03-AP-error_testing.ipynb
 layout: notebook
@@ -21,6 +21,13 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include API.html %}</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="https://apclassroom.collegeboard.org/103/home?unit=1">College Board Big Idea 1</a></p>
@@ -170,17 +177,9 @@ layout: notebook
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-AP-error_testing.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-AP-error_testing.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> letter = input(&#34;What letter would you like to check?&#34;)
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-AP-error_testing.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> for i in alphabetList:
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-AP-error_testing.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     count = 0
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-AP-error_testing.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     if i == letter:
-
-<span class="ansi-red-fg">NameError</span>: name &#39;alphabetList&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The letter g is the 0 letter in the alphabet
+</pre>
 </div>
 </div>
 
@@ -487,7 +486,7 @@ layout: notebook
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="o">.</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
