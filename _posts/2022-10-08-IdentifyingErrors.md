@@ -16,13 +16,7 @@ There is a lot of development that has to go into programs to make the user inte
 ## CollegeBoard Videos 1.3 Videos 1, 2, and 3
 
 Video 1:
-- A program is always developed with an idea
-- The idea always has a **specific purpose** in the mind and the people think about what they want to do and follow some steps
-- Developers are trying to stick to their plan and follow some specific steps
-- The Development can be very exploratory and the steps followed are based on what happens, people who are observing early AI Projects look for things to improve on and they try to make changes that might be useful
-- When making a program, developers have to determine the requirements of the program, understand the constraints like time, understand the user concerns and interests
-- Developers design the program by **brainstorming**, **storyboarding**, planning user experience, laying out the user interface, organizing into modules, and develop a testing strategy
-- Developers have to choose how a program should behave and include a list of user interactions
+
 
 Video 2:
 - Programs are developed by groups of people and groups use programming from other people and make it for themselves, but they must give credit
