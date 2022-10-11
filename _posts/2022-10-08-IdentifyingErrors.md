@@ -45,8 +45,8 @@ Video 3:
 - Programmers have to test and then the users have to test and then the programmers change even more
 - After a lot of testing, the program is finally released to other people
 
-## CollegeBoard Quiz: Collaboration Quiz
-I took the CollegeBoard quiz about Collaboration and out of the 3 questions, I got 3 of the questions right showing that I understand the topic and I can use what I learned to make collaborating with my group more efficient. I can use what I learned to make sure I am a better collaborator. I can add more comments to my code to help my group mates understand what I am trying to do. I can also add comments to my fastpage, so anyone looking at my code can see what I did.
+## CollegeBoard Quiz: Identifying and Correcting Errors Quiz
+I took the CollegeBoard quiz about Identifying and Correcting Errors and out of the 3 questions, I got 3 of the questions right showing that I understand the topic and I can use what I learned to make myself a better developer and understand what errors happened and how to fix them. This quiz was a little hard especially on the first question because I did not really know how to do it, and I was between two answers, but now I understand it. 
 ![]({{ site.baseurl }}/images/collegeboardquiz4.png)
 
 ## Takeaways
