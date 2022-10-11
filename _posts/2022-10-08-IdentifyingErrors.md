@@ -10,7 +10,7 @@ categories: [Notes, week7, tri1]
 ---
 {% include collegeboardnotes.html %}
 
-# CollegeBoard Unit: Program Design and Development
+# CollegeBoard Unit: Identifying and Correcting Errors
 Errors in programming happen all the time but many people have a very hard time understanding what errors there are and how to solve them. Understanding the different errors is essential to becoming a proficient programmer. CRD - 2.I.1 says that a logic error is a mistake in the algorithm or program that causes it to behave incorrectly or unexpectedly. CRD 2.I.2 says that a syntax error is a mistake in the program where the rules of programming language are not followed. CRD - 2.I.5 says that test cases, hand tracing, visualizations, debuggers, and adding extra output statements are effective ways to find and correct errors. CRD - 2.J.2 is defined inputs used to test a program should demonstrate the different expected outcomes that are at or just beyond the extremes of input data.
 
 ## CollegeBoard Videos 1.4 Videos 1, 2, and 3
