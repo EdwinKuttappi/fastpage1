@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Practice with identifying and correcting code blocks
-title: Big Idea 1 'Identifying and Correcting Errors'
+title: Big Idea 1 'Identifying and Correct Errors'
 layout: default
 badges: false
 author: Sean Yeung, John Mortensen, and Edwin Abraham
@@ -136,7 +136,8 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>My name is Edwin Abraham, and I decided to input my last name initial, so when I inputted 'a', I got 1 which is true because it is the first key in the list</p>
+<p>My name is Edwin Abraham, and I decided to input my last name initial, so when I inputted 'a', I got 1 which is true because it is the first key in the list.</p>
+<p>The problem here was the the computer starts from 0 but we want it to start at 1, so we had to change i += 0 to 1.</p>
 
 </div>
 </div>
@@ -178,7 +179,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The letter g is the 0 letter in the alphabet
+<pre>The letter a is the 0 letter in the alphabet
 </pre>
 </div>
 </div>
@@ -220,34 +221,17 @@ layout: notebook
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 2, 4, 6, 8, 10]
+</pre>
 </div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This code should output the odd numbers from 0 - 10 using a while loop.</p>
-
 </div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">odds</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="n">odds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">2</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">odds</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -256,10 +240,7 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This code outputs the even numbers from 0 - 10 using a for loop.</p>
-<ul>
-<li>Analyze this code to determine what can be changed to get the outcome to be odd numbers. (Code block below)</li>
-</ul>
+<h1 id="Even-Number-Function">Even Number Function<a class="anchor-link" href="#Even-Number-Function"> </a></h1><p>This code should output the even numbers from 0 - 10 using a for loop.</p>
 
 </div>
 </div>
@@ -304,7 +285,7 @@ layout: notebook
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This code should output the odd numbers from 0 - 10 using a for loop.</p>
+<h1 id="Odd-Number-Function">Odd Number Function<a class="anchor-link" href="#Odd-Number-Function"> </a></h1><p>This code should output the odd numbers from 0 - 10 using a for loop.</p>
 
 </div>
 </div>
@@ -484,21 +465,33 @@ layout: notebook
 <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is the menu, what would you like to order?&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;To stop ordering please type stop&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="o">.</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1"># why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">3.99</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">1.99</span>
-<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="mf">0.99</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="mf">3.99</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="mf">1.99</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="mf">0.99</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thank You for Ordering, Here is your total:&quot;</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is not on the menu&quot;</span><span class="p">)</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        
 
 <span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="c1">#print(total)</span>
 </pre></div>
 
     </div>
@@ -511,11 +504,15 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Menu
+<pre>This is the menu, what would you like to order?
+To stop ordering please type stop
 burger  $3.99
 fries  $1.99
 drink  $0.99
-0.99
+3.99
+4.98
+6.970000000000001
+Thank You for Ordering, Here is your total: 6.970000000000001
 </pre>
 </div>
 </div>
@@ -528,11 +525,26 @@ drink  $0.99
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><blockquote><p>Now is a good time to think about Testing of your teams final project...</p>
+<h2 id="Solving-Hacks">Solving Hacks<a class="anchor-link" href="#Solving-Hacks"> </a></h2><blockquote><p>Now is a good time to think about Testing of your teams final project...</p>
 <ul>
-<li>What errors may arise in your project?</li>
-<li>What are some test cases that can be used?</li>
-<li>Make sure to document any bugs you encounter and how you solved the problem.</li>
+<li>What errors may arise in your project?<ul>
+<li>I did not know how to use the string</li>
+<li>When I typed stop the code always broke</li>
+<li>When I typed burger it did not work and ran the else statement</li>
+<li>The break crashed the system</li>
+</ul>
+</li>
+<li>What are some test cases that can be used?<ul>
+<li>inputting burger and getting the price of burger</li>
+<li>adding items to the list and seeing if the total is right</li>
+<li>Putting stop to see if the program outputs the right items</li>
+</ul>
+</li>
+<li>Make sure to document any bugs you encounter and how you solved the problem.<ul>
+<li>The code was always running the else part so I had to fix my indentation</li>
+<li>Whenever I typed something on the menu, it would run the else statement, so I had to add elif to the functions above</li>
+</ul>
+</li>
 <li>What are “single” tests that you will perform on your project? Or, your part of the project?<ul>
 <li>As Hack Design and Test plan action … Divide these “single” tests into Issues for Scrum Board prior to coding. FYI, related tests could be in same Issue by using markdown checkboxes to separate tests.</li>
 </ul>

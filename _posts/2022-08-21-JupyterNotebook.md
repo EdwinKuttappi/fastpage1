@@ -1,7 +1,6 @@
 ---
 keywords: fastai
 title: My First Jupyter Notebook
-categories: [week0, tri1]
 nb_path: _notebooks/2022-08-21-JupyterNotebook.ipynb
 layout: notebook
 ---
