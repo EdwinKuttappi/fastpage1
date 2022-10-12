@@ -539,7 +539,8 @@ Rank Url: https://coinranking.com/coin/ixgUfzmLR+aave-aave
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="My-API">My API<a class="anchor-link" href="#My-API"> </a></h1><p>I chose to use Currency Exchange API found on RapidAPI</p>
+<h1 id="My-API">My API<a class="anchor-link" href="#My-API"> </a></h1><p>I chose Holidays in the World API
+I chose to use Currency Exchange API found on RapidAPI</p>
 
 </div>
 </div>
@@ -553,23 +554,18 @@ Rank Url: https://coinranking.com/coin/ixgUfzmLR+aave-aave
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="c1"># https://rapidapi.com/fyhao/api/currency-exchange/</span>
-<span class="c1"># The link for the API I used</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://events-happened-in-world.p.rapidapi.com/search&quot;</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://currency-exchange.p.rapidapi.com/listquotes&quot;</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;date&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">,</span><span class="s2">&quot;month&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span><span class="p">,</span><span class="s2">&quot;limit&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">}</span>
 
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;2348020badmshecfd384514830c4p1f8a42jsn72e4bf449cdf&quot;</span><span class="p">,</span>
-	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;currency-exchange.p.rapidapi.com&quot;</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;events-happened-in-world.p.rapidapi.com&quot;</span>
 <span class="p">}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Currencies&quot;</span><span class="p">)</span>
-<span class="n">currencies</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">currency</span> <span class="ow">in</span> <span class="n">currencies</span><span class="p">:</span>
-	<span class="nb">print</span><span class="p">(</span><span class="n">currency</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -582,7 +578,70 @@ Rank Url: https://coinranking.com/coin/ixgUfzmLR+aave-aave
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Currencies
+<pre>{&#34;data&#34;:[{&#34;_id&#34;:&#34;61d8eefe8d2a7580b2f9bf0d&#34;,&#34;date&#34;:&#34;5&#34;,&#34;month&#34;:&#34;May&#34;,&#34;year&#34;:&#34;1282 &#34;,&#34;event&#34;:&#34; Juan Manuel, Prince of Villena (d. 1322)&#34;},{&#34;_id&#34;:&#34;61d8eefe8d2a7580b2f9bfef&#34;,&#34;date&#34;:&#34;5&#34;,&#34;month&#34;:&#34;May&#34;,&#34;year&#34;:&#34;1983 &#34;,&#34;event&#34;:&#34; James Anyon, English cricketer&#34;},{&#34;_id&#34;:&#34;61d8eefe8d2a7580b2f9bf6d&#34;,&#34;date&#34;:&#34;5&#34;,&#34;month&#34;:&#34;May&#34;,&#34;year&#34;:&#34;1306 &#34;,&#34;event&#34;:&#34; Constantine Palaiologos, Byzantine general (b. 1261)&#34;},{&#34;_id&#34;:&#34;61d8eefe8d2a7580b2f9bfa4&#34;,&#34;date&#34;:&#34;5&#34;,&#34;month&#34;:&#34;May&#34;,&#34;year&#34;:&#34;1905 &#34;,&#34;event&#34;:&#34; Floyd Gottfredson, American author and illustrator (d. 1986)&#34;},{&#34;_id&#34;:&#34;61d8eefe8d2a7580b2f9bf0a&#34;,&#34;date&#34;:&#34;5&#34;,&#34;month&#34;:&#34;May&#34;,&#34;year&#34;:&#34;1432 &#34;,&#34;event&#34;:&#34; Francesco Bussone da Carmagnola, Italian adventurer&#34;}]}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://events-happened-in-world.p.rapidapi.com/search&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;date&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">,</span><span class="s2">&quot;month&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span><span class="p">,</span><span class="s2">&quot;limit&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;2348020badmshecfd384514830c4p1f8a42jsn72e4bf449cdf&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;events-happened-in-world.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="c1">#holidays = response.json().get(&#39;Public Holidays&#39;)</span>
+<span class="c1">#for date in holidays: # Refer to list</span>
+    <span class="c1">#if date[&quot;2019-01-01&quot;] == &quot;2019-01-01&quot;: # Supposed to not include this date</span>
+        <span class="c1">#for key, value in date.items(): # Find specific date in API</span>
+            <span class="c1">#print(key, value)</span>
+
+<span class="c1">#ids = response.json().get(&#39;data&#39;)</span>
+<span class="c1">#for id in ids:</span>
+    <span class="c1">#if id[&quot;_id&quot;] == &quot;61d8eefe8d2a7580b2f9bebe&quot;:</span>
+        <span class="c1">#for key, value in date.items():</span>
+            <span class="c1">#print(key, value) </span>
+
+
+<span class="c1">#items = response.json().get(&#39;data&#39;)</span>
+<span class="c1">#for date in items:  # the specific item in the list</span>
+    <span class="c1">#if date[&quot;date&quot;] == &quot;2019-01-01&quot;:  # this filters </span>
+        <span class="c1">#for key, value in date.items():  # looks for the key and value and outputs it</span>
+            <span class="c1">#print(key, value)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Holidays&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Holidays
 </pre>
 </div>
 </div>
@@ -593,12 +652,14 @@ Rank Url: https://coinranking.com/coin/ixgUfzmLR+aave-aave
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 18&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15&#39;&gt;16&lt;/a&gt;</span> currencies = response.json()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span> for currency in currencies:
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span> 	print(currency[&#34;name&#34;])
+<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 18&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13&#39;&gt;14&lt;/a&gt;</span> print(&#34;Holidays&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span> holidays = response.json().get(&#39;Public Holidays&#39;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span> for date in holidays: # Refer to list
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span>     if date[&#34;2019-01-01&#34;] == &#34;2019-01-01&#34;: # Supposed to not include this date
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=19&#39;&gt;20&lt;/a&gt;</span>         for key, value in date.items(): # Find specific date in API
 
-<span class="ansi-red-fg">TypeError</span>: string indices must be integers</pre>
+<span class="ansi-red-fg">TypeError</span>: &#39;NoneType&#39; object is not iterable</pre>
 </div>
 </div>
 

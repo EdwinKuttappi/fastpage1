@@ -462,7 +462,7 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span>  <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
          <span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
          <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">}</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># variable is being assigned</span>
 
 <span class="c1">#shows the user the menu and prompts them to select an item</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is the menu, what would you like to order?&quot;</span><span class="p">)</span>
@@ -479,7 +479,7 @@ layout: notebook
     <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="mf">1.99</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="c1"># == means that you are comparing the variable, don&#39;t assign variable</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="mf">0.99</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span><span class="p">:</span>
