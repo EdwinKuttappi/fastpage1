@@ -4,7 +4,7 @@ description: An proof of knowledge to show how to use Data Abstraction with Pyth
 title: Lists, Dictionaries, Iteration, and a Quiz
 toc: true
 author: John Mortensen and Edwin Abraham
-categories: [week2,tri1,lists,dictionaries]
+categories: [week2,tri1]
 permalink: /collegeboard/python_lists
 tags: [python]
 nb_path: _notebooks/2022-09-05-TP120-python_lists.ipynb
