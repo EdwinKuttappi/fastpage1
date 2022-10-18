@@ -6,7 +6,7 @@ title: Intro to Engineering at Qualcomm
 description: Some representatives from Qualcomm joined a Zoom Webinar hosted by a community club and shared how the employees got interested in Engineering
 show_tags: true
 author: Edwin Abraham
-image: /images/Qualcomm.png
+image: /images/Qualcomm.jpg
 categories: [extra, week9, tri1]
 ---
 
