@@ -7,7 +7,7 @@ description: Some representatives from Qualcomm joined a Zoom Webinar hosted by 
 show_tags: true
 author: Edwin Abraham
 image: /images/.png
-categories: [Extra, week9, tri1]
+categories: [extra, week9, tri1]
 ---
 
 # Intro to Engineering at Qualcomm
@@ -47,4 +47,4 @@ On October 17, 2022, the WE STEM Club came to Del Norte and offered students in 
 After listening to this talk, I think it is very important to not compare yourself to others and that you should always stay curious. One of the questions was which field of engineering should I take, and this was a question that I find myself asking. Right now I want to become a Mechanical Engineering but there are so many options in Engineering. A way to find out which field of engineering is to find new experiences. Knowing there are a lot of fields I think I have narrowed it down to software engineering, hardware engineering, or mechanical engineering, but within those fields there are still a lot of different options. I have tried to expose myself a bit more especially by trying to do a lot of different STEM options like Robotics where I have tried doing Electrical and I am also doing AP Computer Science Principles and am quite interested in that as well. One of the speaker's sons was challenging himself and majored in Mechanical Engineering. I now want to challenge myself more and participate in more STEM related classes and learn more about the process of Engineering. Getting more exposure to Engineering in High School is really important and it is important to learn all these concepts early on so classes will be easier in the future.
 
 ## Takeaways
-This talk has helped me a lot to realize what I need to do if I really want to go into the Engineering field. This talk has really shown me that I need to take all the challenges I have and the opportunities related to Engineering. I need to show more interest in STEM fields because I am really interested and I need to narrow down the STEM major I want to choose. I am in Robotics but I think I need to participate in Robotics more and make sure I am getting as much exposure as I can. I also think I should really use this Summer to my advantage and try to get more Experiences in the STEM field
+This talk has helped me a lot to realize what I need to do if I really want to go into the Engineering field. This talk has really shown me that I need to take all the challenges I have and the opportunities related to Engineering. I need to show more interest in STEM fields because I am really interested and I need to narrow down the STEM major I want to choose. I am in Robotics but I think I need to participate in Robotics more and make sure I am getting as much exposure as I can. I also think I should really use this Summer to my advantage and try to get more Experiences in the STEM field.
