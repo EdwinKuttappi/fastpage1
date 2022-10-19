@@ -80,7 +80,7 @@ html_escape:
   description: false
 
 
-weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development, Python Web Server Project, UI Starters, Deployment, API, Internet Connections]
+weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development, Python Web Server Project, UI Starters, Deployment, API, Internet Connections, Project Week 1]
 review_ticket_links: [
   https://github.com/EdwinKuttappi/fastpage1/issues/2,
   https://github.com/EdwinKuttappi/fastpage1/issues/3,
@@ -110,7 +110,10 @@ weekly_summaries: [
   I added submenu for my CollegeBoard Notes and Quizzes so that makes it easy for people to switch between each one and try and find different ones.,
   This week was learning how to use API's which are really cool and they can show a lot of information. I got to play with an API that was about AI.
   This API was interesting because I could ask it a question like what color are apples and it would say yellow or green or red.
-  This week we also had to correct an error with Burger and Fries and make sure we knew how to use elif statements and string variables like k and v but I did not really do this.
+  This week we also had to correct an error with Burger and Fries and make sure we knew how to use elif statements and string variables like k and v but I did not really do this.,
+  This week was focused on teaching the frontend developers and backend developers how to debug code using VSCode and Inspect Element. The assignment was cancelled so I should revisit.
+  We focused on the CollegeBoard Big Idea 4.1 Notes about the Internet to learn how exactly information can be sent from one place to another place as well as the process of that.
+  This week was mainly just deploying our flask site on a common machine for all of Mr. Mortensen's APCSP classes and make a subdomain called agenda.nighthawkcodescrums.gq
 ]
 
 
