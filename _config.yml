@@ -80,7 +80,7 @@ html_escape:
   description: false
 
 
-weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development, Python Web Server Project, UI Starters, Deployment, API]
+weekly_sprints: [Tool Setup, Intro to Python, Data Abstraction, Creative Development, Python Web Server Project, UI Starters, Deployment, API, Internet Connections]
 review_ticket_links: [
   https://github.com/EdwinKuttappi/fastpage1/issues/2,
   https://github.com/EdwinKuttappi/fastpage1/issues/3,
@@ -88,7 +88,9 @@ review_ticket_links: [
   https://github.com/EdwinKuttappi/fastpage1/issues/5,
   https://github.com/EdwinKuttappi/fastpage1/issues/6,
   https://github.com/EdwinKuttappi/fastpage1/issues/7,
-  https://github.com/EdwinKuttappi/fastpage1/issues/8
+  https://github.com/EdwinKuttappi/fastpage1/issues/8,
+  https://github.com/EdwinKuttappi/fastpage1/issues/9,
+  https://github.com/EdwinKuttappi/fastpage1/issues/10
 ]
 weekly_summaries: [
   This week was the hardest week where we set up tools such as VSCode and Anaconda.
