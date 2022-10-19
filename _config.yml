@@ -113,7 +113,7 @@ weekly_summaries: [
   This week we also had to correct an error with Burger and Fries and make sure we knew how to use elif statements and string variables like k and v but I did not really do this.,
   This week was focused on teaching the frontend developers and backend developers how to debug code using VSCode and Inspect Element. The assignment was cancelled so I should revisit.
   We focused on the CollegeBoard Big Idea 4.1 Notes about the Internet to learn how exactly information can be sent from one place to another place as well as the process of that.
-  This week was mainly just deploying our flask site on a common machine for all of Mr. Mortensen's APCSP classes and make a subdomain called agenda.nighthawkcodescrums.gq
+  This week was mainly just deploying our flask site on a common machine for all of Mr. Mortensen's APCSP classes and make a subdomain called agenda.nighthawkcodescrums.gq.
 ]
 
 
