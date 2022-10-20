@@ -2,7 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Big Idea 2 'Binary Numbers'
+title: Night at the Museum
+author: Edwin Abraham
 description: On November 11th, 2022 we had our Night at the Museum and this is the blog post about how it went and what I saw
 image: /images/apcsp.png
 categories: [week 12, tri1]
