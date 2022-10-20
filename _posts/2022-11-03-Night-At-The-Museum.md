@@ -5,7 +5,7 @@ layout: post
 title: Night at the Museum
 author: Edwin Abraham
 description: On November 11th, 2022 we had our Night at the Museum and this is the blog post about how it went and what I saw
-image: /images/apcsp.png
+image: /images/nightathemuseum.png
 categories: [week11, tri1]
 ---
 
