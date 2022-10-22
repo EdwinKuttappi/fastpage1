@@ -10,4 +10,4 @@ categories: [week11, tri1]
 ---
 
 # Presenting our Group Flask Site
-I have to take a 30 minute shift and help explain my group flask
+Our Night at the Museum was on November 3rd, 2022, at 6:00pm-7:30pm. I had to take a 30 minute shift and help explain my group flask
