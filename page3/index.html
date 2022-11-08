@@ -76,17 +76,20 @@ window.onload = wrap_img;
     <p id="demo"></p>
 </html>
 
-<p>var i = 0;
-var txt = ‘Welcome to Edwins Fastpages’;
-var speed = 50;</p>
+<script>
+var i = 0;
+var txt = 'Welcome to Edwins Fastpages';
+var speed = 50;
 
-<p>function typewriter() {
-    if (i &lt; txt.length) {
-        document.getElementById(“demo”).innerHTML +=txt.charAt(i);
+function typewriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML +=txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
-}</p>
+}
+
+</script>
 
 <p>‘This site is built by <a href="https://github.com/EdwinKuttappi">Edwin</a>, a relatively new programmer who is using Jupyter for the first time.’</p>
 
