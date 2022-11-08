@@ -4,8 +4,24 @@ search_exclude: true
 image: images/1200px-Jupyter_logo.svg.png
 ---
 
-{% include typewriter.js %}
+<html>
+    <p id="demo"></p>
+</html>
 
+<script>
+var i = 0;
+var txt = 'Welcome to Edwins Fastpages';
+var speed = 50;
+
+function typewriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML +=txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+</script>
 'This site is built by [Edwin](https://github.com/EdwinKuttappi), a relatively new programmer who is using Jupyter for the first time.'
 
 #Goals
