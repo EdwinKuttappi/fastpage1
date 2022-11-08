@@ -12,3 +12,7 @@ categories: [week12, tri1]
 # Taking the Multiple Choice Test
 
 # Test Corrections
+
+# Confusing Problems
+
+## Question 2
