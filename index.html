@@ -98,6 +98,15 @@ window.onload = wrap_img;
             opacity: 1;
         }
     }
+
+    #container {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        transform: rotate(45deg);
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
 </style>
 
 <script>
@@ -106,7 +115,7 @@ var txt = 'Welcome to Edwins Fastpages';
 var speed = 50;
 
 function typewriter(x) {
-    if (i < txt.length) {
+    if (i <= txt.length) {
         document.getElementById("typewriter").innerHTML = '\xa0' + txt.substring(0, i)
         i++;
         setTimeout(typeWriter, speed);
@@ -114,7 +123,7 @@ function typewriter(x) {
 
 }
 
-typewriter();
+typeWriter();
 
 </script>
 'This site is built by [Edwin](https://github.com/EdwinKuttappi), a relatively new programmer who is using Jupyter for the first time.'
