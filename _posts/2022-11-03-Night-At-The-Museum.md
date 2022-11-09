@@ -14,6 +14,7 @@ Our Night at the Museum was on November 3rd, 2022, at 6:00pm-7:30pm. I had to ta
 
 ## Presenting our Flask Site
 [Backend](https://agenda.nighthawkcodescrums.gq/)
+We did not really present our backend site, the main purpose of the site was to have it run and use it as a place to store the data that the frontend had. In order to use the backend, we had to get off the School Wifi because it had the firewall which blocked AWS which was the host we used for the backend.
 
 ## Presenting our Fastpage Site
 [Frontend](https://edwinkuttappi.github.io/fastpage1/categories/)
