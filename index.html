@@ -5,21 +5,48 @@ image: images/1200px-Jupyter_logo.svg.png
 ---
 
 <html>
-    <p id="demo"></p>
-</html>
+
+<body>
+
+    <h1 id="typewriter" />
+
+</body>
+
+<style>
+    html {
+        background-color: yellow;
+    }
+
+    body {
+        animation: fadeIn 0.25s ease-in;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity:0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
 
 <script>
 var i = 0;
 var txt = 'Welcome to Edwins Fastpages';
 var speed = 50;
 
-function typewriter() {
+function typewriter(x) {
     if (i < txt.length) {
-        document.getElementById("demo").innerHTML +=txt.charAt(i);
+        document.getElementById("typewriter").innerHTML = '\xa0' + txt.substring(0, i)
         i++;
         setTimeout(typeWriter, speed);
     }
+
 }
+
+typewriter();
 
 </script>
 'This site is built by [Edwin](https://github.com/EdwinKuttappi), a relatively new programmer who is using Jupyter for the first time.'
@@ -31,5 +58,7 @@ This blog will have a lot of projects, and in this current state, it does not lo
 
 On October 19th, 2022, I committed my 1000th Workflow Run🥳😁🥳🎉
 ![]({{ site.baseurl }}/images/1000workflow.png)
+
+</html>
 
 # Posts
