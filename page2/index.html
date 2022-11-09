@@ -74,33 +74,61 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home"><html>
-    <p id="demo"></p>
-</html>
+
+<body>
+
+    <h1 id="typewriter" />
+
+</body>
+
+<style>
+    html {
+        background-color: yellow;
+    }
+
+    body {
+        animation: fadeIn 0.25s ease-in;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity:0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
 
 <script>
 var i = 0;
 var txt = 'Welcome to Edwins Fastpages';
 var speed = 50;
 
-function typewriter() {
+function typewriter(x) {
     if (i < txt.length) {
-        document.getElementById("demo").innerHTML +=txt.charAt(i);
+        document.getElementById("typewriter").innerHTML = '\xa0' + txt.substring(0, i)
         i++;
         setTimeout(typeWriter, speed);
     }
+
 }
 
+typewriter();
+
 </script>
+'This site is built by [Edwin](https://github.com/EdwinKuttappi), a relatively new programmer who is using Jupyter for the first time.'
 
-<p>‘This site is built by <a href="https://github.com/EdwinKuttappi">Edwin</a>, a relatively new programmer who is using Jupyter for the first time.’</p>
+#Goals
 
-<p>#Goals</p>
+On this blog, you will see many different projects done by me for my Computer Science Principles Class. I am trying to learn how to program and get ready for this year.
+This blog will have a lot of projects, and in this current state, it does not look super professional, but with some time, I hope to improve this website
 
-<p>On this blog, you will see many different projects done by me for my Computer Science Principles Class. I am trying to learn how to program and get ready for this year.
-This blog will have a lot of projects, and in this current state, it does not look super professional, but with some time, I hope to improve this website</p>
+On October 19th, 2022, I committed my 1000th Workflow Run🥳😁🥳🎉
+![](/fastpage1/images/1000workflow.png)
 
-<p>On October 19th, 2022, I committed my 1000th Workflow Run🥳😁🥳🎉
-<img src="/fastpage1/images/1000workflow.png" alt="" /></p>
+</html>
 
 <h1 id="posts">Posts</h1>
 
