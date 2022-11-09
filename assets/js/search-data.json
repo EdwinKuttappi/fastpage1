@@ -374,9 +374,6 @@
   
 
   
-  
-
-  
 
   
 
@@ -400,7 +397,7 @@
   
 
   
-      ,"page16": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://edwinkuttappi.github.io/fastpage1/robots.txt",
