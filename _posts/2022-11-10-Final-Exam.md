@@ -120,11 +120,17 @@ Correct. List indices are typically nonnegative integers. The exam reference she
 Reflection: I was not sure how to answer this question at all, we did not do the videos for this CollegeBoard Big Idea, but we still went over it in class, and I was not sure what a valid index was, so I guessed on this question.
 
 # Confusing Problems
+These are some problems that I was not sure how to do and I needed help to understand it. I did not really understand what the question was asking or how to answer it. I just chose what I thought was the best answer, and it was correct.
 
 ## Question 2
+![]({{ site.baseurl }}/images/finalquestion2.png)
+This question was really hard and I did not really know what to do. I do not know how I got this answer correct because I had no idea what it meant by procedure or mystery. I just followed the code on the inside and chose my answer, and it turned out to be right.
 
 ## Question 9
+![]({{ site.baseurl }}/images/finalquestion9.png)
+I still do not really understand this question, but I did understand that you need to change the lines for the code to work properly. When answering this question, I did not know what to do and Jishnu said to pick number 3 and explained it to me.
 
 ## Question 44
-
+![]({{ site.baseurl }}/images/finalquestion44.png)
+This question was a little hard mainly because I did not know what MOD was, so I had to look it up to find out it was the remainder which was not that hard.
 
