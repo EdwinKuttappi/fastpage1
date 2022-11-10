@@ -44,10 +44,10 @@ Correct. The procedure initializes count to 1. Inside the loop, the value of cou
 **Explanation** for Wrong Answer: Option D
 Incorrect. The inner loop iterates from index j + 1 to the end of the list, so each element is compared with all the elements that follow it, not just the one element that immediately precedes it.
 
-![]({{ site.baseurl }}/images/finalquestion11.png)
-
 **Explanation** for Correct Answer: Option B
 Correct. The algorithm traverses myList using two nested loops. The outer loop iterates from the first element in the list to the second-to-last element in the list. For each iteration of the outer loop, the inner loop compares that element to every subsequent element in the array.
+
+![]({{ site.baseurl }}/images/finalquestion11.png)
 
 ## Question 20
 **Topic 2.1**: Binary Numbers
