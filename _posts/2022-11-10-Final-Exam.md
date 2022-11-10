@@ -77,6 +77,7 @@ Incorrect. A temporary variable is needed to interchange the values of two varia
 Correct. The first statement assigns the value of num1 to the temporary variable temp. The second statement assigns the value of num2 to num1. The third statement assigns the original value of num1, which is stored in temp, to num2. The original values of num1 to num2 are interchanged.
 
 ## Question 39
+
 **Topic 3.2**: Data Abstraction
 **Explanation** for Wrong Answer: Option C
 Incorrect. List indices are typically nonnegative integers, so a decimal number between two integers would be considered an invalid index.
