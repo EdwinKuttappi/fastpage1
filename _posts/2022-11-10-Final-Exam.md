@@ -10,6 +10,7 @@ categories: [Notes, week12, tri1]
 ---
 
 # Taking the Multiple Choice Test
+I wanted to take the test over the weekend, but I did not get the time too. When I got to class on Monday, two of my groupmates had already finished it, so I decided to work with Jishnu. The questions were not too hard, but we spent a lot of time collaborating and explaining our answers to make sure the other one got it. We did this until Question 20, and I finished the rest by myself. I did this pretty quickly and finished quicker than expected and when I submitted I got a **43/50**.
 
 # Test Corrections
 After I submitted the test, I got a 43/50 (86%), which was around what I thought I would get. I was hoping to get an A, but I guess this means I should work harder towards trying to understand why I got these questions wrong and remember them. Whenever I got questions wrong, they were usually from the same skill showing that I could use some practice in specific skills.
