@@ -135,5 +135,5 @@ I still do not really understand this question, but I did understand that you ne
 This question was a little hard mainly because I did not know what MOD was, so I had to look it up to find out it was the remainder which was not that hard.
 
 # Reflection on the Exam
-Overall, the test was pretty easy and I think I could have received a higher score if I paid attention a little more. I think I went through this test pretty quickly when I did it by myself, but when I was talking with Jishnu, that took a lot of time because he was explaining some answers to me. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content.
+Overall, the test was pretty easy and I think I could have received a higher score if I paid attention a little more. I think I went through this test pretty quickly when I did it by myself, but when I was talking with Jishnu, that took a lot of time because he was explaining some answers to me. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content. I got a 3/3.
 

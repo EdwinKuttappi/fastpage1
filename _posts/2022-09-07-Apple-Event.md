@@ -11,5 +11,5 @@ categories: [extra, week3, tri1]
 ---
 
 # Apple's Far Out Event
-On September 7th, 2022, Apple held a Far Out Event where they introduced the iPhone 14, Airpods Pro 2, and 3 new Apple Watches.
+On September 7th, 2022, Apple held a Far Out Event where they introduced the iPhone 14, Airpods Pro 2, and 3 new Apple Watches. Hi
 
