@@ -13,7 +13,7 @@ categories: [week13, tri2]
 <!-- Hack 3: do your own thing -->
 
 {% assign BITS = 8 %}
-{% assign BITS_ALT = 24 %}
+{% assign BITS_2 = 24 %}
 
 <style>
 .table {
@@ -92,7 +92,7 @@ categories: [week13, tri2]
                 </td>
                 {% endfor %}
             </tr>
-            <!--Add Java Tables here-->
+            <!--Add Java Table Data here-->
             </table>
 
 <script>
@@ -202,15 +202,7 @@ categories: [week13, tri2]
         if (digit === "1") {
             document.getElementById('bulb' + i).src = IMAGE_ON;
             document.getElementById('butt' + i).innerHTML = MSG_OFF;
-        } else {
-            document.getElementById('bulb' + i).src = IMAGE_OFF;
-            document.getElementById('butt' + i).innerHTML = MSG_ON;
-        }
-    }
-    }
-    // Function for Characters
-    function showChar {
-        
+        } 
     }
 </script>
 
@@ -223,3 +215,4 @@ I have a good idea of what I'm supposed to do, I just can't really find out how 
 - I was not sure how to open each one and how exactly I was supposed to make the functions
 - have to change all the variables for each hack
 - Was not sure how to assign the 24 bits part
+- Couldn't Assign the java variables to the color code, but I was able to make the functions for it
