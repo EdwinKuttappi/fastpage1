@@ -11,14 +11,15 @@ categories: [week13, tri2]
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
+
+{% assign BITS = 8 %}
+{% assign BITS_ALT = 24 %}
+
 <style>
 .table {
     border-color: red;
 }
 </style>
-{% assign BITS = 8 %}
-{% assign BITS_ALT = 24 %}
-
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math and Characters with Conversions</span>
@@ -164,7 +165,6 @@ categories: [week13, tri2]
         for (let i = 0; conversion.length < BITS; i++) {
             conversion = "0" + conversion;
         }
-        }
         return conversion;
     }
     // toggle selected bit and recalculate
@@ -212,6 +212,7 @@ categories: [week13, tri2]
             document.getElementById('bulb' + i).src = IMAGE_OFF;
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
+    }
     }
 </script>
 
