@@ -1,5 +1,6 @@
 ---
 title: Binary Math
+toc: false
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
@@ -12,10 +13,11 @@ categories: [week13, tri2]
 <!-- Hack 3: do your own thing -->
 
 {% assign BITS = 8 %}
+{% assign BITS_ALT = 24 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Binary Math with Conversions</span>
+        <span class="fs-4">Binary Math and Characters with Conversions</span>
     </header>
     <div class="row justify-content-md-center">
         <div class="col-8">
@@ -26,6 +28,7 @@ categories: [week13, tri2]
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Character</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -34,6 +37,7 @@ categories: [week13, tri2]
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id ="character">Not Characterizable</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -56,10 +60,35 @@ categories: [week13, tri2]
                 <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
                 {% endfor %}
             </tr>
+            <table class="table">
+            <tr id="table">
+                <th>Plus</th>
+                <th>Binary</th>
+                <th>RGB</th>
+                <th>Hexadecimal</th>
+                <th>Minus</th>
+            </tr>
+    <header class="b-3 mb-4 border-bottom border-primary text-dark">
+            <span class="fs-4">Colors made with Binary</span>
+    </header>
+            <tr>
+                <td><button type="button" id="add2" onclick="add(1)">+1</button></td>
+                <td id="binary">00000000</td>
+                <td id="hexadecimal">0</td>
+                <td id ="RGB"> - Color - </td>
+                <td><button type="button" id="sub2" onclick="add(-1)">-1</button></td>
+            </tr>
+            <br>
+            <tr>
+                {% comment %}Build many bits{% endcomment %}
+                {% for i in (0..bits) %}
+                <td><img class="img-responsive py-3" id="bulb{{ i }}" src="{{site.baseurl}}/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt{{ i }}" onclick="javascript:toggleBit({{ i }})">Turn on</button>
+                </td>
+                {% endfor %}
+            </tr>
+            <!--Add Java Tables here-->
             </table>
-        </div>
-    </div>
-</div>
 
 <script>
     const BITS = {{ BITS }};
@@ -71,6 +100,27 @@ categories: [week13, tri2]
 
     // return string with current value of each bit
     function getBits() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsRed() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsGreen() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsBlue() {
         let bits = "";
         for(let i = 0; i < BITS; i++) {
         bits = bits + document.getElementById('digit' + i).value;
@@ -104,7 +154,6 @@ categories: [week13, tri2]
         }
         return conversion;
     }
-
     // toggle selected bit and recalculate
     function toggleBit(i) {
         //alert("Digit action: " + i );
@@ -153,3 +202,9 @@ categories: [week13, tri2]
         }
     }
 </script>
+
+# Problems Im facing
+
+> I was not able to really make or complete all the hacks
+I have a good idea of what I'm supposed to do, I just can't really find out how to do it, I wish this was a bit more organized and that I could actually see what corresponds to what. For this I have added comments before each section to find out what each does, but I wasn't really sure about the Java Part
+- I can not really make the functions that are necessary to make it work
