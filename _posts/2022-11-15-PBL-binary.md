@@ -132,12 +132,6 @@ categories: [week13, tri2]
         }
         return bits;
     }
-    function binToChar(bin) {
-        let dec = parseInt(bin, 2).toString();
-        console.log(dec);
-        var chr = String.fromCharCode(dec);
-        return chr;
-    }
     // setter for DOM values
     function setConversions(binary) {
         document.getElementById('binary').innerHTML = binary;
@@ -213,6 +207,10 @@ categories: [week13, tri2]
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
     }
+    }
+    // Function for Characters
+    function showChar {
+        
     }
 </script>
 
