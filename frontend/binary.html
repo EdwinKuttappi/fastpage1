@@ -76,6 +76,12 @@ window.onload = wrap_img;
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
+<style>
+.table {
+    border-color: red;
+}
+</style>
+
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math and Characters with Conversions</span>
@@ -268,6 +274,9 @@ window.onload = wrap_img;
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
     }
+        else {
+            document.getElementById('character').innerHTML = "Not Characterizable";
+        }
     //
     function decimal_2_base(decimal, base) {
         let conversion = "";
@@ -281,7 +290,6 @@ window.onload = wrap_img;
         if (base === 2) {                        // only pad for binary conversions
         for (let i = 0; conversion.length < BITS; i++) {
             conversion = "0" + conversion;
-        }
         }
         return conversion;
     }
@@ -330,15 +338,23 @@ window.onload = wrap_img;
             document.getElementById('bulb' + i).src = IMAGE_OFF;
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
-        }
+    }
+    }
+    // Function for Characters
+    function showChar {
+        
     }
 </script>
 
-# Problems Im facing
+# Problems I'm Facing
 
 &gt; I was not able to really make or complete all the hacks
 I have a good idea of what I'm supposed to do, I just can't really find out how to do it, I wish this was a bit more organized and that I could actually see what corresponds to what. For this I have added comments before each section to find out what each does, but I wasn't really sure about the Java Part
 - I can not really make the functions that are necessary to make it work
+- I was not sure how to implement the Java
+- I was not sure how to open each one and how exactly I was supposed to make the functions
+- have to change all the variables for each hack
+- Was not sure how to assign the 24 bits part
 </table></div></div></div>
 
       </div>
