@@ -11,7 +11,11 @@ categories: [week13, tri2]
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
-
+<style>
+.table {
+    border-color: red;
+}
+</style>
 {% assign BITS = 8 %}
 {% assign BITS_ALT = 24 %}
 
@@ -127,6 +131,12 @@ categories: [week13, tri2]
         }
         return bits;
     }
+    function binToChar(bin) {
+        let dec = parseInt(bin, 2).toString();
+        console.log(dec);
+        var chr = String.fromCharCode(dec);
+        return chr;
+    }
     // setter for DOM values
     function setConversions(binary) {
         document.getElementById('binary').innerHTML = binary;
@@ -137,6 +147,9 @@ categories: [week13, tri2]
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
     }
+        else {
+            document.getElementById('character').innerHTML = "Not Characterizable";
+        }
     //
     function decimal_2_base(decimal, base) {
         let conversion = "";
@@ -199,12 +212,15 @@ categories: [week13, tri2]
             document.getElementById('bulb' + i).src = IMAGE_OFF;
             document.getElementById('butt' + i).innerHTML = MSG_ON;
         }
-        }
     }
 </script>
 
-# Problems Im facing
+# Problems I'm Facing
 
 > I was not able to really make or complete all the hacks
 I have a good idea of what I'm supposed to do, I just can't really find out how to do it, I wish this was a bit more organized and that I could actually see what corresponds to what. For this I have added comments before each section to find out what each does, but I wasn't really sure about the Java Part
 - I can not really make the functions that are necessary to make it work
+- I was not sure how to implement the Java
+- I was not sure how to open each one and how exactly I was supposed to make the functions
+- have to change all the variables for each hack
+- Was not sure how to assign the 24 bits part
