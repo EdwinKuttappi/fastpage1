@@ -78,7 +78,7 @@ window.onload = wrap_img;
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Binary Math with Conversions</span>
+        <span class="fs-4">Binary Math and Characters with Conversions</span>
     </header>
     <div class="row justify-content-md-center">
         <div class="col-8">
@@ -89,6 +89,7 @@ window.onload = wrap_img;
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Character</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -97,6 +98,7 @@ window.onload = wrap_img;
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="character">Not Characterizable</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -161,10 +163,63 @@ window.onload = wrap_img;
                 <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
                 
             </tr>
+            <table class="table">
+            <tr id="table">
+                <th>Plus</th>
+                <th>Binary</th>
+                <th>RGB</th>
+                <th>Hexadecimal</th>
+                <th>Minus</th>
+            </tr>
+    <header class="b-3 mb-4 border-bottom border-primary text-dark">
+            <span class="fs-4">Colors made with Binary</span>
+    </header>
+            <tr>
+                <td><button type="button" id="add2" onclick="add(1)">+1</button></td>
+                <td id="binary">00000000</td>
+                <td id="hexadecimal">0</td>
+                <td id="RGB"> - Color - </td>
+                <td><button type="button" id="sub2" onclick="add(-1)">-1</button></td>
+            </tr>
+            <br />
+            <tr>
+                
+                
+                <td><img class="img-responsive py-3" id="bulb0" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb1" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb2" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb3" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb4" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb5" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb6" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb7" src="/fastpage1/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                </td>
+                
+            </tr>
+            <!--Add Java Tables here-->
             </table>
-        </div>
-    </div>
-</div>
 
 <script>
     const BITS = 8;
@@ -176,6 +231,27 @@ window.onload = wrap_img;
 
     // return string with current value of each bit
     function getBits() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsRed() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsGreen() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
+    }
+     function getBitsBlue() {
         let bits = "";
         for(let i = 0; i < BITS; i++) {
         bits = bits + document.getElementById('digit' + i).value;
@@ -209,7 +285,6 @@ window.onload = wrap_img;
         }
         return conversion;
     }
-
     // toggle selected bit and recalculate
     function toggleBit(i) {
         //alert("Digit action: " + i );
@@ -259,6 +334,12 @@ window.onload = wrap_img;
     }
 </script>
 
+# Problems Im facing
+
+&gt; I was not able to really make or complete all the hacks
+I have a good idea of what I'm supposed to do, I just can't really find out how to do it, I wish this was a bit more organized and that I could actually see what corresponds to what. For this I have added comments before each section to find out what each does, but I wasn't really sure about the Java Part
+- I can not really make the functions that are necessary to make it work
+</table></div></div></div>
 
       </div>
     </main><footer class="site-footer h-card">
