@@ -241,6 +241,7 @@ categories: [week13, tri2]
         }
         document.getElementById("decimal").focus();
     }
+</script>
 
 # Problems I'm Facing
 
