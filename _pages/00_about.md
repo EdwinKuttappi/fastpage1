@@ -6,6 +6,13 @@ description: A page where you can learn more about the programmer, Edwin and his
 categories: [about]
 title: About Me Page
 ---
+# Milestones
+
+On October 19th, 2022, I committed my 1000th Workflow Run🥳😁🥳🎉
+![]({{ site.baseurl }}/images/1000workflow.png)
+
+Next Milestone: 2500 Workflow Runs
+
 # About Edwin
 
 Hi, my name is Edwin and I am currently a Junior at Del Norte High School and do have some experience in coding but nothing like this. I am very excited to do more projects like this, because it is fun
