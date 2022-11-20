@@ -13,7 +13,6 @@ categories: [week13, tri2]
 <!-- Hack 3: do your own thing -->
 
 {% assign BITS = 8 %}
-{% assign BITS_2 = 24 %}
 
 <style>
 .table {
