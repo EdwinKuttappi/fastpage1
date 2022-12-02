@@ -11,6 +11,7 @@ categories: [week14, tri1]
 
 # Unit 3 Sections 1 and 2
 This Group: Joselyn, Amitha, Naja, and Lina
+
 [Unit 3 Sections 1 and 2 Hacks](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/11/28/Section1&2.html)
 
 My Score: **1/1**
@@ -22,15 +23,18 @@ I really liked this lesson and I learned some things from them. I already knew a
 
 # Unit 3 Sections 3 and 4
 This Group: Theo, Haeryn, Ellie, and Kaylee
+
 [Unit 3 Sections 3 and 4 Hacks](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/11/29/Section3&4.html)
 
 My Score: **1/1**
 Graded By: **Haeryn**
 Comments: Updated blog to have nice explanations, good work.
 
-# Unit 3 Sections 5, 6, and 7
-This Group: Arnav, Nicolas, Ben, and Luke
-[Unit 3 Sections 5, 6, and 7](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/12/01/Section5&6&7.html) 
-
 ## Reflection
 Overall, this lesson was really fun and I really liked it. I did understand a lot and I already knew most of the information, but I learned more from this section than the one from before. 
+
+# Unit 3 Sections 5, 6, and 7
+This Group: Arnav, Nicolas, Ben, and Luke
+
+[Unit 3 Sections 5, 6, and 7](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/12/01/Section5&6&7.html) 
+
