@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -513,6 +513,66 @@ raven
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chickenAlfredo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Chicken Alfredo"</span><span class="p">,</span>
+    <span class="s2">"Meat"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"Time"</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">cheeseQuesadilla</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Cheese Quesadilla"</span><span class="p">,</span>
+    <span class="s2">"Meat"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"Time"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">beefWellington</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Name"</span><span class="p">:</span> <span class="s2">"Beef Wellington"</span><span class="p">,</span>
+    <span class="s2">"Meat"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"Time"</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">mealPrep</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s2">"Time"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s2">"Meat"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"Name"</span><span class="p">],</span> <span class="s2">"doesn't contain any meat, so this is a good choice"</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"Name"</span><span class="p">],</span> <span class="s2">"takes too much time to cook and contains meat"</span><span class="p">)</span>
+
+<span class="n">mealPrep</span><span class="p">(</span><span class="n">chickenAlfredo</span><span class="p">)</span>
+<span class="n">mealPrep</span><span class="p">(</span><span class="n">cheeseQuesadilla</span><span class="p">)</span>
+<span class="n">mealPrep</span><span class="p">(</span><span class="n">beefWellington</span><span class="p">)</span>
+
+<span class="c1"># Answer Should be Cheese Quesadilla because it only takes </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Chicken Alfredo takes too much time to cook and contains meat
+Cheese Quesadilla doesn't contain any meat, so this is a good choice
+Beef Wellington takes too much time to cook and contains meat
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
