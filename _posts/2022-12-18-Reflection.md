@@ -40,7 +40,7 @@ Overall, this lesson was really fun and I really liked it. I did understand a lo
 # Unit 3 Sections 5, 6, and 7
 This Group: Arnav, Nicolas, Ben, and Luke
 
-[Unit 3 Sections 5, 6, and 7](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/12/01/Section5&6&7.html) 
+[Unit 3 Sections 5, 6, and 7 Hacks](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/12/01/Section5&6&7.html) 
 
 My Score: **/1**
 
@@ -50,3 +50,16 @@ Comments:
 
 ## Reflection
 This lesson was pretty simple and I think it was the most well organized one out of them all. I liked that we got to do a flowchart. I learned a lot about JavaScript and Python. The only thing I had a little trouble with were the Binary Truth Tables
+
+# Unit 3 Sections 8 and 10
+This Group: Varalu, Advay, Rohin, and Ryan
+
+[Unit 3 Sections 8 and 10]()
+
+My Score: **/1**
+
+Graded By: 
+
+Comments:
+
+## Reflection
