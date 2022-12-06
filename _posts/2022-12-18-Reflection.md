@@ -15,7 +15,9 @@ This Group: Joselyn, Amitha, Naja, and Lina
 [Unit 3 Sections 1 and 2 Hacks](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/11/28/Section1&2.html)
 
 My Score: **1/1**
+
 Graded by **Amitha**
+
 Comments: Completed everything accurately and did extra binary hacks
 
 ## Reflection
@@ -27,7 +29,9 @@ This Group: Theo, Haeryn, Ellie, and Kaylee
 [Unit 3 Sections 3 and 4 Hacks](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/11/29/Section3&4.html)
 
 My Score: **1/1**
+
 Graded By: **Haeryn**
+
 Comments: Updated blog to have nice explanations, good work.
 
 ## Reflection
@@ -38,3 +42,11 @@ This Group: Arnav, Nicolas, Ben, and Luke
 
 [Unit 3 Sections 5, 6, and 7](https://edwinkuttappi.github.io/fastpage1/week14/tri2/2022/12/01/Section5&6&7.html) 
 
+My Score: **/1**
+
+Graded By:
+
+Comments:
+
+## Reflection
+This lesson was pretty simple and I think it was the most well organized one out of them all. I liked that we got to do a flowchart. I learned a lot about JavaScript and Python. The only thing I had a little trouble with were the Binary Truth Tables
