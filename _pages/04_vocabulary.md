@@ -23,6 +23,15 @@ Procedural Abstraction: Grouping a sequence of commands and is used repeatedly
 Protocol: Something that helps you to send and receive data
 
 # Unit 3
+Variables, Data Types, Assignment Operators
+Managing Complexity with Variables:  Lists, 2D Lists, Dictionaries, Class
+Algorithms, Sequence, Selection, Iteration
+Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables
+Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings
+Python If, Elif, Else conditionals; Nested Selection Statements
+Python For, While loops with Range, with List
+Combining loops with conditionals to Break, Continue
+Procedural Abstraction, Python Def procedures, Parameters, Return Values
 
 **Iteration** - Repetition of a Process
 
