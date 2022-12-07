@@ -56,11 +56,11 @@ This Group: Varalu, Advay, Rohin, and Ryan
 
 [Unit 3 Sections 8 and 10]()
 
-My Score: **/1**
+My Score: **1/1**
 
-Graded By: 
+Graded By: Ben
 
-Comments:
+Comments: Nice flowchart, completed all work with good explanations
 
 ## Reflection
 The presentation done by this group was pretty simple, I felt that I understood most of what they said. For the things I did not understand, I went back into their notes and tried to understand what they did. I had a lot of trouble with Exercise 2 but managed to do it. The quiz they had was pretty easy and I was also very impressed with the UI of the quiz.
@@ -70,11 +70,11 @@ This Group: Eli, Samarth, Khalid, and Trent
 
 [Unit 3 Sections 9 and 11 Hacks]()
 
-My Score: **/1**
+My Score: **0.97/1**
 
-Graded By:
+Graded By: Varalu
 
-Comments:
+Comments: I don't think your reverse list (w/o list.reverse()) or bubble sort algorithms work as intended. Also f-strings are used differently
 
 ## Reflection
 I felt like this was the lesson that I paid the most attention too, this was good because I knew what was being taught, and could keep up with the class. It wasn't so much that I did not already know, but I just was able to follow along really well with the lesson and could understand the algorithms and the pseudocode in the lesson.
