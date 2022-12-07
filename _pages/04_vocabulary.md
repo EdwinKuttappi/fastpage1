@@ -5,33 +5,129 @@ comments: true
 title: Vocabulary
 description: A place where you can review any vocabulary that you need to help you prepare for a test
 categories: [vocabulary]
-permalink: /Vocabulary/overview
+permalink: /vocabulary
 ---
 
 # Vocabulary from CollegeBoard to help study
+**Sequence**: Two or more lines forms a sequence
 
-Sequence: Two or more lines forms a sequence
+**Def**: This defines a variable which is useful when using input and output in a program
 
-Def: This defines a variable which is useful when using input and output in a program
+**Input**: This is what the user inputs into the code
 
-Input: This is what the user inputs into the code
+**Output**: Based on the user's output the code will give something to the user
 
-Output: Based on the user's output the code will give something to the user
+**Procedural Abstraction**: Grouping a sequence of commands and is used repeatedly
 
-Procedural Abstraction: Grouping a sequence of commands and is used repeatedly
+**Protocol**: Something that helps you to send and receive data
 
-Protocol: Something that helps you to send and receive data
+# Unit 2
+**Bits**:
+
+**Bytes**:
+
+**Hexadecimal/Nibbles**
+
+**Binary Numbers**: 
+
+**Unsigned Integer**:
+
+**Signed Integer**:
+
+**Floating Point**:
+
+**Binary Data**:
+
+**Abstractions**: 
+
+**Boolean**: 
+
+**ASCII**: Language that is just made up of symbols
+
+**Unicode**:
+
+**RGB**:
+
+**Data Compression**: 
+
+**Lossy**: 
+
+**Lossless**: 
 
 # Unit 3
-Variables, Data Types, Assignment Operators
-Managing Complexity with Variables:  Lists, 2D Lists, Dictionaries, Class
-Algorithms, Sequence, Selection, Iteration
-Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables
-Characters, Strings, Length, Concatenation, Upper, Lower, Traversing Strings
-Python If, Elif, Else conditionals; Nested Selection Statements
-Python For, While loops with Range, with List
-Combining loops with conditionals to Break, Continue
-Procedural Abstraction, Python Def procedures, Parameters, Return Values
+**Variables**:
+
+**Data Types**: 
+
+**Assignment Operators**:
+
+**Managing Complexity with Variables**:  
+
+**Lists**: 
+
+**2D Lists**: 
+
+**Dictionaries**:
+
+**Class**:
+
+**Algorithms**: 
+
+**Sequence**: 
+
+**Selection**:
+
+**Iteration**:
+
+**Expressions**:
+
+**Comparison Operators**: 
+
+**Booleans Expressions and Selection**: 
+
+**Booleans Expressions and Iteration**: 
+
+**Truth Tables**:
+
+**Characters**: 
+
+**Strings**: 
+
+**Length**: 
+
+**Concatenation**: 
+
+**Upper**: 
+
+**Lower**: 
+
+**Traversing Strings**:
+
+**Python If**: 
+
+**Elif**: 
+
+**Else conditionals**: 
+
+**Nested Selection Statements**:
+
+**Python For**: 
+
+**While loops with Range**: 
+
+**with List**:
+
+**Combining loops with conditionals to Break**: 
+
+**Continue**:
+
+**Procedural Abstraction**:
+
+**Python Def procedures**:
+
+**Parameters**: 
+
+**Return Values**:
 
 **Iteration** - Repetition of a Process
 
