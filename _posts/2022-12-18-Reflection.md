@@ -70,7 +70,7 @@ This Group: Eli, Samarth, Khalid, and Trent
 
 [Unit 3 Sections 9 and 11 Hacks]()
 
-My Score: **0.97/1**
+My Score: **0.9/1**
 
 Graded By: Varalu
 
