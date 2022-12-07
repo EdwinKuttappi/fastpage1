@@ -63,3 +63,18 @@ Graded By:
 Comments:
 
 ## Reflection
+The presentation done by this group was pretty simple, I felt that I understood most of what they said. For the things I did not understand, I went back into their notes and tried to understand what they did. I had a lot of trouble with Exercise 2 but managed to do it. The quiz they had was pretty easy and I was also very impressed with the UI of the quiz.
+
+# Unit 3 Sections 9 and 11
+This Group: Eli, Samarth, Khalid, and Trent
+
+[Unit 3 Sections 9 and 11 Hacks]()
+
+My Score: **/1**
+
+Graded By:
+
+Comments:
+
+## Reflection
+I felt like this was the lesson that I paid the most attention too, this was good because I knew what was being taught, and could keep up with the class. It wasn't so much that I did not already know, but I just was able to follow along really well with the lesson and could understand the algorithms and the pseudocode in the lesson.
