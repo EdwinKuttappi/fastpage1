@@ -42,7 +42,7 @@ permalink: /vocabulary
 
 **Boolean**: 
 
-**ASCII**: Language that is just made up of symbols
+**ASCII**: Stands for American Standard Code for Information Interchange and is a language that is just made up of symbols
 
 **Unicode**:
 
