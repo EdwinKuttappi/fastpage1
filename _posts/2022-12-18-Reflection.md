@@ -54,7 +54,7 @@ This lesson was pretty simple and I think it was the most well organized one out
 # Unit 3 Sections 8 and 10
 This Group: Varalu, Advay, Rohin, and Ryan
 
-[Unit 3 Sections 8 and 10]()
+[Unit 3 Sections 8 and 10 Hacks](https://edwinkuttappi.github.io/fastpage1/week15/tri2/2022/12/05/Section8&10.html)
 
 My Score: **0.9/1**
 
@@ -68,9 +68,9 @@ The presentation done by this group was pretty simple, I felt that I understood 
 # Unit 3 Sections 9 and 11
 This Group: Eli, Samarth, Khalid, and Trent
 
-[Unit 3 Sections 9 and 11 Hacks]()
+[Unit 3 Sections 9 and 11 Hacks](https://github.com/EdwinKuttappi/fastpage1/blob/master/_posts/2022-12-06-Section9%2611.md)
 
-My Score: **0.95/1**
+My Score: **0.93/1**
 
 Graded By: Trent
 
@@ -82,7 +82,7 @@ I felt like this was the lesson that I paid the most attention too, this was goo
 # Unit 3 Sections 12 and 13
 This Group: Caleb, James, Qais, and Krishiv
 
-[Unit 3 Sections 12 and 13 Hacks]()
+[Unit 3 Sections 12 and 13 Hacks](https://github.com/EdwinKuttappi/fastpage1/blob/master/_notebooks/2022-12-08-Section12%2613.ipynb)
 
 My Score: **0.9/1**
 
@@ -91,41 +91,43 @@ Graded By: James
 Comments: Completed all of the hacks and took notes and explained each answer and showed a good understanding
 
 ## Reflection
+This lesson was all about procedures and this is an important part of the CollegeBoard AP Exam because pseudocode includes a lot of procedures and this is important. If you do not understand these procedures, you should work on it because this lesson was beneficial to my understanding of what I need to do.
 
 # Unit 3 Sections 14 and 15
 This Group: Emma, Sanika, Ishi, and Leonard 
 
-[Unit 3 Sections 14 and 15 Hacks]()
+[Unit 3 Sections 14 and 15 Hacks](https://github.com/EdwinKuttappi/fastpage1/blob/master/_notebooks/2022-12-12-Section14%2615.ipynb)
 
-My Score: **/1**
+My Score: **0.93/1**
+
+Graded By: Ishi
+
+Comments: The reflection was really polished and showed a high level of understanding
+
+## Reflection
+This lesson was pretty simple and it was easy because I know a lot about variables and I use it all the time. I also learned a lot about Documentation and the importance of using it in your code. I also learned a lot about the random function, and how important and commonly used it is.
+
+# Unit 3 Section 16
+This Group: Edwin, Sachit, Raunak, and Colin 
+
+[Unit 3 Section 16 Hacks](https://edwinkuttappi.github.io/farmers/)
+
+My Score: **3.5/4**
+
+Graded By: Mr. Yeung
+
+Comments: I think we just did not have much preparation and that is 
+
+## Reflection
+
+# Unit 3 Section 17 and 18
+This Group: Edwin, Sachit, Raunak, and Colin 
+
+[Unit 3 Section 17 and 18 Hacks]()
+
+My Score: **3.5/4**
 
 Graded By: 
-
-Comments:
-
-## Reflection
-
-# Unit 3 Section 16
-This Group: Edwin, Sachit, Raunak, and Colin 
-
-[Unit 3 Section 16 Hacks]()
-
-My Score: **3.5/4**
-
-Graded By: Mr. Yeung
-
-Comments:
-
-## Reflection
-
-# Unit 3 Section 16
-This Group: Edwin, Sachit, Raunak, and Colin 
-
-[Unit 3 Section 16 Hacks]()
-
-My Score: **3.5/4**
-
-Graded By: Mr. Yeung
 
 Comments:
 
