@@ -4,6 +4,8 @@ author: Edwin Abraham
 layout: post
 title: Computer Science/Technical Business Panel
 description: On December 13th, 2022, two clubs, Girls in CS and SD STEM Startups both partnered in order to 
+categories: [extra, tri2, week15]
+comments: true
 ---
 
 # Background
@@ -80,9 +82,11 @@ Kris: Twitter is not the only company that does this, Meta as well. THe thing th
 
 7. How do you think learning how to Code would help in Business?
 
-Kathyleen: People are not old mannered and there is a lot of tech. I would say that if you learn how to code it is like a way of thinking and a different way of looking at problems, it is like criticial thinking. Being a critical thinker can help you in interviews and become a good problem solver.
+Kathyleen: People are not old mannered and there is a lot of tech. I would say that if you learn how to code it is like a way of thinking and a different way of looking at problems, it is like critical thinking. Being a critical thinker can help you in interviews and become a good problem solver.
 
 8. How would coding help with Investment
 
-Kathyleen: Yes, as I mentioed earlier coding can be really beneficial to investment and can help when trading with stocks and making patterns. This also helps with critical thinking and can help with many other things in the future.
+Kathyleen: Yes, as I mentioned earlier coding can be really beneficial to investment and can help when trading with stocks and making patterns. This also helps with critical thinking and can help with many other things in the future.
+
 # Takeaways
+After listening to this panel, I have found myself becoming more and more excited about Computer Science, we all know that
