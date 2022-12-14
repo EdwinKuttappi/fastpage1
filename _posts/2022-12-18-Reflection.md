@@ -78,3 +78,42 @@ Comments: I don't think your reverse list (w/o list.reverse()) or bubble sort al
 
 ## Reflection
 I felt like this was the lesson that I paid the most attention too, this was good because I knew what was being taught, and could keep up with the class. It wasn't so much that I did not already know, but I just was able to follow along really well with the lesson and could understand the algorithms and the pseudocode in the lesson.
+
+# Unit 3 Sections 12 and 13
+This Group: Caleb, James, Qais, and Krishiv
+
+[Unit 3 Sections 12 and 13 Hacks]()
+
+My Score: **/1**
+
+Graded By: 
+
+Comments: 
+
+## Reflection
+
+# Unit 3 Sections 14 and 15
+This Group: Emma, Sanika, Ishi, and Leonard 
+
+[Unit 3 Sections 14 and 15 Hacks]()
+
+My Score: **/1**
+
+Graded By: 
+
+Comments:
+
+## Reflection
+
+# Unit 3 Section 16
+This Group: Edwin, Sachit, Raunak, and Colin 
+
+[Unit 3 Section 16 Hacks]()
+
+My Score: **3.5/4**
+
+Graded By: Mr. Yeung
+
+Comments:
+
+## Reflection
