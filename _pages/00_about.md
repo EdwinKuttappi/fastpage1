@@ -11,6 +11,9 @@ title: About Me Page
 On October 19th, 2022, I committed my 1000th Workflow Run🥳😁🥳🎉
 ![]({{ site.baseurl }}/images/1000workflow.png)
 
+On December 17th, 2022, I made my 500th Commit🥳😁🥳🎉
+![]({{ site.baseurl }}/images/500thcommit.png)
+
 Next Milestone: 2500 Workflow Runs
 
 # About Edwin
