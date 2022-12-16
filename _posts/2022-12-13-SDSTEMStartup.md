@@ -16,6 +16,7 @@ comments: true
  
  I was very surprised to see how many students from APCSP and APCSA showed up today
  ![APCSP Panel Talk on Finance](https://raw.githubusercontent.com/EdwinKuttappi/fastpage1/master/images/IMG_0159.jpg)
+ 
  ## Kathyleen
  - Born in Vietnam and lived in the Bay Area and San Jose
  - Moved to San Diego in 2004
