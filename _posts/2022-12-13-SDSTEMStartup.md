@@ -16,12 +16,12 @@ comments: true
  
  I was very surprised to see how many students from APCSP and APCSA showed up today
  ![APCSP Panel Talk on Finance](https://raw.githubusercontent.com/EdwinKuttappi/fastpage1/master/images/IMG_0159.jpg)
- 
+
  ## Kathyleen
  - Born in Vietnam and lived in the Bay Area and San Jose
  - Moved to San Diego in 2004
  - She studied in Spain
- - Recieved Financial Degree from Santa Clara University in the Bay Area
+ - Received Financial Degree from Santa Clara University in the Bay Area
  - Favorite Quote by Maya Angelou: “My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.”
  - Her first job was an investment banker but she did not like it and then she switched to tech afterwards
  - She learned to surf but realized surfing doesn't pay the bills
@@ -39,11 +39,11 @@ comments: true
  - Was very hard for him to get a job in 2008 when the Stock Market was not in a stable condition
  - He worked in some Tech Areas but he wanted in the Tech Space he wanted to be in
  - As time went on, he slowly worked towards becoming a Development Operator
- - A Developement Operator is someone who deploys the software and they make sure everything is secure and goes as planned
+ - A Development Operator is someone who deploys the software and they make sure everything is secure and goes as planned
  - When Security is said, it is not his primary occupation to secure the network but more to look at it and see if everything goes as planned
- - He moved down to San DIego because his girlfriend lived here
+ - He moved down to San Diego because his girlfriend lived here
  - He was looking for a new role and then found Qualcomm and was hired by **Mr. Mortensen** 😲
- - He has worked on a bunch of different types of learning like Continous Learning
+ - He has worked on a bunch of different types of learning like Continuous Learning
  - He also used to Work at Twitter specifically at a lot of different Data Centers
  - Everything in Twitter used to be a REST API until 2 years ago
  - He works currently at a company called Mysten Labs
@@ -60,15 +60,15 @@ Kathyleen: Used short sprints and maybe 3 months. Agile Methodology
 
 2. Kris, do you still work at Twitter?
 
-Kris: No, I dont work at Twitter anymore, I actually work at a company called Mysten Labs now
+Kris: No, I don't work at Twitter anymore, I actually work at a company called Mysten Labs now
 
 Mr Mortensen: Ever Since Elon Musk said he was going to buy the company, Kris knew that he needed to search for another job based on prior experiences.
 
 3. What do you think is the most important skill to have?
 
-Kris: I found the most useful overtime to be Continous Learning and the thing is not just learning a specific programming langugage, but learning how to learn efficently and grasp the most information. Don't really be concerned and everything will fall into place.
+Kris: I found the most useful overtime to be Continuous Learning and the thing is not just learning a specific programming language, but learning how to learn efficiently and grasp the most information. Don't really be concerned and everything will fall into place.
 
-Kathyleen: 100%, Continous Learning as well as learn to be adaptive because of my career path, I had seen many things happen during these 35 years and it is important that you are adapative to change. The Best Technical People I've worked with are people who listen to the requirements and translate it into technology.
+Kathyleen: 100%, Continuous Learning as well as learn to be adaptive because of my career path, I had seen many things happen during these 35 years and it is important that you are adaptive to change. The Best Technical People I've worked with are people who listen to the requirements and translate it into technology.
 
 4. What is the most important thing you have seen while working?
 
