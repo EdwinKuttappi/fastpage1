@@ -32,7 +32,7 @@ My Score: **1/1**
 
 Graded By: **Haeryn**
 
-Comments: Updated blog to have nice explanations, good work.
+Comments: Updated blog to have nice explanations, good work
 
 ## Reflection
 Overall, this lesson was really fun and I really liked it. I did understand a lot and I already knew most of the information, but I learned more from this section than the one from before. 
@@ -49,7 +49,7 @@ Graded By: Ben
 Comments: Nice flowchart, completed all work with good explanations
 
 ## Reflection
-This lesson was pretty simple and I think it was the most well organized one out of them all. I liked that we got to do a flowchart. I learned a lot about JavaScript and Python. The only thing I had a little trouble with were the Binary Truth Tables
+This lesson was pretty simple and I think it was the most well organized one out of them all. I liked that we got to do a flowchart. I learned a lot about JavaScript and Python. The only thing I had a little trouble with were the Binary Truth Tables.
 
 # Unit 3 Sections 8 and 10
 This Group: Varalu, Advay, Rohin, and Ryan
@@ -82,7 +82,7 @@ I felt like this was the lesson that I paid the most attention too, this was goo
 # Unit 3 Sections 12 and 13
 This Group: Caleb, James, Qais, and Krishiv
 
-[Unit 3 Sections 12 and 13 Hacks](https://github.com/EdwinKuttappi/fastpage1/blob/master/_notebooks/2022-12-08-Section12%2613.ipynb)
+[Unit 3 Sections 12 and 13 Hacks](https://edwinkuttappi.github.io/fastpage1/week15/tri2/2022/12/08/Section12&13.html)
 
 My Score: **0.9/1**
 
@@ -96,7 +96,7 @@ This lesson was all about procedures and this is an important part of the Colleg
 # Unit 3 Sections 14 and 15
 This Group: Emma, Sanika, Ishi, and Leonard 
 
-[Unit 3 Sections 14 and 15 Hacks](https://github.com/EdwinKuttappi/fastpage1/blob/master/_notebooks/2022-12-12-Section14%2615.ipynb)
+[Unit 3 Sections 14 and 15 Hacks](https://edwinkuttappi.github.io/fastpage1/week16/tri2/2022/12/12/Section14&15.html)
 
 My Score: **0.93/1**
 
@@ -112,23 +112,25 @@ This Group: Edwin, Sachit, Raunak, and Colin
 
 [Unit 3 Section 16 Hacks](https://edwinkuttappi.github.io/farmers/)
 
-My Score: **3.5/4**
+My Score: **3.5/4** and **2.8/3**
 
 Graded By: Mr. Yeung
 
-Comments: I think we just did not have much preparation and that is 
+Comments: I think we just did not have much preparation and that is it, on top of this, we did not really do well in the grading, we possibly graded a bit too easily.
 
 ## Reflection
+Our section was quite interesting and I think that we could have done a lot better. We did not prepare a lot for this presentation, and some of our group members did not know the format. We could have definitely put some more time into organizing everything to get a good grade.
 
 # Unit 3 Section 17 and 18
-This Group: Edwin, Sachit, Raunak, and Colin 
+This Group: Zeen, Navan, Shaurya, Vardaan, and Justin
 
-[Unit 3 Section 17 and 18 Hacks]()
+[Unit 3 Section 17 and 18 Hacks](https://edwinkuttappi.github.io/fastpage1/week16/tri2/2022/12/14/Section17&18.html)
 
-My Score: **3.5/4**
+My Score: **1/1**
 
-Graded By: 
+Graded By: Vardaan
 
-Comments:
+Comments: Really proud of this to be honest. He made a good effort at every single hack and he also did extra research and experimentation with the heap permutation after the hacks that were assigned
 
 ## Reflection
+This lesson was really easy for me to learn because it was about undecidable problems and decidable problems. I was very interested in this topic and liked that they used graphs to visually represent the undecidable problems and decidable problems. I also learned how to improve the efficiency of algorithms.
