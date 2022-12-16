@@ -6,7 +6,7 @@ title: Reflection on the Unit 3 Assignments
 author: Edwin Abraham
 description: Students went up in the front of the classroom and they were told to take different sections of Unit 3 and teach it to the class.
 image: /images/collegeboardunit1.png
-categories: [week14, tri1]
+categories: [week16, tri1]
 ---
 
 # Unit 3 Sections 1 and 2
