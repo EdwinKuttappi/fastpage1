@@ -22,37 +22,37 @@ permalink: /vocabulary
 **Protocol**: Something that helps you to send and receive data
 
 # Unit 2
-**Bits**:
+**Bits**: The smallest unit of information in a computer, can either equal 0 or 1, and 8 bits are equal to one byte
 
-**Bytes**:
+**Bytes**:  A basic unit of measurement for pieces of information; the space required to store one character
 
-**Hexadecimal/Nibbles**
+**Hexadecimal/Nibbles**: Pertaining to the base-16 number system represented by the digits 0 through 9 and the uppercase or lowercase letters A (equivalent to decimal 10) through F(equivalent to decimal 15)
 
-**Binary Numbers**: 
+**Binary Numbers**: A number expressed in binary form, or base, like 1100 which is 12
 
-**Unsigned Integer**:
+**Unsigned Integer**: A data type that can only hold a whole number with a value greater than, or equal to, zero
 
-**Signed Integer**:
+**Signed Integer**: An integer that has a positive or negative sign
 
-**Floating Point**:
+**Floating Point**: A number represented by an exponent according to a given base and to find the value of a floating-point number, the base is raised to the power of the exponent
 
-**Binary Data**:
+**Binary Data**: A type of data that is represented or displayed in the binary numeral system
 
-**Abstractions**: 
+**Abstractions**: Extraction of relevant information from a larger data set, where utilizing abstraction allows engineers and others to simplify a codebase
 
-**Boolean**: 
+**Boolean**: Pertaining to, or characteristic of logical (true, false) values
 
-**ASCII**: Stands for American Standard Code for Information Interchange and is a language that is just made up of symbols
+**ASCII**: Stands for American Standard Code for Information Interchange and is a language that is just made up of symbols, its a standard single-byte character encoding scheme used for text-based data using designated 7-bit or 8-bit number combinations to represent either 128 or 256 possible characters.
 
-**Unicode**:
+**Unicode**: A character-encoding standard developed by the Unicode Consortium that represents almost all of the written languages of the world
 
-**RGB**:
+**RGB**: The three colors used by a computer screen, all the other colors can be made up by mixing red, blue and green
 
-**Data Compression**: 
+**Data Compression**: A reduction in the number of bits needed to represent data
 
-**Lossy**: 
+**Lossy**: If a process is lossy, it means that a little quality is lost when it is performed, meaning if a format is lossy, it means that putting data into that format will cause some slight loss
 
-**Lossless**: 
+**Lossless**: Restores and rebuilds file data in its original form after the file is decompressed
 
 # Unit 3
 **Variables**:
