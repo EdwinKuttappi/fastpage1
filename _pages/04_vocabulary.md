@@ -55,94 +55,95 @@ permalink: /vocabulary
 **Lossless**: Restores and rebuilds file data in its original form after the file is decompressed
 
 # Unit 3
-**Variables**:
+**Variables**: A named storage location capable of containing data that can be modified during a program's run
 
-**Data Types**: 
+**Data Types**: A classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations
 
-**Assignment Operators**:
+**Assignment Operators**: The operator used to assign a new value to a variable, property, event or indexer element
 
-**Managing Complexity with Variables**:  
+**Managing Complexity with Variables**: This is for making sure that variables have a specific value so that the code can run
 
-**Lists**: 
+**Lists**: A table of records located in the main area for each computer in the user interface
 
-**2D Lists**: 
+**2D Lists**: a two-dimensional data structure stored linearly in the memory, it has rows and columns
 
-**Dictionaries**:
+**Dictionaries**: A collection of keys or key and value pairs that is used for content or query processing in search
 
-**Class**:
+**Class**: A set of objects that share a common definitional property, that share common operations and behavior, or both
 
-**Algorithms**: 
+**Algorithms**: A rule or procedure for solving a problem
 
-**Sequence**: 
+**Sequence**: An ordered arrangement, as in a set of numbers, such as the Fibonacci sequence
 
-**Selection**:
+**Selection**: A programming construct where a section of code is run only if a condition is met
 
-**Iteration**:
+**Iteration**: Repeated runs of one or more statements or instructions. Statements or instructions so executed are said to be in a loop
 
-**Expressions**:
+**Expressions**: Any combination of operators, constants, literal values, functions, and names of fields (columns), controls, and properties that evaluates to a single value
 
-**Comparison Operators**: 
+**Comparison Operators**: Can compare numbers or strings and perform evaluations, like <, <=, >=, >, and ===
 
-**Booleans Expressions and Selection**: 
+**Booleans Expressions and Selection**: An expression that yields a Boolean value (true or false), such expressions can involve comparisons (testing values for equality or, for non—Boolean values, the < [less than] or > [greater than] relation) and logical combination (using Boolean operators such as AND, OR, and XOR) of Boolean expressions, a programming construct where a section of code is run only if a condition is met
 
-**Booleans Expressions and Iteration**: 
+**Booleans Expressions and Iteration**: An expression that yields a Boolean value (true or false), such expressions can involve comparisons (testing values for equality or, for non—Boolean values, the < [less than] or > [greater than] relation) and logical combination (using Boolean operators such as AND, OR, and XOR) of Boolean expressions, a process where the design of a product or application is improved by repeated review and testing
 
-**Truth Tables**:
+**Truth Tables**: A tabular representation of all the combinations of values for inputs and their corresponding outputs
 
-**Characters**: 
+**Characters**: A letter, number, punctuation mark, or other symbols
 
-**Strings**: 
+**Strings**: A group of characters or character bytes handled as a single entity, computer programs use strings to store and transmit data and commands
 
-**Length**: 
+**Length**: The amount of items in a list, and can be used as it's own variable
 
-**Concatenation**: 
+**Concatenation**: The process of combining two or more character strings or expressions into a single character string or expression, or combining two or more binary strings or expressions into a single binary string or expression
 
-**Upper**: 
+**Upper**: An element greater than or equal to all the elements in a given set
 
-**Lower**: 
+**Lower**: An element lesser than or equal to all the elements in a given set
 
-**Traversing Strings**:
+**Traversing Strings**: It cuts off a substring from the original string and thus allows to iterate over it partially
 
-**Python If**: 
+**Python If**: A selection statement that allows more than one possible flow of control
 
-**Elif**: 
+**Elif**: This is short for else if and is used when the first if statement isn't true, but you want to check for another condition
 
-**Else conditionals**: 
+**Else conditionals**: A statement that runs a different set of statements depending on whether an expression is true or false
 
-**Nested Selection Statements**:
+**Nested Selection Statements**: Used when more than one decision must be made before carrying out a tas
 
-**Python For**: 
+**Python For**: A control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied
 
-**While loops with Range**: 
+**While loops with Range**: Uses a while function and used to create a sequence ranging between a certain limit
 
-**with List**:
+**With List**: An abstract data type that represents a finite number of ordered values, where the same value may occur more than once
 
-**Combining loops with conditionals to Break**: 
+**Combining loops with conditionals to Break**: If a function is true or false, the break can be used in order to stop the function once a conditional has been reached
 
-**Continue**:
+**Continue**: This statement passes control to the next iteration of the nearest enclosing do, for, or while statement in which it appears, bypassing any remaining statements in the do, for, or while statement body
 
-**Procedural Abstraction**:
+**Procedural Abstraction**: The idea that each method should have a coherent conceptual description that separates its implementation from its users
 
-**Python Def procedures**:
+**Python Def procedures**: A procedure allows us to group a block of code under a name, known as a procedure name
 
-**Parameters**: 
+**Parameters**: A value that is given to a variable, either at the
+beginning of an operation or before an expression is evaluated by a program
 
-**Return Values**:
+**Return Values**: A single value that is the result of the execution of a statement, method, or function
 
-**Iteration** - Repetition of a Process
+**Iteration**: Repetition of a Process
 
-**For Loop** - FOR LOOP repeats a function for a set number of times; I is the number of times repeated
+**For Loop**: FOR LOOP repeats a function for a set number of times; I is the number of times repeated
 
-**While Loop** - The while loop is used to repeat a section of code an unknown number of times until a specific condition is met
+**While Loop**: The while loop is used to repeat a section of code an unknown number of times until a specific condition is met
 
-**Initialization** - What sets the counter variable to a starting value. For example (var i = 0) represents an initial value of 0.
+**Initialization**: What sets the counter variable to a starting value. For example (var i = 0) represents an initial value of 0.
 
-**Condition** - Allows the computer to know whether or not to keep repeating the loop.
+**Condition**: Allows the computer to know whether or not to keep repeating the loop.
 
-**Increment/Decrement** - Modifies the counter variable after each repetition.
+**Increment/Decrement**: Modifies the counter variable after each repetition.
 
-**Indexing / List Index** - The position of an element in a list, starting from 0
+**Indexing / List Index**: The position of an element in a list, starting from 0
 
-**Nesting** - Having one data type or function inside another data type or function, such as lists or loops.
+**Nesting**: Having one data type or function inside another data type or function, such as lists or loops.
 
-**Array** - Another name for a list, depends on the language
+**Array**: Another name for a list, depends on the language
