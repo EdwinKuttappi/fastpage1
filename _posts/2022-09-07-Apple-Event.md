@@ -20,7 +20,7 @@ On this day, Apple announced 4 new iPhones, iPhone 14, iPhone 14 Plus, iPhone 14
 Apple introduced three new apple watches. The Apple Watch SE (Starting at $299), Apple Watch Series 8 (Starting at $399), and the Apple Watch Ultra (Starting at $799).
 
 ## Apple Watch SE
-This Apple Watch is the budget apple watch for those people who don't neccessarily want to spend or need all of the other features.
+This Apple Watch is the budget apple watch for those people who don't neccessarily want to spend or need all of the other features. One big key thing Apple focused on during this event was Safety, especially with Crash Detection and Emergency SOS. Apple brought Crash Detection to this model and all the other apple watches announced here during this event
 
 ## Apple Watch Series 8
 The Apple Watch Series 8 with a newer processor than last year and it has a temperature sensor. This watch also has crash detection so if it has detected you are in a crash it will notify first responders. It is also now capable of Bluetooth 5.3.
