@@ -13,11 +13,14 @@ categories: [extra, week3, tri1]
 # Apple's Far Out Event
 On September 7th, 2022, Apple held a Far Out Event where they introduced the iPhone 14, Airpods Pro 2, and 3 new Apple Watches.
 
-# iPhone 14
+# Apple iPhones
+This year, I saw a model of what the iPhone 14's would look like and I was not sure whether Apple would actually do that. The render showed the phone with not one, but two cutout notches, one in a circular shape, and next to it in another oval shape. I did not think Apple would do this, but they did with the Pro Models, and used this new hardware to improve their software with Dynamic Island, and instead of leaving screen between the two cutouts, they filled it with black to make it seem like one big oval cutout.
+
+## iPhone 14
 On this day, Apple announced 4 new iPhones, iPhone 14, iPhone 14 Plus, iPhone 14 Pro, and the iPhone 14 Pro Max. This year they did not include an iPhone 14 mini, this is probably because they thought they didn't need it anymore. However, one thing to note is that the iPhone 14 and iPhone 14 Plus come with the Apple A15 Chip which is the same chip as the iPhone 13 and the iPhone 13 mini. However, the iPhone 14 Pro and the iPhone 14 Pro Max come with the newer A16 chip.
 
 # Apple Watches
-Apple introduced three new apple watches. The Apple Watch SE (Starting at $299), Apple Watch Series 8 (Starting at $399), and the Apple Watch Ultra (Starting at $799).
+Apple introduced three new apple watches. The Apple Watch SE (Starting at $299), Apple Watch Series 8 (Starting at $399), and the Apple Watch Ultra (Starting at $799). I was not really expecting the Apple Watch Ultra, but I was impressed with the look of it. All of these Apple Watches come with new Safety Detection Features just like with the new iPhones
 
 ## Apple Watch SE
 This Apple Watch is the budget apple watch for those people who don't neccessarily want to spend or need all of the other features. One big key thing Apple focused on during this event was Safety, especially with Crash Detection and Emergency SOS. Apple brought Crash Detection to this model and all the other apple watches announced here during this event
