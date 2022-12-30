@@ -30,3 +30,6 @@ The Apple Watch Series 8 with a newer processor than last year and it has a temp
 
 ## Apple Watch Ultra
 I was not expecting this watch at all, I was wondering what the purpose of this watch was, and it is for super dedicated athletes. I remember first seeing it at school during lunch and really liked the bands of the Series 8 Watch, but not so much the shape of the actual watch. Then I realized it was a whole new watch, and was made for professional athletes.
+
+# Airpods Pro 2
+During this event, Apple also announced a new generation of the Apple Airpod Pro's which has the same look as the orginal ones, but the case now supports MagSafe Charging
