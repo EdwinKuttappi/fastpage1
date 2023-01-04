@@ -10,6 +10,7 @@ categories: [week17, tri1]
 ---
 
 # Submission 1
+
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
 | Header      | Title       | Header      | Title       |
