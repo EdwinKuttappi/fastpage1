@@ -13,7 +13,20 @@ categories: [week17, tri1]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| Header      | Title       | Header      | Title       |
-| Paragraph   | Text        | Paragraph   | Text        |
+| **Program Purpose and Function** | 1 | 1 | Text |
+| **Data Abstraction** | 1 | 1 | Text |
+| **Managing Complexity** | 1 | 1 | Text |
+| **Procedural Abstraction** | 1 | 1 | Text |
+| **Algorithm Implementation** | 1 | 1 | Text |
+| **Testing** | 1 | 1 | Text |
 
 # Submission 2
+
+| Reporting Category | Student Score | College Board Score | Comments |
+| ----------- | ----------- | ----------- | ----------- |
+| **Program Purpose and Function** | 1 | 1 | Text |
+| **Data Abstraction** | 1 | 1 | Text |
+| **Managing Complexity** | 1 | 1 | Text |
+| **Procedural Abstraction** | 1 | 1 | Text |
+| **Algorithm Implementation** | 1 | 1 | Text |
+| **Testing** | 1 | 1 | Text |
