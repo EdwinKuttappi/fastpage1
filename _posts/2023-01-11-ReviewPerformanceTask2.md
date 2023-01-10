@@ -19,7 +19,7 @@ categories: [week17, tri1]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| **Program Purpose and Function** | 1 | 0 | Text |
+| **Program Purpose and Function** | 1 | 0 | They described the purpose of the program and the functionality of it, but they did not talk much with the functionality of the program, they also described the input and output |
 | **Data Abstraction** | 1 | 1 | Text |
 | **Managing Complexity** | 0 | 0 | Text |
 | **Procedural Abstraction** | 0 | 1 | Text |
