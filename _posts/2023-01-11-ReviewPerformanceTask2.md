@@ -51,12 +51,12 @@ categories: [week17, tri1]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| **Program Purpose and Function** | 1 | 1 | Text |
-| **Data Abstraction** | 1 | 1 | Text |
-| **Managing Complexity** | 1 | 1 | Text |
-| **Procedural Abstraction** | 1 | 1 | Text |
-| **Algorithm Implementation** | 1 | 1 | Text |
-| **Testing** | 1 | 1 | Text |
+| **Program Purpose and Function** | 1 | 0 | The input and the output of this program was shown in the video and was described in the written response, and they talked about the functionality of the program |
+| **Data Abstraction** | 1 | 1 | There are two lists in the first program, and they are both used later in the second segment of code, and this list has more than one elements in it, and serves a purpose in the program |
+| **Managing Complexity** | 1 | 1 | This person talked about how the code would be different if they did not use lists, and how it would be unnecessarily complex without lists because more parameters would be needed |
+| **Procedural Abstraction** | 1 | 1 | There is one function in this code and there are 2 parameters in it, and then in the second segment that function is being called |
+| **Algorithm Implementation** | 1 | 1 | This person goes in detail to explain how iteration, sequencing, and selection can all be seen within the code, and they also go into depth to explain how it applies |
+| **Testing** | 1 | 1 | This part of the code describes two calls from the functions and the conditions being tested by the call, as well as the results and output of each call |
 
 # Submission 4
 [Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-g-video.mp4)
