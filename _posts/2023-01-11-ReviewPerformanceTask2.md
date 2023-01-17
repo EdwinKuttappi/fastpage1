@@ -20,11 +20,11 @@ categories: [week17, tri1]
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
 | **Program Purpose and Function** | 1 | 0 | They described the purpose of the program and the functionality of it, but they did not talk much with the functionality of the program, they also described the input and output |
-| **Data Abstraction** | 1 | 1 | Text |
-| **Managing Complexity** | 0 | 0 | Text |
-| **Procedural Abstraction** | 0 | 1 | Text |
-| **Algorithm Implementation** | 0 | 1 | Text |
-| **Testing** | 1 | 1 | Text |
+| **Data Abstraction** | 0 | 0 | They mentioned two separate lists, the first list was animalImages and the second list was animalList, but the person did not show how the list animalList was being used |
+| **Managing Complexity** | 0 | 0 | This person did not show how the data has been managed showing how the data in the list is used as an output |
+| **Procedural Abstraction** | 0 | 0 | This person did not talk about how the use of this procedure can contribute to the functionality of this project, and is something they should mention |
+| **Algorithm Implementation** | 0 | 0 | Did explain what the algorithm did, but did not go into more detail about how it did that, also did not see iteration, sequencing, or selection |
+| **Testing** | 1 | 1 | This person did describe both calls to the procedure, and each call had a different argument, and they described the conditions as well as the result of each call |
 
 # Submission 2
 [Video](https://www.youtube.com/watch?v=VTtZi_Cr4Cc)
@@ -35,12 +35,12 @@ categories: [week17, tri1]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| **Program Purpose and Function** | 1 | 1 | Text |
-| **Data Abstraction** | 1 | 1 | Text |
-| **Managing Complexity** | 1 | 1 | Text |
-| **Procedural Abstraction** | 1 | 1 | Text |
-| **Algorithm Implementation** | 1 | 1 | Text |
-| **Testing** | 1 | 1 | Text |
+| **Program Purpose and Function** | 1 | 1 | This person did describe the program's purpose and the functionality of it as well, and also showed the input and output of the program working |
+| **Data Abstraction** | 1 | 1 | This person shows a list of nouns in the first picture, and in the second picture, they also show how that list is used in the form of a parameter |
+| **Managing Complexity** | 1 | 1 | It talks about how the code would have to work or not work if the list was not at all, and talks about how the list serves a purpose making the code easier to understand |
+| **Procedural Abstraction** | 1 | 1 | There is a function with four different parameters, and in the second part of code uses that function to output things for the user, and they described the functionality of it |
+| **Algorithm Implementation** | 1 | 1 | The segments of code show that they did actually use iteration, selection, and sequencing, and this person also explained how the algorithm works for other people|
+| **Testing** | 1 | 1 | This person described what each call was in the code, and then talked about the conditions tested in each call, and then gave the results of both calls |
 
 # Submission 3
 [Video](https://www.youtube.com/shorts/TiKzQk5aK9k)
