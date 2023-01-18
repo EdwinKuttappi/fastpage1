@@ -39,7 +39,7 @@ categories: [week17, tri1]
 | **Data Abstraction** | 1 | 1 | This person shows a list of nouns in the first picture, and in the second picture, they also show how that list is used in the form of a parameter |
 | **Managing Complexity** | 1 | 1 | It talks about how the code would have to work or not work if the list was not at all, and talks about how the list serves a purpose making the code easier to understand |
 | **Procedural Abstraction** | 1 | 1 | There is a function with four different parameters, and in the second part of code uses that function to output things for the user, and they described the functionality of it |
-| **Algorithm Implementation** | 1 | 1 | The segments of code show that they did actually use iteration, selection, and sequencing, and this person also explained how the algorithm works for other people|
+| **Algorithm Implementation** | 1 | 1 | The segments of code show that they did actually use iteration, selection, and sequencing, and this person also explained how the algorithm works for other people |
 | **Testing** | 1 | 1 | This person described what each call was in the code, and then talked about the conditions tested in each call, and then gave the results of both calls |
 
 # Submission 3
