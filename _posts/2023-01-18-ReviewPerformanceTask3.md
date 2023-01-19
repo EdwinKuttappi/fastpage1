@@ -6,7 +6,7 @@ title: Reflection on Sample Performance Tasks 3
 author: Edwin Abraham
 description: In preparation for the APCSP Performance Task, we were told to review samples to see what we needed to include before the actual exam
 image: /images/apcsplogo3.png
-categories: [week19, tri1]
+categories: [week19, tri2]
 ---
 
 # Submission 1
