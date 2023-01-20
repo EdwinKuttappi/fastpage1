@@ -67,8 +67,8 @@ categories: [week18, tri2]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| **Program Purpose and Function** | 1 | 1 | Text |
-| **Data Abstraction** | 1 | 1 | Text |
+| **Program Purpose and Function** | 1 | 1 | This Person actually used the input and output of the game, they also described the overall function and purpose of the program to keep |
+| **Data Abstraction** | 1 | 1 | In this program, I do not really identify any lists and guesses is somewhat of an one-element list, and this does not really show the list being used in the second picture |
 | **Managing Complexity** | 1 | 1 | Text |
 | **Procedural Abstraction** | 1 | 1 | Text |
 | **Algorithm Implementation** | 1 | 1 | Text |
