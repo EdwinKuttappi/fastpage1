@@ -19,11 +19,11 @@ categories: [week19, tri2]
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
-| **Program Purpose and Function** | 1 | 0 | They described the purpose of the program and the functionality of it, but they did not talk much with the functionality of the program, they also described the input and output |
-| **Data Abstraction** | 0 | 0 | They mentioned two separate lists, the first list was animalImages and the second list was animalList, but the person did not show how the list animalList was being used |
+| **Program Purpose and Function** | 1 | 1 | They showed how the program worked and how it was able to use the input and output, as well as describe the functionality and purpose of the program |
+| **Data Abstraction** | 0 | 0 | There are two code segments and it shows a list of RPS, but in the second segment, it doesn't really use that list, but I am not sure if the lisst is necessary |
 | **Managing Complexity** | 0 | 0 | This person did not show how the data has been managed showing how the data in the list is used as an output |
 | **Procedural Abstraction** | 0 | 0 | This person did not talk about how the use of this procedure can contribute to the functionality of this project, and is something they should mention |
-| **Algorithm Implementation** | 0 | 0 | Did explain what the algorithm did, but did not go into more detail about how it did that, also did not see iteration, sequencing, or selection |
+| **Algorithm Implementation** | 0 | 1 | Did explain what the algorithm did, but did not go into more detail about how it did that, also did not see iteration, sequencing, or selection |
 | **Testing** | 1 | 1 | This person did describe both calls to the procedure, and each call had a different argument, and they described the conditions as well as the result of each call |
 
 # Submission 2
