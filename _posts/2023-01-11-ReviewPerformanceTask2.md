@@ -68,11 +68,11 @@ categories: [week18, tri2]
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
 | **Program Purpose and Function** | 1 | 1 | This Person actually used the input and output of the game, they also described the overall function and purpose of the program to keep |
-| **Data Abstraction** | 1 | 1 | In this program, I do not really identify any lists and guesses is somewhat of an one-element list, and this does not really show the list being used in the second picture |
-| **Managing Complexity** | 1 | 1 | Text |
-| **Procedural Abstraction** | 1 | 1 | Text |
-| **Algorithm Implementation** | 1 | 1 | Text |
-| **Testing** | 1 | 1 | Text |
+| **Data Abstraction** | 0 | 1 | In this program, I do not really identify any lists and guesses is somewhat of an one-element list, and this does not really show the list being used in the second picture |
+| **Managing Complexity** | 0 | 1 | This person talks about a list called wordList and I did not really see it in the first picture of code and I am not sure what exactly if they really described it in detail a lot. |
+| **Procedural Abstraction** | 1 | 1 | In the first image, the code's function is made and then in the second segment it is being called with isitcorrect?(answer) and is then added to a list |
+| **Algorithm Implementation** | 1 | 1 | This person did make an in detail explanation of their code explaning how they could actually make it, also it was a little hard to know if it is, but it seems the program uses iteration, selection, and sequencing |
+| **Testing** | 1 | 1 | Two calls are being made in the code segments and it describes two calls to the procedure that was there, one of this is adding the answer to the guess list if correct, and the other is for the wrong one, they also describe the results of each |
 
 # Takeaways
 Knowing that actual people are grading our AP Exams, it can be determined that there can be different opinions. For example, on the first one, some people may think it deserves a 2, while some other people think it deserves a 4. This assignment just shows that the score one person thinks you got might not be your actual score, so it is important to review the rubric and try to get every single point.
