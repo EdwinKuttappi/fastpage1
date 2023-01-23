@@ -22,9 +22,9 @@ categories: [week19, tri2]
 | **Program Purpose and Function** | 1 | 1 | They showed how the program worked and how it was able to use the input and output, as well as describe the functionality and purpose of the program |
 | **Data Abstraction** | 0 | 0 | There are two code segments and it shows a list of RPS, but in the second segment, it doesn't really use that list, but I am not sure if the lisst is necessary |
 | **Managing Complexity** | 0 | 0 | This person did not show how the data has been managed showing how the data in the list is used as an output |
-| **Procedural Abstraction** | 0 | 0 | This person did not talk about how the use of this procedure can contribute to the functionality of this project, and is something they should mention |
-| **Algorithm Implementation** | 0 | 1 | Did explain what the algorithm did, but did not go into more detail about how it did that, also did not see iteration, sequencing, or selection |
-| **Testing** | 1 | 1 | This person did describe both calls to the procedure, and each call had a different argument, and they described the conditions as well as the result of each call |
+| **Procedural Abstraction** | 0 | 0 | Text |
+| **Algorithm Implementation** | 0 | 1 | Text |
+| **Testing** | 1 | 1 | Text |
 
 # Submission 2
 [Video](https://www.youtube.com/watch?v=VTtZi_Cr4Cc)
@@ -75,4 +75,4 @@ categories: [week19, tri2]
 | **Testing** | 1 | 1 | Two calls are being made in the code segments and it describes two calls to the procedure that was there, one of this is adding the answer to the guess list if correct, and the other is for the wrong one, they also describe the results of each |
 
 # Takeaways
-Knowing that actual people are grading our AP Exams, it can be determined that there can be different opinions. For example, on the first one, some people may think it deserves a 2, while some other people think it deserves a 4. This assignment just shows that the score one person thinks you got might not be your actual score, so it is important to review the rubric and try to get every single point.
+Similar to the past few performance task scoring assignments, I think I did a good job grading these performance tasks. I’ve gotten used to the CollegeBoard Rubric and I think I know how to get a program that fufills all of these programs. Knowing that actual people are grading our AP Exams, it can be determined that there can be different opinions. For example, on the first one, some people may think it deserves a 2, while some other people think it deserves a 4. This assignment just shows that the score one person thinks you got might not be your actual score, so it is important to review the rubric and try to get every single point.
