@@ -22,9 +22,9 @@ categories: [week19, tri2]
 | **Program Purpose and Function** | 1 | 1 | They showed how the program worked and how it was able to use the input and output, as well as describe the functionality and purpose of the program |
 | **Data Abstraction** | 0 | 0 | There are two code segments and it shows a list of RPS, but in the second segment, it doesn't really use that list, but I am not sure if the lisst is necessary |
 | **Managing Complexity** | 0 | 0 | This person did not show how the data has been managed showing how the data in the list is used as an output |
-| **Procedural Abstraction** | 0 | 0 | Text |
-| **Algorithm Implementation** | 0 | 1 | Text |
-| **Testing** | 1 | 1 | Text |
+| **Procedural Abstraction** | 1 | 0 | There is one procedure that shows all the code and then later in one line of code, that line of code is calling the function, and talks about how it contributes to the function of the program |
+| **Algorithm Implementation** | 0 | 1 | This person was using an algorithm that showed some iteration and selection, but I am not really sure that there was sequencing, and ther was not too much detail |
+| **Testing** | 1 | 1 | This person ran two different calls and they both include the conditions that were tested by that, and then after that it will find the output, and this person talked about the different results of each call |
 
 # Submission 2
 [Video](https://www.youtube.com/watch?v=VTtZi_Cr4Cc)
