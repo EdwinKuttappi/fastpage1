@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Reflection on the Trimester 2 Midterm
 description: On January 24th, our Final Exam for Trimester 1 was opened and it was a Multiple Choice Test on CollegeBoard with 50 Questions and this is my reflection as well as any test corrections
-image: /images/
+image: /images/midtermtri2.jpg
 categories: [tri2, week20]
 ---
 
