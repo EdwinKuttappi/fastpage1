@@ -14,7 +14,7 @@ We were assigned a 50 Question Multiple Choice Test in preparation for the AP Ex
 # Test Corrections
 After I submitted the test, I got a 43/50 (86%), which was around what I thought I would get. I was hoping to get an A, but I guess this means I should work harder towards trying to understand why I got these questions wrong and remember them. Whenever I got questions wrong, they were usually from the same skill showing that I could use some practice in specific skills. ![]({{ site.baseurl }}/images/finalexamtri1score.png)
 
-1.D: 1/2 (50.0%)
+1.A: 3/3 (100.0%)
 
 2.B: 5/7 (71.4%)
 
@@ -26,6 +26,10 @@ After I submitted the test, I got a 43/50 (86%), which was around what I thought
 
 I can take a look at the notes I took for each section, especially from the ones I got wrong. If I don't understand it from my notes, I can always go back to the CollegeBoard Videos and rewatch it. Additionally, when I was doing test corrections I could look at the reason why my answer was wrong, and why the correct answer was right.
 
+## Question 17
+
+##
+
 # Confusing Problems
 
 ## Question 2
@@ -33,3 +37,6 @@ I can take a look at the notes I took for each section, especially from the ones
 ## Question 16
 
 ## Question 30
+
+# Reflection on the Exam
+Overall, the test was pretty easy and I am happy with ny score, but I should try to get a higher score. If I paid attention a little more, I think I could have understood the questions a bit more I think I went through this test pretty quickly when I did it by myself, but when I was talking with Jishnu, that took a lot of time because he was explaining some answers to me. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content. I got a 3/3.
