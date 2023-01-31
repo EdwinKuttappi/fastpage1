@@ -75,7 +75,7 @@ I can take a look at the notes I took for each section, especially from the ones
 ## Question 50
 **Topic 2.1**: Binary Numbers
 
-**Explanation** for Wrong Answer: A, I just completely guessed on this problem because I had no idea how to do this and I did not really remember how to use the hexadecimal to find the character
+**Explanation** for Wrong Answer: A, I just completely guessed on this problem because I had no idea how to do this and I did not really remember how to use the hexadecimal to find the character.
 
 **Explanation** for Correct Answer: C, this is a hexadecimal and it is asking for the number 56 with base 16, so we have to do 5(16) + 6 = 86 which is the Character V. 
 
@@ -86,11 +86,17 @@ I can take a look at the notes I took for each section, especially from the ones
 ## Question 2
 ![]({{ site.baseurl }}/images/midtermquestion2.png)
 
+I did not understand the purpose of the program and I had to try and guess what could be changed in order to find out the answer. On this question, I had to guess the answer because I did not know what would make sure the output of the code would stay the same.
+
 ## Question 16
 ![]({{ site.baseurl }}/images/midtermquestion16.png)
+
+This question was a complete guess because I had no idea what each one meant completely, I had an idea of each one, but I wasn't sure why the answer was selection, I knew it couldn't be iteration because that would help with the even number, and I had to guess between the other three choices, and I was right. I still do not understand but maybe I can understand by looking at someone else's test corrections.
 
 ## Question 30
 ![]({{ site.baseurl }}/images/midtermquestion30.png)
 
+This question was very hard and I did not reallt understand what the question was asking and I had no idea what I had to do. I got this question right but I did not know why it was B and C, all I knew was that it was not A or D because the circles did not line up.
+
 # Reflection on the Exam
-Overall, the test was pretty easy and I am happy with ny score, but I should try to get a higher score. If I paid attention a little more, I think I could have understood the questions a bit more I think I went through this test pretty quickly when I did it by myself, but when I was talking with Jishnu, that took a lot of time because he was explaining some answers to me. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content. I got a 3/3.
+Overall, the test was pretty easy and I am happy with ny score, but I should try to get a higher score. If I paid attention a little more, I think I could have understood the questions a bit more I think I went through this test pretty slowly because I did not really understand each question and I had to read it a lot of times. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content, spend less time on each problem.
