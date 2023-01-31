@@ -81,14 +81,16 @@ I can take a look at the notes I took for each section, especially from the ones
 
 ![]({{ site.baseurl }}/images/midtermquestion50.png)
 
-
 # Confusing Problems
 
 ## Question 2
+![]({{ site.baseurl }}/images/midtermquestion2.png)
 
 ## Question 16
+![]({{ site.baseurl }}/images/midtermquestion16.png)
 
 ## Question 30
+![]({{ site.baseurl }}/images/midtermquestion30.png)
 
 # Reflection on the Exam
 Overall, the test was pretty easy and I am happy with ny score, but I should try to get a higher score. If I paid attention a little more, I think I could have understood the questions a bit more I think I went through this test pretty quickly when I did it by myself, but when I was talking with Jishnu, that took a lot of time because he was explaining some answers to me. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content. I got a 3/3.
