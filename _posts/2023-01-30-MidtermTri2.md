@@ -16,19 +16,69 @@ After I submitted the test, I got a 43/50 (86%), which was around what I thought
 
 1.A: 3/3 (100.0%)
 
-2.B: 5/7 (71.4%)
+1.D: 9/10 (90.0%)
 
-3.A: 7/8 (87.5%)
+2.A: 6/7 (85.7%)
 
-3.C: 3/4 (75.0%)
+2.B: 4/5 (80.0%)
 
-4.A: 4/6 (66.7%)
+3.A: 1/1 (100.0%)
+
+3.B: 2/2 (100.0%)
+
+3.C 0/1 (0.0%)
+
+4.B: 18/19 (94.7%)
+
+4.C: 2/2 (100.0%)
 
 I can take a look at the notes I took for each section, especially from the ones I got wrong. If I don't understand it from my notes, I can always go back to the CollegeBoard Videos and rewatch it. Additionally, when I was doing test corrections I could look at the reason why my answer was wrong, and why the correct answer was right.
 
 ## Question 17
+**Topic 3.6, 3.7, and 3.9**: Conditionals, Nested Conditionals, and Developing Algorithms
 
-##
+**Explanation** for Wrong Answer: A and B, I chose this because I was not sure what exactly the code was trying to say and what exactly we need to do
+
+**Explanation** for Correct Answer:
+
+![]({{ site.baseurl }}/images/midtermquestion17.png)
+
+## Question 22
+**Topic 3.8**: Iteration
+
+**Explanation** for Wrong Answer:
+
+**Explanation** for Correct Answer:
+
+![]({{ site.baseurl }}/images/midtermquestion22.png)
+
+## Question 27
+**Topic 3.8**: Iteration
+
+**Explanation** for Wrong Answer:
+
+**Explanation** for Correct Answer:
+
+![]({{ site.baseurl }}/images/midtermquestion27.png)
+
+## Question 38
+**Topic 3.12**: Calling Procedures
+
+**Explanation** for Wrong Answer: A, If the initial value of number is 4, the REPEAT UNTIL loop will reduce the value of number to 2, and then to 0, at which point the loop will terminate. The procedure will return true, not false.
+
+**Explanation** for Correct Answer: C, The REPEAT UNTIL statement subtracts 2 from the parameter number until the condition number ≤ 0 is true. After this REPEAT loop ends, the value of number is either 0 (if the original number was even) or –1 (if the original number was odd).
+
+![]({{ site.baseurl }}/images/midtermquestion38.png)
+
+## Question 50
+**Topic 2.1**: Binary Numbers
+
+**Explanation** for Wrong Answer: A, I just completely guessed on this problem because I had no idea how to do this and I did not really remember how to use the hexadecimal to find the character
+
+**Explanation** for Correct Answer: C, this is a hexadecimal and it is asking for the number 56 with base 16, so we have to do 5(16) + 6 = 86 which is the Character V. 
+
+![]({{ site.baseurl }}/images/midtermquestion50.png)
+
 
 # Confusing Problems
 
