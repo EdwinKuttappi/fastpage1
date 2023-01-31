@@ -9,10 +9,12 @@ categories: [tri2, week20]
 ---
 
 # Taking the Multiple Choice Test
-We were assigned a 50 Question Multiple Choice Test in preparation for the AP Exam and we know what to expect on that day. When I got to class on Friday, two of my groupmates had already finished it, and I knew I had to work on it over the long weekend The questions were not too hard, but we spent a lot of time collaborating and explaining our answers to make sure the other one got it. I did this pretty quickly and finished quicker than expected and when I submitted I got a /50.
+We were assigned a 50 Question Multiple Choice Test in preparation for the AP Exam and we know what to expect on that day. When I got to class on Friday, two of my groupmates had already finished it, and I knew I had to work on it over the long weekend The questions were not too hard, but we spent a lot of time collaborating and explaining our answers to make sure the other one got it. I did this pretty quickly and finished quicker than expected and when I submitted I got a 45/50 (90.0%).
 
 # Test Corrections
-After I submitted the test, I got a 43/50 (86%), which was around what I thought I would get. I was hoping to get an A, but I guess this means I should work harder towards trying to understand why I got these questions wrong and remember them. Whenever I got questions wrong, they were usually from the same skill showing that I could use some practice in specific skills. ![]({{ site.baseurl }}/images/finalexamtri1score.png)
+After I submitted the test, I got a 43/50 (86%), which was around what I thought I would get. I was hoping to get an A, but I guess this means I should work harder towards trying to understand why I got these questions wrong and remember them. Whenever I got questions wrong, they were usually from the same skill showing that I could use some practice in specific skills. 
+
+![]({{ site.baseurl }}/images/tri2midterm.png)
 
 1.A: 3/3 (100.0%)
 
@@ -37,27 +39,27 @@ I can take a look at the notes I took for each section, especially from the ones
 ## Question 17
 **Topic 3.6, 3.7, and 3.9**: Conditionals, Nested Conditionals, and Developing Algorithms
 
-**Explanation** for Wrong Answer: A and B, I chose this because I was not sure what exactly the code was trying to say and what exactly we need to do
+**Explanation** for Wrong Answer: A and B, I chose this because I was not sure what exactly the code was trying to say and what exactly we need to do, but I kenw thatI had to find the options that would result in the correct conditionals.
 
-**Explanation** for Correct Answer:
+**Explanation** for Correct Answer: A and D, these were the correct answers because they used the conditionals and made sure the output was true with the two statements.
 
 ![]({{ site.baseurl }}/images/midtermquestion17.png)
 
 ## Question 22
 **Topic 3.8**: Iteration
 
-**Explanation** for Wrong Answer:
+**Explanation** for Wrong Answer: A, I said that only algorithm 1 would work because I understood what that was trying to do, but for the second algorithm, I didn't understand hwo giving values to someone else would calculate the average height.
 
-**Explanation** for Correct Answer:
+**Explanation** for Correct Answer: C, Both Algorithms are able to find the correct answer and they are able to calculate the correct average, I just didn't know what Algorithm B did and was not really sure how it worked.
 
 ![]({{ site.baseurl }}/images/midtermquestion22.png)
 
 ## Question 27
 **Topic 3.8**: Iteration
 
-**Explanation** for Wrong Answer:
+**Explanation** for Wrong Answer: C, I knew that n had to be set to the value of 1, but I did not understand how the loops repeated n times worked and was really confused, it was similar to the one question with the loops value and the answer was 3y.
 
-**Explanation** for Correct Answer:
+**Explanation** for Correct Answer: D, this was the correct answer because we shouldn't set the value of n before the loop iterates n times, and setting the variable n and adding 1 should only be at the end of the code.
 
 ![]({{ site.baseurl }}/images/midtermquestion27.png)
 
