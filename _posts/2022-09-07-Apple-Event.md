@@ -25,6 +25,9 @@ Instead of the iPhone 14 mini, Apple decided to launch the iPhone 14 Plus which 
 ## iPhone 14 Pro
 I was surprised with this phone because of the new Dynamic Island
 
+## iPhone 14 Pro Max
+Just like recent years, Apple has released a Pro Max version of this years iPhone, which is the same as the iPhone 14 Pro but has a bigger screen and battery.
+
 # Apple Watches
 Apple introduced three new apple watches. The Apple Watch SE (Starting at $299), Apple Watch Series 8 (Starting at $399), and the Apple Watch Ultra (Starting at $799). I was not really expecting the Apple Watch Ultra, but I was impressed with the look of it. All of these Apple Watches come with new Safety Detection Features just like with the new iPhones
 
