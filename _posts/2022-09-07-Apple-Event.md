@@ -23,7 +23,7 @@ On this day, Apple announced 4 new iPhones, iPhone 14, iPhone 14 Plus, iPhone 14
 Instead of the iPhone 14 mini, Apple decided to launch the iPhone 14 Plus which basically was the iPhone 14 but bigger and had a battery size for $100 more. I think they did this was because the iPhone 12 mini and iPhone 13 mini were not selling as much as they had wanted, and for this new plus phone, I think the same will happen as well.
 
 ## iPhone 14 Pro
-I was surprised with this phone because of the new Dynamic Island
+I was surprised with this phone because of the new Dynamic Island. There were images that the notch would be a circle cutout and then an oval cutout, and I thought it wouldn't happen, but it did, but instead they filled the space in between, to look like it was together, and it was one big oval in the middle of the phone.
 
 ## iPhone 14 Pro Max
 Just like recent years, Apple has released a Pro Max version of this years iPhone, which is the same as the iPhone 14 Pro but has a bigger screen and battery.
