@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Edwin's Blog
-description: A blog made by Edwin, to test out programming and learn how to make more websites
+description: A blog made by Edwin, to test out programming and learn how to make more websites © Edwin 2023
 github_username: EdwinKuttappi
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "fastpage1"
