@@ -2,7 +2,7 @@
 keywords: fastai
 description: Practice with identifying and correcting code blocks
 title: Big Idea 1 'Identifying and Correct Errors'
-layout: default
+layout: base
 badges: false
 author: Sean Yeung, John Mortensen, and Edwin Abraham
 image: /images/fixingbugs.jpg

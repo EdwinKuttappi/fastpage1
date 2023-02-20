@@ -2,7 +2,7 @@
 keywords: fastai
 description: Quick launch into Variables, Functions, Arrays, IJavaScript HTML, using Jupyter Notebooks
 title: JavaScript Notebook
-layout: default
+layout: base
 badges: false
 author: John Mortensen and Edwin Abraham
 permalink: /techtalk/javascript
