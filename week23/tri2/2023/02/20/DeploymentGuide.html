@@ -100,6 +100,13 @@ window.onload = wrap_img;
         font-size: 18px;
         text-align: center;
     }
+    .text5 {
+        color: #177545;
+        font-size: 20px;
+        border-width: 2.5px;
+        border-style: solid;
+        text-align: center;
+    }
     code {
         color: white;
         background-color: black;
@@ -238,7 +245,7 @@ flask-web-1  | <span class="o">[</span>2023-02-20 18:55:57 +0000] <span class="o
 <span class="nb">sudo </span>docker-compose
 <span class="nb">ls</span> <span class="c"># should see list of other projects</span>
 </code></pre></div></div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone github.com//.git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>repository name<span class="o">}</span>.git
 Cloning into <span class="s1">'Flask'</span>...
 remote: Enumerating objects: 699, <span class="k">done</span><span class="nb">.</span>
 remote: Counting objects: 100% <span class="o">(</span>699/699<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
@@ -246,7 +253,22 @@ remote: Compressing objects: 100% <span class="o">(</span>429/429<span class="o"
 remote: Total 699 <span class="o">(</span>delta 330<span class="o">)</span>, reused 597 <span class="o">(</span>delta 230<span class="o">)</span>, pack-reused 0
 Receiving objects: 100% <span class="o">(</span>699/699<span class="o">)</span>, 12.57 MiB | 10.64 MiB/s, <span class="k">done</span><span class="nb">.</span>
 Resolving deltas: 100% <span class="o">(</span>330/330<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+
+<span class="nb">cd</span> ~/<span class="o">{</span>repository name<span class="o">}</span>
+docker-compose up <span class="nt">-d</span> <span class="nt">--build</span>
 </code></pre></div></div>
+
+<h1 id="step-5-test-curl">Step 5: Test Curl</h1>
+<p>To test that the application is working on AWS we can use the curl command to make sure that our code can be pulled from our flask and where we can verify the port</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost: 8091 <span class="c"># should be localhost:----, where ---- is your port number</span>
+</code></pre></div></div>
+
+<h1 id="step-6-obtain-dns-domain">Step 6: Obtain DNS Domain</h1>
+<p>There are two ways one can obtain a DNS, the reason you can’t host your site on the IP Address, because only one site at a time can be hosted</p>
+
+<div class="text5">We can use <a href="https://www.freenom.com/en/index.html?lang=en">Freenom</a>, which was what we used last trimester, but due to some difficulty obtaining a domain, Jeffrey has proposed an alternate solution, <a href="https://www.duckdns.org/">DuckDNS</a>, which is easy to use as all you need is a Github account.</div>
+
+<div class="text">Please refer to <a href="https://www.freenom.com/en/index.html?lang=en">Jeffrey's Guide</a></div>
 
       </div>
     </main><footer class="site-footer h-card">
