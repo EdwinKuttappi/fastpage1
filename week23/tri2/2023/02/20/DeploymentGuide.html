@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Changing Instances into Mortensen or Yeung server | Edwin’s Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Changing Instances into Mortensen or Yeung server" />
+<meta name="author" content="Edwin Abraham" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Deployment Guide for those who made their own instance sent via slack by Mr. Mortensen into a blog post" />
+<meta property="og:description" content="The Deployment Guide for those who made their own instance sent via slack by Mr. Mortensen into a blog post" />
+<link rel="canonical" href="https://edwinkuttappi.github.io/fastpage1/week23/tri2/2023/02/20/DeploymentGuide.html" />
+<meta property="og:url" content="https://edwinkuttappi.github.io/fastpage1/week23/tri2/2023/02/20/DeploymentGuide.html" />
+<meta property="og:site_name" content="Edwin’s Blog" />
+<meta property="og:image" content="https://edwinkuttappi.github.io/fastpage1/images/.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-20T00:00:00-06:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://edwinkuttappi.github.io/fastpage1/images/.png" />
+<meta property="twitter:title" content="Changing Instances into Mortensen or Yeung server" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Abraham"},"dateModified":"2023-02-20T00:00:00-06:00","datePublished":"2023-02-20T00:00:00-06:00","description":"The Deployment Guide for those who made their own instance sent via slack by Mr. Mortensen into a blog post","headline":"Changing Instances into Mortensen or Yeung server","image":"https://edwinkuttappi.github.io/fastpage1/images/.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week23/tri2/2023/02/20/DeploymentGuide.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week23/tri2/2023/02/20/DeploymentGuide.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpage1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://edwinkuttappi.github.io/fastpage1/feed.xml" title="Edwin's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpage1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpage1/">Edwin&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpage1/_pages/00_about.html">About Me Page</a><a class="page-link" href="/fastpage1/submenu/">Submenus</a><a class="page-link" href="/fastpage1/categories/">Tags</a><a class="page-link" href="/fastpage1/timebox/">Timebox</a><a class="page-link" href="/fastpage1/vocabulary">Vocabulary</a><a class="page-link" href="/fastpage1/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        font-family: oxygen;
+    }
+    .text {
+        color: #479ffb;
+        font-size: 20px;
+        border-width: 2.5px;
+        border-style: solid;
+        text-align: center;
+    }
+    .text2 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .text3 {
+        color: red;
+        font-size: 18px;
+        text-align: left;
+    }
+    .text4 {
+        color: #f93535;
+        font-size: 18px;
+        text-align: center;
+    }
+    code {
+        color: white;
+        background-color: black;
+    }
+    .file {
+        color: black;
+    }
+</style>
+
+<h1>Changing Instance to under Mortensen or Yeung Servers</h1>
+<div class="text">This blog post will detail how to make a new container under the Mortensen or Yeung machines</div>
+
+<h1 id="step-1-choosing-a-port">Step 1: Choosing a Port</h1>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker ps
+
+CONTAINER ID   IMAGE                                    COMMAND                  CREATED        STATUS                          PORTS                                                 NAMES
+4e8fd682c3b5   dolphins_v1                              <span class="s2">"gunicorn main:app"</span>      17 hours ago   Up 17 hours                     0.0.0.0:8090-&gt;8080/tcp, :::8090-&gt;8080/tcp             dolphins3_web_1
+d12771409040   jame_v2                                  <span class="s2">"gunicorn main:app"</span>      2 days ago     Up 2 days                       0.0.0.0:8095-&gt;8086/tcp, :::8095-&gt;8086/tcp             p3_jame_web_1
+0065cdbe0eb6   recipies_port_v1                         <span class="s2">"gunicorn main:app"</span>      2 days ago     Up 2 days                       0.0.0.0:8011-&gt;8086/tcp, :::8011-&gt;8086/tcp             recipiesflask_web_1
+b68006ff922a   flask_port_v1                            <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8199-&gt;8199/tcp, :::8199-&gt;8199/tcp             p4t5-p8199-flask-saakd_web_1
+788376b446c0   a3389c4f670f                             <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8051-&gt;8086/tcp, :::8051-&gt;8086/tcp             carhub_p4t9_web_1
+6acdb6d366d3   flask_blewupflask_v1                     <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8135-&gt;8080/tcp, :::8135-&gt;8080/tcp             blewupflask_web_1
+e749e6510fb0   tgddkp_flask_v2                          <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8069-&gt;8080/tcp, :::8069-&gt;8080/tcp             tgddkpflask_web_1
+f5aff8b7b5a1   ssvg_port_v1                             <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8123-&gt;8080/tcp, :::8123-&gt;8080/tcp             t8122_final_ssvg_flask_web_1
+728e25c3c1ce   flow_v1                                  <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8087-&gt;8087/tcp, :::8087-&gt;8087/tcp             gaccs-flask_web_1
+5a5c67ec51ca   sizet2_port_v1                           <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8929-&gt;8929/tcp, :::8929-&gt;8929/tcp             sizet2_flask_web_1
+67c791756f45   tripleaj_port_v1                         <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       0.0.0.0:8099-&gt;8080/tcp, :::8099-&gt;8080/tcp             tripleajflask_web_1
+75e03ba6297d   codecrunch_port_v1                       <span class="s2">"gunicorn main:app"</span>      3 days ago     Up 3 days                       127.0.0.1:4269-&gt;8086/tcp                              code-crunch-backend_web_1
+15516aed08ee   8708d0f3e62b                             <span class="s2">"gunicorn main:app"</span>      5 days ago     Up 3 days                       0.0.0.0:8066-&gt;8080/tcp, :::8066-&gt;8080/tcp             groupa_web_1
+daa4a256ece8   346331782f3e                             <span class="s2">"gunicorn main:app"</span>      10 days ago    Up 3 days                       0.0.0.0:8089-&gt;8080/tcp, :::8089-&gt;8080/tcp             dejmogroupflask_web_1
+96e3f8703ef6   346331782f3e                             <span class="s2">"gunicorn main:app"</span>      11 days ago    Up 3 days                       0.0.0.0:8053-&gt;8080/tcp, :::8053-&gt;8080/tcp             hubcarp4t9_web_1
+bdc08f9c95fc   lscr.io/linuxserver/webtop:ubuntu-xfce   <span class="s2">"/init"</span>                  4 weeks ago    Up 3 days                       0.0.0.0:3000-&gt;3000/tcp, :::3000-&gt;3000/tcp, 3389/tcp   webtop
+1bd333f4f93c   ddns_ddns                                <span class="s2">"/bin/sh -c '/go/bin…"</span>   6 weeks ago    Up 3 days                                                                             ddns_ddns_1
+a3de1a1fb1ac   redis:4-alpine                           <span class="s2">"docker-entrypoint.s…"</span>   6 weeks ago    Up 3 days                       6379/tcp                                              ddns_redis_1
+01c989713817   java_springv1                            <span class="s2">"java -jar target/sp…"</span>   3 months ago   Up 3 days                       0.0.0.0:8085-&gt;8085/tcp, :::8085-&gt;8085/tcp             spring_portfolio_web_1
+18f10e47abbc   flask_loopholegames_t42                  <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8042-&gt;8080/tcp, :::8042-&gt;8080/tcp             t2p4_loopholegames_web_1
+6b4b0355a561   flask_team_cheese_t8_v1                  <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8071-&gt;8080/tcp, :::8071-&gt;8080/tcp             p3t8_ezkg_web_1
+dc89f014f8f9   bb9b973d6f2e                             <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8094-&gt;8080/tcp, :::8094-&gt;8080/tcp             p3t1_vase_web_1
+5d73acae5c4b   346331782f3e                             <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8034-&gt;8080/tcp, :::8034-&gt;8080/tcp             nbad_flask_web_1
+a6f2e8fce6a5   image_sadv_v1                            <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8037-&gt;8080/tcp, :::8037-&gt;8080/tcp             t7p3_sadv_web_1
+ecc3c5f2aa1f   p4t0_music_flask_v1                      <span class="s2">"gunicorn main:app"</span>      3 months ago   Restarting <span class="o">(</span>3<span class="o">)</span> 58 seconds ago                                                         p4t0_music_web_1
+ecf0125ae99e   flask_ssjn_v1                            <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8032-&gt;8080/tcp, :::8032-&gt;8080/tcp             p3t2_ssjn_flask_web_1
+e5288d9f1d48   98970bd83403                             <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8035-&gt;8080/tcp, :::8035-&gt;8080/tcp             lawnmowers-flask-repo_web_1
+5f7b2dd4425c   fr0st_v1                                 <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8045-&gt;8080/tcp, :::8045-&gt;8080/tcp             p4t5_fr0st_web_1
+65ac9aa7ab19   flask_workwatch_v1                       <span class="s2">"gunicorn main:app"</span>      3 months ago   Up 3 days                       0.0.0.0:8033-&gt;8080/tcp, :::8033-&gt;8080/tcp             t0p3-workwatch_web_1
+a7d251d15d88   lscr.io/linuxserver/duckdns:latest       <span class="s2">"/init"</span>                  4 months ago   Up 3 days                                                                             duckdns
+</code></pre></div></div>
+<div class="text">
+There are many containers here, and when run <code>sudo docker ps</code>, it might not look the exact same. Refer to the ports column and choose a port number. Take recipies_port_v1 for example, their ports are
+<div class="code"><code>0.0.0.0:8011-&gt;8086/tcp, :::8011-&gt;8086/tc</code></div>
+</div>
+
+<p>Look at the left hand number of each container and find one that is <strong>NOT</strong> being used by another container. <strong>Please make sure to add your port number to this <a href="https://docs.google.com/spreadsheets/d/1lF-hdNvA_nGc580IKdckl6JI_H7SxKnBZUy_YeyK0bQ/edit?usp=sharing">spreadsheet</a></strong> to avoid future confusion. To double-check, I advise that you look at the spreadsheet and see if your port number is being used.</p>
+
+<h1 id="step-2-updating-port-number-through-vscode">Step 2: Updating Port Number through VSCode</h1>
+<div class="text2">
+Open your group's flask on VSCode, and find <code>docker-compose.yml</code> and <code>Dockerfile</code>
+</div>
+<p><br /></p>
+<div class="text3">
+Within <code>docker-compose.yml</code>, you should probably change the image to whatever you want. It should look like <code>flask_port_v1</code> but you must change it. Your new image name may look like <code>flask_insert-name_v1</code> or even <code>groupflask_v1</code>. Refer to the <a href="https://docs.google.com/spreadsheets/d/1lF-hdNvA_nGc580IKdckl6JI_H7SxKnBZUy_YeyK0bQ/edit?usp=sharing">spreadsheet</a> to make sure your image is different than others, and while your at it, make sure to add your image under the images column.
+The next thing to consider is the actual ports section:
+</div>
+<p>This is what <code>docker-compose.yml</code> should look like with the exception of the name of your image and the left hand number under ports</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: <span class="s1">'3'</span>
+services:
+        web:
+                image: flask_projectone_v1
+                build: <span class="nb">.</span>
+                ports:
+                        - <span class="s2">"8011:8086"</span> <span class="c"># 8011 would be your port and 8086 being the internal port</span>
+                volumes:
+                        - ./volumes:/volumes
+                        - ./instance:/instance
+                restart: unless-stopped
+</code></pre></div></div>
+<p><br /></p>
+<div class="text3">
+Within <code>Dockerfile</code>, you should be able to find <code>ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code> and <code>EXPOSE 8086</code>. 8086 will be the port number that is on the right, if you wish you can change this to 8080 or another number, but keeping it 8086 is recommended for simplicity
+</div>
+<p>This is what <code>Dockerfile</code> should look like unless you decided to change the port number</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM docker.io/python:3.10
+
+WORKDIR /
+
+<span class="c"># --- [Install python and pip] ---</span>
+RUN apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+    apt-get <span class="nb">install</span> <span class="nt">-y</span> python3 python3-pip git
+COPY <span class="nb">.</span> /
+
+RUN pip <span class="nb">install</span> <span class="nt">--no-cache-dir</span> <span class="nt">-r</span> requirements.txt
+RUN pip <span class="nb">install </span>gunicorn
+
+ENV <span class="nv">GUNICORN_CMD_ARGS</span><span class="o">=</span><span class="s2">"--workers=1 --bind=0.0.0.0:8086"</span> <span class="c"># Can change 8086 to another number such as 8080 if desired</span>
+
+EXPOSE 8086 <span class="c"># If changing internal port number in line above, this number must also match that</span>
+
+CMD <span class="o">[</span> <span class="s2">"gunicorn"</span>, <span class="s2">"main:app"</span> <span class="o">]</span>
+</code></pre></div></div>
+
+<h1 id="step-3-testing-step-1-and-2">Step 3: Testing Step 1 and 2</h1>
+<p>This step is just testing to see if our container is up and the steps in the past were done correctly.</p>
+
+<ol>
+  <li>In VSCode open up a new terminal</li>
+  <li>Type <code>sudo docker-compose up</code></li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker-compose up
+
+<span class="o">[</span>+] Running 1/0
+ ⠿ Container flask-web-1  Created                                                    0.0s
+Attaching to flask-web-1 <span class="c"># instead of flask-web-1 it should be yours</span>
+flask-web-1  | <span class="o">[</span>2023-02-20 18:55:57 +0000] <span class="o">[</span>1] <span class="o">[</span>INFO] Starting gunicorn 20.1.0
+flask-web-1  | <span class="o">[</span>2023-02-20 18:55:57 +0000] <span class="o">[</span>1] <span class="o">[</span>INFO] Listening at: http://0.0.0.0:8080 <span class="o">(</span>1<span class="o">)</span> <span class="c"># This port number will be your port number for the container</span>
+</code></pre></div></div>
+<ul>
+  <li>If this does not work then seek help or try doing step 1 and 2 and making sure your ports are fine
+<br />
+<br /></li>
+</ul>
+<div class="text">Localhost</div>
+<p>In this step, if the terminal says that it has been built, go to a new browser and type <code>localhost:xxxx</code>. The numbers after localhost: should be your port number for the flask, the number on the left.</p>
+
+<p>For example if my ports are <code>8091:8086</code>, I would type <code>localhost:8091</code></p>
+<ul>
+  <li>Before Deployment on AWS, please make sure to check the <a href="https://docs.google.com/spreadsheets/d/1lF-hdNvA_nGc580IKdckl6JI_H7SxKnBZUy_YeyK0bQ/edit?usp=sharing">spreadsheet</a> to see if your ports are the same as someone else’s</li>
+</ul>
+
+<h1 id="step-4-deploying-onto-aws">Step 4: Deploying onto AWS</h1>
+<p>Now we have made it to the AWS Part of Deployment, this is where we will get the site hosted on your own custom domain using Freenom or DuckDNS
+<br /></p>
+
+<div class="text4"><strong>PLEASE MAKE SURE YOU HAVE COMMITTED YOUR CHANGES TO THE FILES IN VSCODE, AND A REMINDER TO PULL FROM GITHUB BEFORE PUSHING YOUR CHANGES</strong></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~
+<span class="nb">sudo </span>docker-compose
+<span class="nb">ls</span> <span class="c"># should see list of other projects</span>
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone github.com//.git
+Cloning into <span class="s1">'Flask'</span>...
+remote: Enumerating objects: 699, <span class="k">done</span><span class="nb">.</span>
+remote: Counting objects: 100% <span class="o">(</span>699/699<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+remote: Compressing objects: 100% <span class="o">(</span>429/429<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+remote: Total 699 <span class="o">(</span>delta 330<span class="o">)</span>, reused 597 <span class="o">(</span>delta 230<span class="o">)</span>, pack-reused 0
+Receiving objects: 100% <span class="o">(</span>699/699<span class="o">)</span>, 12.57 MiB | 10.64 MiB/s, <span class="k">done</span><span class="nb">.</span>
+Resolving deltas: 100% <span class="o">(</span>330/330<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+</code></pre></div></div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpage1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://edwinkuttappi.github.io/fastpage1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpage1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A blog made by Edwin, to test out programming and learn how to make more websites © Edwin 2023</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
