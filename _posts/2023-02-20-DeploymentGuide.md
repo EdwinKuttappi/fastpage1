@@ -35,6 +35,13 @@ categories: [week23, tri2]
         font-size: 18px;
         text-align: center;
     }
+    .text5 {
+        color: #177545;
+        font-size: 20px;
+        border-width: 2.5px;
+        border-style: solid;
+        text-align: center;
+    }
     code {
         color: white;
         background-color: black;
@@ -173,7 +180,7 @@ sudo docker-compose
 ls # should see list of other projects
 ```
 ```bash
-git clone github.com/{{username}}/{{repository name}}.git
+git clone github.com/{username}/{repository name}.git
 Cloning into 'Flask'...
 remote: Enumerating objects: 699, done.
 remote: Counting objects: 100% (699/699), done.
@@ -181,4 +188,20 @@ remote: Compressing objects: 100% (429/429), done.
 remote: Total 699 (delta 330), reused 597 (delta 230), pack-reused 0
 Receiving objects: 100% (699/699), 12.57 MiB | 10.64 MiB/s, done.
 Resolving deltas: 100% (330/330), done.
+
+cd ~/{repository name}
+docker-compose up -d --build
 ```
+
+# Step 5: Test Curl
+To test that the application is working on AWS we can use the curl command to make sure that our code can be pulled from our flask and where we can verify the port
+```bash
+curl localhost: 8091 # should be localhost:----, where ---- is your port number
+```
+
+# Step 6: Obtain DNS Domain
+There are two ways one can obtain a DNS, the reason you can't host your site on the IP Address, because only one site at a time can be hosted
+
+<div class="text5">We can use <a href="https://www.freenom.com/en/index.html?lang=en">Freenom</a>, which was what we used last trimester, but due to some difficulty obtaining a domain, Jeffrey has proposed an alternate solution, <a href="https://www.duckdns.org/">DuckDNS</a>, which is easy to use as all you need is a Github account.</div>
+
+<div class="text">Please refer to <a href="https://www.freenom.com/en/index.html?lang=en">Jeffrey's Guide</a></div>
