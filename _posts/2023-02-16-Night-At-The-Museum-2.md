@@ -6,11 +6,11 @@ title: Night at the Museum
 author: Edwin Abraham
 description: On February 17th, 2023 we had our Night at the Museum and this is the blog post about how it went and what I saw
 image: /images/nightatthemuseum.png
-categories: [week23, tri2]
+categories: [week24, tri2]
 ---
 
 # Background
-Our Night at the Museum was on February 16th, 2023, at 6:00pm-7:30pm. I had to take a 30 minute shift with the rest of my group and help explain our group project. We are in Period 4 with Mr. Yeung so we had to come during 6:30pm-7:00pm. Each student in our group brought their laptops to do some final changes and to display their feature, so that way we could present to more people easier. Our Project was a flight planner and we used a frontend and a backend for it. Our [backend](https://farmersflask.duckdns.org) was where we had to store our data for everyone's features and then we had to show it on our [frontend](raunak2007.github.io/RECS-repo), and in order to get the data from the backend, we had to use fetch commands to get the data to show and save our data used in each of the features. This trimester, I was the DevOps, which was harder than expected, many people had a problem with Freenom, so as an alternative, Jeffrey proposed using DuckDNS. I finally got the site deployed and then helped other people who needed it.
+Our Night at the Museum was on February 16th, 2023, at 6:00pm-7:30pm. I had to take a 30 minute shift with the rest of my group and help explain our group project. We are in Period 4 with Mr. Yeung so we had to come during 6:30pm-7:00pm. Each student in our group brought their laptops to do some final changes and to display their feature, so that way we could present to more people easier. Our Project was a flight planner and we used a frontend and a backend for it. Our [backend](https://farmersflask.duckdns.org) was where we had to store our data for everyone's features and then we had to show it on our [frontend](https://raunak2007.github.io/RECS-repo), and in order to get the data from the backend, we had to use fetch commands to get the data to show and save our data used in each of the features. This trimester, I was the DevOps, which was harder than expected, many people had a problem with Freenom, so as an alternative, Jeffrey proposed using DuckDNS. I finally got the site deployed and then helped other people who needed it.
 ![]({{ site.baseurl }}/images/jazz1.jpg)
 
 ## Presenting our Flask Site
