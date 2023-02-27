@@ -10,11 +10,11 @@ categories: [week19, tri2]
 ---
 
 # Submission 1
-[Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-i-video.mp4)
+[Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-h-video.mp4)
 
-[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-i.pdf)
+[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-h.pdf)
 
-[CollegeBoard Rubric](https://drive.google.com/file/d/1HXDauimq8edpT0-aZ2iIujzLdIxtyKMx/view)
+[CollegeBoard Rubric](https://drive.google.com/file/d/19KBDJTwn0DPSKhBUz2bFSMEtnNcnpEZx/view)
 
 
 | Reporting Category | Student Score | College Board Score | Comments |
@@ -27,11 +27,11 @@ categories: [week19, tri2]
 | **Testing** | 1 | 1 | This person ran two different calls and they both include the conditions that were tested by that, and then after that it will find the output, and this person talked about the different results of each call |
 
 # Submission 2
-[Video](https://www.youtube.com/watch?v=VTtZi_Cr4Cc)
+[Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-c-video.mp4)
 
-[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-b.pdf)
+[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-c.pdf)
 
-[CollegeBoard Rubric](https://drive.google.com/file/d/1bzSueMdVVt3QVmkMCSKEkIVd9mZ3hQBP/view)
+[CollegeBoard Rubric](https://drive.google.com/file/d/1KNzEy7woRmvGmEE0LPJ24FwDhoyWDU7_/view)
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
@@ -43,11 +43,11 @@ categories: [week19, tri2]
 | **Testing** | 1 | 1 | This person described what each call was in the code, and then talked about the conditions tested in each call, and then gave the results of both calls |
 
 # Submission 3
-[Video](https://www.youtube.com/shorts/TiKzQk5aK9k)
+[Video](https://www.youtube.com/watch?v=KeY7B6cNSic)
 
-[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-d.pdf)
+[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-j.pdf)
 
-[CollegeBoard Rubric](https://drive.google.com/file/d/1dX7KNT9axip5DQDEYdIYbuajcrWUB4lR/view)
+[CollegeBoard Rubric](https://drive.google.com/file/d/1q5N1F_6NA7NLB2wkp6wqC8jLxHuxFm7Z/view)
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
@@ -59,11 +59,11 @@ categories: [week19, tri2]
 | **Testing** | 1 | 1 | This part of the code describes two calls from the functions and the conditions being tested by the call, as well as the results and output of each call |
 
 # Submission 4
-[Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-g-video.mp4)
+[Video](https://secure-media.collegeboard.org/apc/ap-computer-science-principles-2022-create-performance-task-sample-e-video.mp4)
 
-[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-g.pdf)
+[Written Response](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-2022-create-performance-task-sample-e.pdf)
 
-[CollegeBoard Rubric](https://drive.google.com/file/d/1so2WKNMi5vONuFCWZFFUqq8gVWNe_jCS/view)
+[CollegeBoard Rubric](https://drive.google.com/file/d/1c-w31AwXb-m1E5A4OKiRC6SezoB8JDuK/view)
 
 | Reporting Category | Student Score | College Board Score | Comments |
 | ----------- | ----------- | ----------- | ----------- |
