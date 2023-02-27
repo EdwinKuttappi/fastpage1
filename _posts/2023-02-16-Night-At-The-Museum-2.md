@@ -36,7 +36,7 @@ Jonathan and his group's project was mainly about exercising and helping a perso
 ![]({{ site.baseurl }}/images/jonathanwproject2.jpg)
 
 William and his group's project was really interesting and they had a lot of work done. They did a project about crimes with multiple pieces of information attached to it. I really liked their site and they had so many features and a lot of pages. I think they did a lot of work and really showed they knew what they were doing. I listened to them present it and I was very impressed because they had so much information.
-![]({{ site.baseurl }}/images/williamwproject2.jpg)
+![]({{ site.baseurl }}/images/williamwproject2.png)
 
 Rohan and his group's project was amazing because it was related to Physics and it was not working, but then they fixed something using inspect element to debug it, and then it worked. There were a lot of calculations that went into it, and it looked really good. I was curious as to how it worked and what the code behind it was.
 ![]({{ site.baseurl }}/images/rohanmproject.jpg)
