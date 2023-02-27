@@ -20,7 +20,7 @@ We did not really present our backend site, the main purpose of the site was to 
 ![]({{ site.baseurl }}/images/harshagproject.jpg)
 
 ## Presenting our Fastpage Site
-[Frontend](raunak2007.github.io/RECS-repo/maps)
+[Frontend](https://raunak2007.github.io/RECS-repo/maps)
 <br>
 This was the site we used mainly for our users to interact with. If you go to the website you can use our project and see what exactly what the users do. You can also go on the website to try it out. We got a lot of people to try out our features, and one person that I remember was an adult who came and asked us to explain our project as quick as possible. We all tried going over our feature quickly, and when we were done he just asked us questions, and it seemed like he knew what he was talking about, so I assume he had a lot of experience. I had a lot of fun explaining our project to other people.
 ![]({{ site.baseurl }}/images/measurementproject.jpg)
