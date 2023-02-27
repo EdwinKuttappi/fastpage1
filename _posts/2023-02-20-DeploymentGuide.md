@@ -5,7 +5,7 @@ layout: base
 title: Changing Instances into Mortensen or Yeung server
 author: Edwin Abraham
 description: The Deployment Guide for those who made their own instance sent via slack by Mr. Mortensen into a blog post
-image: /images/.png
+image: /images/aws.png
 categories: [week23, tri2]
 ---
 <style>
