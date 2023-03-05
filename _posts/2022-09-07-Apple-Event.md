@@ -26,7 +26,7 @@ Instead of the iPhone 14 mini, Apple decided to launch the iPhone 14 Plus which 
 I was surprised with this phone because of the new Dynamic Island. There were images that the notch would be a circle cutout and then an oval cutout, and I thought it wouldn't happen, but it did, but instead they filled the space in between, to look like it was together, and it was one big oval in the middle of the phone.
 
 ## iPhone 14 Pro Max
-Just like recent years, Apple has released a Pro Max version of this years iPhone, which is the same as the iPhone 14 Pro but has a bigger screen and battery.
+Just like recent years, Apple has released a Pro Max version of this years iPhone, which is the same as the iPhone 14 Pro but has a bigger screen and battery. This is the biggest phone that Apple released this year, and it is probably the best phone you can get from Apple this year.
 
 # Apple Watches
 Apple introduced three new apple watches. The Apple Watch SE (Starting at $299), Apple Watch Series 8 (Starting at $399), and the Apple Watch Ultra (Starting at $799). I was not really expecting the Apple Watch Ultra, but I was impressed with the look of it. All of these Apple Watches come with new Safety Detection Features just like with the new iPhones
