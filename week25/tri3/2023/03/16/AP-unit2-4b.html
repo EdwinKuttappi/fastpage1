@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      10 min read
     
 </span></p>
 
@@ -181,10 +181,22 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- A database schema is a column of a table of data, or also known as a category such as name, uid, password, or dob.
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>The purpose of an identity Column in a SQL database is to help us know what the rest of the column is about, what kinds of data types it will contain, and any other relevant information.</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>A primary key is something that is used to identify someone. The primary key (i.e. id) should be unique to each user so that it is easy to tell who is who.</li>
+</ul>
+</li>
+<li>What are the Data Types in SQL table?<ul>
+<li>There are many data types such as integers, structures like lists and dictionaries, strings, floats, and probably more</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -247,8 +259,14 @@ window.onload = wrap_img;
 <li>A cursor object is . An example here would be when a breakpoint is set when the variable results is defined, we can see the cursor when we debug in VSCode</li>
 </ul>
 </li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>For the conn object, I see that some of its attributes include in_transaction, isolation_level, and row_factory. For the cursor object, I see that some of its attributes include arraysize, lastrowid, row_factory, and rowcount.</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>Yes, "results" is an object because it not only appears under the the list of local variables, but it also includes data used as a part of the functionality of the program. It includes the attributes of each user, such as their name, their uid, and their date of birth.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -303,8 +321,22 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>The create() function in the Object Oriented Programming was called on an object</li>
+<li>The imperative version involves creating numerous variables within the function rather than the objects</li>
+<li>Both of these have their own pros and cons. The imperative version is less error prone, but also less efficient</li>
+<li>The converse is true for the create() in the OOP version. Imperative version does not censor your password</li>
+<li>Using OOP might be easier if one is trying to work with large amounts of data. If one is trying to work with a small amount of data, imperative might work better.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>The purpose of the SQL INSERT statement in this code is to insert a new row of data into the "users" table of a SQLite database</li>
+<li>The INSERT INTO statement specifies the name of the table and the columns where the data should be inserted, and the VALUES clause provides the values to be inserted into those columns</li>
+<li>The ? placeholders are used to prevent SQL injection attacks by sanitizing user input</li>
+<li>The INSERT INTO statement in this code is similar to the init method of a User class in that both are used to create a new record or object in the database</li>
+<li>However, there are some differences. The INSERT INTO statement only inserts data into a table in the database, while the init method of a User class creates a new instance of a class in memory</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -367,9 +399,22 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>The "hacked" part in the code is meant to provide a password that meets the minimum length requirement (2 characters) for security purposes. The message variable is set to "hacked" in this case to indicate that the password was automatically set, so that way no one can look at the code and find out what the password is</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>The try/except block is used to handle exceptions that may occur during the execution of the SQL command</li>
+<li>In this case, the try block contains the SQL command to update the password for the specified user, and the except block catches any sqlite3</li>
+<li>Error exceptions that might be raised during the execution of the command. If an exception occurs, the code inside the except block is executed</li>
+<li>It is similar to an if/else statement</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>The code that connects to the database and creates a cursor object is repeated in each of these examples. This is because it is necessary to establish a connection to the database in order to execute SQL commands. The cursor object is used to execute the SQL commands and interact with the database</li>
+<li>Once the SQL commands have been executed, the cursor and connection objects need to be closed to free up resources and prevent memory leaks.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -436,8 +481,15 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>DELETE can be a dangerous operation if used carelessly as it permanently removes data from the database, and if it is used with caution, it can result in unintended data loss or corruption</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>The "f" before the string is used for f-strings, which are a way of formatting strings that allows you to include the values of variables directly in the string</li>
+<li>The curly braces {} surrounding uid indicate that the value of the uid variable should be inserted at that position in the string. This provides a much easier alternative than .format()</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -497,8 +549,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>The menu repeats so that if the user would like to perform multiple operations in one sitting (create and red for example), they can do so. They can perform as many operations as they would like until they don't input anything or make the program exit.</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>Yes, it is possible to refactor this with a list, and you can probably by using list comprehension in Python.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
