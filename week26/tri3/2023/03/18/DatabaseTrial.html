@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      6 min read
     
 </span></p>
 
@@ -199,7 +199,7 @@ window.onload = wrap_img;
 
 <span class="sd">''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''</span>
 <span class="k">class</span> <span class="nc">Phone</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'users'</span>  <span class="c1"># table name is plural, class name is singular</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'Phones'</span>  <span class="c1"># table name is plural, class name is singular</span>
 
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">_company</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#_name</span>
@@ -306,6 +306,7 @@ window.onload = wrap_img;
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span>
 
     <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -392,26 +393,6 @@ Records exist uid Pixel 7, or error.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_by_company</span><span class="p">(</span><span class="n">company</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
-        <span class="n">phone</span> <span class="o">=</span> <span class="n">Phone</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">company</span><span class="o">=</span><span class="n">company</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">phone</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_by_model</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">phone</span> <span class="o">=</span> <span class="n">Phone</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_model</span><span class="o">=</span><span class="n">model</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
@@ -420,7 +401,7 @@ Records exist uid Pixel 7, or error.
 <span class="c1"># # Check credentials by finding user and verify password</span>
 <span class="c1"># def check_credentials(model, price):</span>
 <span class="c1">#     # query email and return user record</span>
-<span class="c1">#     phone = find_by_model(model)</span>
+<span class="c1">#     phone = find_by_model(company)</span>
 <span class="c1">#     if phone == None:</span>
 <span class="c1">#         return False</span>
 <span class="c1">#     if (phone.is_password(price)):</span>
@@ -446,7 +427,7 @@ Records exist uid Pixel 7, or error.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
     <span class="c1"># optimize user time to see if uid exists</span>
-    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user model"</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your model:"</span><span class="p">)</span>
     <span class="n">phone</span> <span class="o">=</span> <span class="n">find_by_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Found</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">phone</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -456,7 +437,7 @@ Records exist uid Pixel 7, or error.
     
     <span class="c1"># request value that ensure creating valid object</span>
     <span class="n">company</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the company:"</span><span class="p">)</span>
-    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your price"</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the price"</span><span class="p">)</span>
     
     <span class="c1"># Initialize User object before date</span>
     <span class="n">phone</span> <span class="o">=</span> <span class="n">Phone</span><span class="p">(</span><span class="n">company</span><span class="o">=</span><span class="n">company</span><span class="p">,</span> 
@@ -478,7 +459,7 @@ Records exist uid Pixel 7, or error.
             <span class="nb">object</span> <span class="o">=</span> <span class="n">phone</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Created</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">object</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
         <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not created</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Unknown error model </span><span class="si">{model}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Unknown error uid </span><span class="si">{uid}</span><span class="s2">"</span><span class="p">)</span>
         
 <span class="n">create</span><span class="p">()</span>
 </pre></div>
@@ -492,216 +473,10 @@ Records exist uid Pixel 7, or error.
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1964</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1963</span>     if not evt_handled:
-<span class="ansi-green-fg">-&gt; 1964</span>         self.dialect.do_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1965</span>             cursor, str_statement, effective_parameters, context
-<span class="ansi-green-intense-fg ansi-bold">   1966</span>         )
-<span class="ansi-green-intense-fg ansi-bold">   1968</span> if self._has_events or self.engine._has_events:
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:748</span>, in <span class="ansi-cyan-fg">DefaultDialect.do_execute</span><span class="ansi-blue-fg">(self, cursor, statement, parameters, context)</span>
-<span class="ansi-green-intense-fg ansi-bold">    747</span> def do_execute(self, cursor, statement, parameters, context=None):
-<span class="ansi-green-fg">--&gt; 748</span>     cursor.execute(statement, parameters)
-
-<span class="ansi-red-fg">OperationalError</span>: no such column: users._company
-
-The above exception was the direct cause of the following exception:
-
-<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 38&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=34'&gt;35&lt;/a&gt;</span>         except:  # error raised if object not created
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=35'&gt;36&lt;/a&gt;</span>             print("Unknown error model {model}")
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=37'&gt;38&lt;/a&gt;</span> create()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 6</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def create():
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     # optimize user time to see if uid exists
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     model = input("Enter your user model")
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     phone = find_by_model(model)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     try:
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>         print("Found\n", phone.read())
-
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 6</span> in <span class="ansi-cyan-fg">find_by_model</span><span class="ansi-blue-fg">(model)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def find_by_model(model):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     with app.app_context():
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>         phone = Phone.query.filter_by(_model=model).first()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     return phone
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:2752</span>, in <span class="ansi-cyan-fg">Query.first</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2750</span>     return self._iter().first()  # type: ignore
-<span class="ansi-green-intense-fg ansi-bold">   2751</span> else:
-<span class="ansi-green-fg">-&gt; 2752</span>     return self.limit(1)._iter().first()
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:2855</span>, in <span class="ansi-cyan-fg">Query._iter</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2852</span> params = self._params
-<span class="ansi-green-intense-fg ansi-bold">   2854</span> statement = self._statement_20()
-<span class="ansi-green-fg">-&gt; 2855</span> result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
-<span class="ansi-green-intense-fg ansi-bold">   2856</span>     statement,
-<span class="ansi-green-intense-fg ansi-bold">   2857</span>     params,
-<span class="ansi-green-intense-fg ansi-bold">   2858</span>     execution_options={"_sa_orm_load_options": self.load_options},
-<span class="ansi-green-intense-fg ansi-bold">   2859</span> )
-<span class="ansi-green-intense-fg ansi-bold">   2861</span> # legacy: automatically set scalars, unique
-<span class="ansi-green-intense-fg ansi-bold">   2862</span> if result._attributes.get("is_single_entity", False):
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/session.py:2229</span>, in <span class="ansi-cyan-fg">Session.execute</span><span class="ansi-blue-fg">(self, statement, params, execution_options, bind_arguments, _parent_execute_state, _add_event)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2168</span> def execute(
-<span class="ansi-green-intense-fg ansi-bold">   2169</span>     self,
-<span class="ansi-green-intense-fg ansi-bold">   2170</span>     statement: Executable,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2176</span>     _add_event: Optional[Any] = None,
-<span class="ansi-green-intense-fg ansi-bold">   2177</span> ) -&gt; Result[Any]:
-<span class="ansi-green-intense-fg ansi-bold">   2178</span>     r"""Execute a SQL expression construct.
-<span class="ansi-green-intense-fg ansi-bold">   2179</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2180</span>     Returns a :class:`_engine.Result` object representing
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2227</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2228</span>     """
-<span class="ansi-green-fg">-&gt; 2229</span>     return self._execute_internal(
-<span class="ansi-green-intense-fg ansi-bold">   2230</span>         statement,
-<span class="ansi-green-intense-fg ansi-bold">   2231</span>         params,
-<span class="ansi-green-intense-fg ansi-bold">   2232</span>         execution_options=execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   2233</span>         bind_arguments=bind_arguments,
-<span class="ansi-green-intense-fg ansi-bold">   2234</span>         _parent_execute_state=_parent_execute_state,
-<span class="ansi-green-intense-fg ansi-bold">   2235</span>         _add_event=_add_event,
-<span class="ansi-green-intense-fg ansi-bold">   2236</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/session.py:2124</span>, in <span class="ansi-cyan-fg">Session._execute_internal</span><span class="ansi-blue-fg">(self, statement, params, execution_options, bind_arguments, _parent_execute_state, _add_event, _scalar_result)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2119</span>     return conn.scalar(
-<span class="ansi-green-intense-fg ansi-bold">   2120</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">   2121</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   2123</span> if compile_state_cls:
-<span class="ansi-green-fg">-&gt; 2124</span>     result: Result[Any] = compile_state_cls.orm_execute_statement(
-<span class="ansi-green-intense-fg ansi-bold">   2125</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   2126</span>         statement,
-<span class="ansi-green-intense-fg ansi-bold">   2127</span>         params or {},
-<span class="ansi-green-intense-fg ansi-bold">   2128</span>         execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   2129</span>         bind_arguments,
-<span class="ansi-green-intense-fg ansi-bold">   2130</span>         conn,
-<span class="ansi-green-intense-fg ansi-bold">   2131</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   2132</span> else:
-<span class="ansi-green-intense-fg ansi-bold">   2133</span>     result = conn.execute(
-<span class="ansi-green-intense-fg ansi-bold">   2134</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">   2135</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/context.py:253</span>, in <span class="ansi-cyan-fg">AbstractORMCompileState.orm_execute_statement</span><span class="ansi-blue-fg">(cls, session, statement, params, execution_options, bind_arguments, conn)</span>
-<span class="ansi-green-intense-fg ansi-bold">    243</span> @classmethod
-<span class="ansi-green-intense-fg ansi-bold">    244</span> def orm_execute_statement(
-<span class="ansi-green-intense-fg ansi-bold">    245</span>     cls,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    251</span>     conn,
-<span class="ansi-green-intense-fg ansi-bold">    252</span> ) -&gt; Result:
-<span class="ansi-green-fg">--&gt; 253</span>     result = conn.execute(
-<span class="ansi-green-intense-fg ansi-bold">    254</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">    255</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    256</span>     return cls.orm_setup_cursor_result(
-<span class="ansi-green-intense-fg ansi-bold">    257</span>         session,
-<span class="ansi-green-intense-fg ansi-bold">    258</span>         statement,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    262</span>         result,
-<span class="ansi-green-intense-fg ansi-bold">    263</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1414</span>, in <span class="ansi-cyan-fg">Connection.execute</span><span class="ansi-blue-fg">(self, statement, parameters, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1412</span>     raise exc.ObjectNotExecutableError(statement) from err
-<span class="ansi-green-intense-fg ansi-bold">   1413</span> else:
-<span class="ansi-green-fg">-&gt; 1414</span>     return meth(
-<span class="ansi-green-intense-fg ansi-bold">   1415</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1416</span>         distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1417</span>         execution_options or NO_OPTIONS,
-<span class="ansi-green-intense-fg ansi-bold">   1418</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py:486</span>, in <span class="ansi-cyan-fg">ClauseElement._execute_on_connection</span><span class="ansi-blue-fg">(self, connection, distilled_params, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    484</span>     if TYPE_CHECKING:
-<span class="ansi-green-intense-fg ansi-bold">    485</span>         assert isinstance(self, Executable)
-<span class="ansi-green-fg">--&gt; 486</span>     return connection._execute_clauseelement(
-<span class="ansi-green-intense-fg ansi-bold">    487</span>         self, distilled_params, execution_options
-<span class="ansi-green-intense-fg ansi-bold">    488</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    489</span> else:
-<span class="ansi-green-intense-fg ansi-bold">    490</span>     raise exc.ObjectNotExecutableError(self)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1638</span>, in <span class="ansi-cyan-fg">Connection._execute_clauseelement</span><span class="ansi-blue-fg">(self, elem, distilled_parameters, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1626</span> compiled_cache: Optional[CompiledCacheType] = execution_options.get(
-<span class="ansi-green-intense-fg ansi-bold">   1627</span>     "compiled_cache", self.engine._compiled_cache
-<span class="ansi-green-intense-fg ansi-bold">   1628</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1630</span> compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
-<span class="ansi-green-intense-fg ansi-bold">   1631</span>     dialect=dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1632</span>     compiled_cache=compiled_cache,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1636</span>     linting=self.dialect.compiler_linting | compiler.WARN_LINTING,
-<span class="ansi-green-intense-fg ansi-bold">   1637</span> )
-<span class="ansi-green-fg">-&gt; 1638</span> ret = self._execute_context(
-<span class="ansi-green-intense-fg ansi-bold">   1639</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1640</span>     dialect.execution_ctx_cls._init_compiled,
-<span class="ansi-green-intense-fg ansi-bold">   1641</span>     compiled_sql,
-<span class="ansi-green-intense-fg ansi-bold">   1642</span>     distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1643</span>     execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   1644</span>     compiled_sql,
-<span class="ansi-green-intense-fg ansi-bold">   1645</span>     distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1646</span>     elem,
-<span class="ansi-green-intense-fg ansi-bold">   1647</span>     extracted_params,
-<span class="ansi-green-intense-fg ansi-bold">   1648</span>     cache_hit=cache_hit,
-<span class="ansi-green-intense-fg ansi-bold">   1649</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1650</span> if has_events:
-<span class="ansi-green-intense-fg ansi-bold">   1651</span>     self.dispatch.after_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1652</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1653</span>         elem,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1657</span>         ret,
-<span class="ansi-green-intense-fg ansi-bold">   1658</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1842</span>, in <span class="ansi-cyan-fg">Connection._execute_context</span><span class="ansi-blue-fg">(self, dialect, constructor, statement, parameters, execution_options, *args, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1837</span>     return self._exec_insertmany_context(
-<span class="ansi-green-intense-fg ansi-bold">   1838</span>         dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1839</span>         context,
-<span class="ansi-green-intense-fg ansi-bold">   1840</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1841</span> else:
-<span class="ansi-green-fg">-&gt; 1842</span>     return self._exec_single_context(
-<span class="ansi-green-intense-fg ansi-bold">   1843</span>         dialect, context, statement, parameters
-<span class="ansi-green-intense-fg ansi-bold">   1844</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1983</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1980</span>     result = context._setup_result_proxy()
-<span class="ansi-green-intense-fg ansi-bold">   1982</span> except BaseException as e:
-<span class="ansi-green-fg">-&gt; 1983</span>     self._handle_dbapi_exception(
-<span class="ansi-green-intense-fg ansi-bold">   1984</span>         e, str_statement, effective_parameters, cursor, context
-<span class="ansi-green-intense-fg ansi-bold">   1985</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1987</span> return result
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:2326</span>, in <span class="ansi-cyan-fg">Connection._handle_dbapi_exception</span><span class="ansi-blue-fg">(self, e, statement, parameters, cursor, context, is_sub_exec)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2324</span> elif should_wrap:
-<span class="ansi-green-intense-fg ansi-bold">   2325</span>     assert sqlalchemy_exception is not None
-<span class="ansi-green-fg">-&gt; 2326</span>     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-<span class="ansi-green-intense-fg ansi-bold">   2327</span> else:
-<span class="ansi-green-intense-fg ansi-bold">   2328</span>     assert exc_info[1] is not None
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1964</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1962</span>                 break
-<span class="ansi-green-intense-fg ansi-bold">   1963</span>     if not evt_handled:
-<span class="ansi-green-fg">-&gt; 1964</span>         self.dialect.do_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1965</span>             cursor, str_statement, effective_parameters, context
-<span class="ansi-green-intense-fg ansi-bold">   1966</span>         )
-<span class="ansi-green-intense-fg ansi-bold">   1968</span> if self._has_events or self.engine._has_events:
-<span class="ansi-green-intense-fg ansi-bold">   1969</span>     self.dispatch.after_cursor_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1970</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1971</span>         cursor,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1975</span>         context.executemany,
-<span class="ansi-green-intense-fg ansi-bold">   1976</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:748</span>, in <span class="ansi-cyan-fg">DefaultDialect.do_execute</span><span class="ansi-blue-fg">(self, cursor, statement, parameters, context)</span>
-<span class="ansi-green-intense-fg ansi-bold">    747</span> def do_execute(self, cursor, statement, parameters, context=None):
-<span class="ansi-green-fg">--&gt; 748</span>     cursor.execute(statement, parameters)
-
-<span class="ansi-red-fg">OperationalError</span>: (sqlite3.OperationalError) no such column: users._company
-[SQL: SELECT users.id AS users_id, users._company AS users__company, users._model AS users__model, users._price AS users__price, users._dob AS users__dob 
-FROM users 
-WHERE users._model = ?
- LIMIT ? OFFSET ?]
-[parameters: ('Apple', 1, 0)]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created
+ {'id': 8, 'company': 'Google', 'model': 'Pixel 7 Pro', 'price': '350', 'dob': '03-20-2023', 'age': 0}
+</pre>
 </div>
 </div>
 
@@ -737,211 +512,102 @@ WHERE users._model = ?
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1964</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1963</span>     if not evt_handled:
-<span class="ansi-green-fg">-&gt; 1964</span>         self.dialect.do_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1965</span>             cursor, str_statement, effective_parameters, context
-<span class="ansi-green-intense-fg ansi-bold">   1966</span>         )
-<span class="ansi-green-intense-fg ansi-bold">   1968</span> if self._has_events or self.engine._has_events:
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:748</span>, in <span class="ansi-cyan-fg">DefaultDialect.do_execute</span><span class="ansi-blue-fg">(self, cursor, statement, parameters, context)</span>
-<span class="ansi-green-intense-fg ansi-bold">    747</span> def do_execute(self, cursor, statement, parameters, context=None):
-<span class="ansi-green-fg">--&gt; 748</span>     cursor.execute(statement, parameters)
 
-<span class="ansi-red-fg">OperationalError</span>: no such column: users._company
+<div class="output_text output_subarea output_execute_result">
+<pre>[{'id': 1,
+  'company': 'Apple',
+  'model': 'iPhone 14',
+  'price': '200',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 2,
+  'company': 'Apple',
+  'model': 'iPhone 14 Pro',
+  'price': '150',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 3,
+  'company': 'Samsung',
+  'model': 'Galaxy S23',
+  'price': '100',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 4,
+  'company': 'LG',
+  'model': 'Wing',
+  'price': '300',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 5,
+  'company': 'Motorola',
+  'model': 'Razr',
+  'price': '250',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 6,
+  'company': 'Google',
+  'model': 'Pixel 7',
+  'price': '50',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 7,
+  'company': 'Gd',
+  'model': 'S22',
+  'price': '300',
+  'dob': '03-20-2023',
+  'age': 0},
+ {'id': 8,
+  'company': 'Google',
+  'model': 'Pixel 7 Pro',
+  'price': '350',
+  'dob': '03-20-2023',
+  'age': 0}]</pre>
+</div>
 
-The above exception was the direct cause of the following exception:
+</div>
 
-<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     json_ready = [phone.read() for phone in table] # each user adds user.read() to list
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     return json_ready
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> read()
+</div>
+</div>
 
-<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 7</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def read():
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     with app.app_context():
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>         table = Phone.query.all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     json_ready = [phone.read() for phone in table] # each user adds user.read() to list
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     return json_ready
+</div>
+    
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:2697</span>, in <span class="ansi-cyan-fg">Query.all</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2675</span> def all(self) -&gt; List[_T]:
-<span class="ansi-green-intense-fg ansi-bold">   2676</span>     """Return the results represented by this :class:`_query.Query`
-<span class="ansi-green-intense-fg ansi-bold">   2677</span>     as a list.
-<span class="ansi-green-intense-fg ansi-bold">   2678</span> 
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2695</span>         :meth:`_engine.Result.scalars` - v2 comparable method.
-<span class="ansi-green-intense-fg ansi-bold">   2696</span>     """
-<span class="ansi-green-fg">-&gt; 2697</span>     return self._iter().all()
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:2855</span>, in <span class="ansi-cyan-fg">Query._iter</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2852</span> params = self._params
-<span class="ansi-green-intense-fg ansi-bold">   2854</span> statement = self._statement_20()
-<span class="ansi-green-fg">-&gt; 2855</span> result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
-<span class="ansi-green-intense-fg ansi-bold">   2856</span>     statement,
-<span class="ansi-green-intense-fg ansi-bold">   2857</span>     params,
-<span class="ansi-green-intense-fg ansi-bold">   2858</span>     execution_options={"_sa_orm_load_options": self.load_options},
-<span class="ansi-green-intense-fg ansi-bold">   2859</span> )
-<span class="ansi-green-intense-fg ansi-bold">   2861</span> # legacy: automatically set scalars, unique
-<span class="ansi-green-intense-fg ansi-bold">   2862</span> if result._attributes.get("is_single_entity", False):
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">delete_by_company</span><span class="p">():</span> <span class="c1"># makes a new function called delete_by_uid</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter uid of user to be deleted."</span><span class="p">)</span> <span class="c1"># prompts the user to enter the uid</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">find_by_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>  <span class="c1"># using previous function to locate user by inputted id</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">object</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"User with uid --</span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2">-- has been deleted. "</span><span class="p">)</span>
+            <span class="n">db</span> <span class="o">=</span> <span class="n">read</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not found</span>
+           <span class="p">(</span><span class="sa">f</span><span class="s2">"No user with uid </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> was found."</span><span class="p">)</span>
+        
+<span class="n">delete_by_company</span><span class="p">()</span>
+</pre></div>
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/session.py:2229</span>, in <span class="ansi-cyan-fg">Session.execute</span><span class="ansi-blue-fg">(self, statement, params, execution_options, bind_arguments, _parent_execute_state, _add_event)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2168</span> def execute(
-<span class="ansi-green-intense-fg ansi-bold">   2169</span>     self,
-<span class="ansi-green-intense-fg ansi-bold">   2170</span>     statement: Executable,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2176</span>     _add_event: Optional[Any] = None,
-<span class="ansi-green-intense-fg ansi-bold">   2177</span> ) -&gt; Result[Any]:
-<span class="ansi-green-intense-fg ansi-bold">   2178</span>     r"""Execute a SQL expression construct.
-<span class="ansi-green-intense-fg ansi-bold">   2179</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2180</span>     Returns a :class:`_engine.Result` object representing
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2227</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2228</span>     """
-<span class="ansi-green-fg">-&gt; 2229</span>     return self._execute_internal(
-<span class="ansi-green-intense-fg ansi-bold">   2230</span>         statement,
-<span class="ansi-green-intense-fg ansi-bold">   2231</span>         params,
-<span class="ansi-green-intense-fg ansi-bold">   2232</span>         execution_options=execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   2233</span>         bind_arguments=bind_arguments,
-<span class="ansi-green-intense-fg ansi-bold">   2234</span>         _parent_execute_state=_parent_execute_state,
-<span class="ansi-green-intense-fg ansi-bold">   2235</span>         _add_event=_add_event,
-<span class="ansi-green-intense-fg ansi-bold">   2236</span>     )
+    </div>
+</div>
+</div>
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/session.py:2124</span>, in <span class="ansi-cyan-fg">Session._execute_internal</span><span class="ansi-blue-fg">(self, statement, params, execution_options, bind_arguments, _parent_execute_state, _add_event, _scalar_result)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2119</span>     return conn.scalar(
-<span class="ansi-green-intense-fg ansi-bold">   2120</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">   2121</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   2123</span> if compile_state_cls:
-<span class="ansi-green-fg">-&gt; 2124</span>     result: Result[Any] = compile_state_cls.orm_execute_statement(
-<span class="ansi-green-intense-fg ansi-bold">   2125</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   2126</span>         statement,
-<span class="ansi-green-intense-fg ansi-bold">   2127</span>         params or {},
-<span class="ansi-green-intense-fg ansi-bold">   2128</span>         execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   2129</span>         bind_arguments,
-<span class="ansi-green-intense-fg ansi-bold">   2130</span>         conn,
-<span class="ansi-green-intense-fg ansi-bold">   2131</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   2132</span> else:
-<span class="ansi-green-intense-fg ansi-bold">   2133</span>     result = conn.execute(
-<span class="ansi-green-intense-fg ansi-bold">   2134</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">   2135</span>     )
+<div class="output_wrapper">
+<div class="output">
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/context.py:253</span>, in <span class="ansi-cyan-fg">AbstractORMCompileState.orm_execute_statement</span><span class="ansi-blue-fg">(cls, session, statement, params, execution_options, bind_arguments, conn)</span>
-<span class="ansi-green-intense-fg ansi-bold">    243</span> @classmethod
-<span class="ansi-green-intense-fg ansi-bold">    244</span> def orm_execute_statement(
-<span class="ansi-green-intense-fg ansi-bold">    245</span>     cls,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    251</span>     conn,
-<span class="ansi-green-intense-fg ansi-bold">    252</span> ) -&gt; Result:
-<span class="ansi-green-fg">--&gt; 253</span>     result = conn.execute(
-<span class="ansi-green-intense-fg ansi-bold">    254</span>         statement, params or {}, execution_options=execution_options
-<span class="ansi-green-intense-fg ansi-bold">    255</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    256</span>     return cls.orm_setup_cursor_result(
-<span class="ansi-green-intense-fg ansi-bold">    257</span>         session,
-<span class="ansi-green-intense-fg ansi-bold">    258</span>         statement,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    262</span>         result,
-<span class="ansi-green-intense-fg ansi-bold">    263</span>     )
+<div class="output_area">
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1414</span>, in <span class="ansi-cyan-fg">Connection.execute</span><span class="ansi-blue-fg">(self, statement, parameters, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1412</span>     raise exc.ObjectNotExecutableError(statement) from err
-<span class="ansi-green-intense-fg ansi-bold">   1413</span> else:
-<span class="ansi-green-fg">-&gt; 1414</span>     return meth(
-<span class="ansi-green-intense-fg ansi-bold">   1415</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1416</span>         distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1417</span>         execution_options or NO_OPTIONS,
-<span class="ansi-green-intense-fg ansi-bold">   1418</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py:486</span>, in <span class="ansi-cyan-fg">ClauseElement._execute_on_connection</span><span class="ansi-blue-fg">(self, connection, distilled_params, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    484</span>     if TYPE_CHECKING:
-<span class="ansi-green-intense-fg ansi-bold">    485</span>         assert isinstance(self, Executable)
-<span class="ansi-green-fg">--&gt; 486</span>     return connection._execute_clauseelement(
-<span class="ansi-green-intense-fg ansi-bold">    487</span>         self, distilled_params, execution_options
-<span class="ansi-green-intense-fg ansi-bold">    488</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    489</span> else:
-<span class="ansi-green-intense-fg ansi-bold">    490</span>     raise exc.ObjectNotExecutableError(self)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1638</span>, in <span class="ansi-cyan-fg">Connection._execute_clauseelement</span><span class="ansi-blue-fg">(self, elem, distilled_parameters, execution_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1626</span> compiled_cache: Optional[CompiledCacheType] = execution_options.get(
-<span class="ansi-green-intense-fg ansi-bold">   1627</span>     "compiled_cache", self.engine._compiled_cache
-<span class="ansi-green-intense-fg ansi-bold">   1628</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1630</span> compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
-<span class="ansi-green-intense-fg ansi-bold">   1631</span>     dialect=dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1632</span>     compiled_cache=compiled_cache,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1636</span>     linting=self.dialect.compiler_linting | compiler.WARN_LINTING,
-<span class="ansi-green-intense-fg ansi-bold">   1637</span> )
-<span class="ansi-green-fg">-&gt; 1638</span> ret = self._execute_context(
-<span class="ansi-green-intense-fg ansi-bold">   1639</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1640</span>     dialect.execution_ctx_cls._init_compiled,
-<span class="ansi-green-intense-fg ansi-bold">   1641</span>     compiled_sql,
-<span class="ansi-green-intense-fg ansi-bold">   1642</span>     distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1643</span>     execution_options,
-<span class="ansi-green-intense-fg ansi-bold">   1644</span>     compiled_sql,
-<span class="ansi-green-intense-fg ansi-bold">   1645</span>     distilled_parameters,
-<span class="ansi-green-intense-fg ansi-bold">   1646</span>     elem,
-<span class="ansi-green-intense-fg ansi-bold">   1647</span>     extracted_params,
-<span class="ansi-green-intense-fg ansi-bold">   1648</span>     cache_hit=cache_hit,
-<span class="ansi-green-intense-fg ansi-bold">   1649</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1650</span> if has_events:
-<span class="ansi-green-intense-fg ansi-bold">   1651</span>     self.dispatch.after_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1652</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1653</span>         elem,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1657</span>         ret,
-<span class="ansi-green-intense-fg ansi-bold">   1658</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1842</span>, in <span class="ansi-cyan-fg">Connection._execute_context</span><span class="ansi-blue-fg">(self, dialect, constructor, statement, parameters, execution_options, *args, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1837</span>     return self._exec_insertmany_context(
-<span class="ansi-green-intense-fg ansi-bold">   1838</span>         dialect,
-<span class="ansi-green-intense-fg ansi-bold">   1839</span>         context,
-<span class="ansi-green-intense-fg ansi-bold">   1840</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1841</span> else:
-<span class="ansi-green-fg">-&gt; 1842</span>     return self._exec_single_context(
-<span class="ansi-green-intense-fg ansi-bold">   1843</span>         dialect, context, statement, parameters
-<span class="ansi-green-intense-fg ansi-bold">   1844</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1983</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1980</span>     result = context._setup_result_proxy()
-<span class="ansi-green-intense-fg ansi-bold">   1982</span> except BaseException as e:
-<span class="ansi-green-fg">-&gt; 1983</span>     self._handle_dbapi_exception(
-<span class="ansi-green-intense-fg ansi-bold">   1984</span>         e, str_statement, effective_parameters, cursor, context
-<span class="ansi-green-intense-fg ansi-bold">   1985</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1987</span> return result
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:2326</span>, in <span class="ansi-cyan-fg">Connection._handle_dbapi_exception</span><span class="ansi-blue-fg">(self, e, statement, parameters, cursor, context, is_sub_exec)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2324</span> elif should_wrap:
-<span class="ansi-green-intense-fg ansi-bold">   2325</span>     assert sqlalchemy_exception is not None
-<span class="ansi-green-fg">-&gt; 2326</span>     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-<span class="ansi-green-intense-fg ansi-bold">   2327</span> else:
-<span class="ansi-green-intense-fg ansi-bold">   2328</span>     assert exc_info[1] is not None
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:1964</span>, in <span class="ansi-cyan-fg">Connection._exec_single_context</span><span class="ansi-blue-fg">(self, dialect, context, statement, parameters)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1962</span>                 break
-<span class="ansi-green-intense-fg ansi-bold">   1963</span>     if not evt_handled:
-<span class="ansi-green-fg">-&gt; 1964</span>         self.dialect.do_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1965</span>             cursor, str_statement, effective_parameters, context
-<span class="ansi-green-intense-fg ansi-bold">   1966</span>         )
-<span class="ansi-green-intense-fg ansi-bold">   1968</span> if self._has_events or self.engine._has_events:
-<span class="ansi-green-intense-fg ansi-bold">   1969</span>     self.dispatch.after_cursor_execute(
-<span class="ansi-green-intense-fg ansi-bold">   1970</span>         self,
-<span class="ansi-green-intense-fg ansi-bold">   1971</span>         cursor,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1975</span>         context.executemany,
-<span class="ansi-green-intense-fg ansi-bold">   1976</span>     )
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:748</span>, in <span class="ansi-cyan-fg">DefaultDialect.do_execute</span><span class="ansi-blue-fg">(self, cursor, statement, parameters, context)</span>
-<span class="ansi-green-intense-fg ansi-bold">    747</span> def do_execute(self, cursor, statement, parameters, context=None):
-<span class="ansi-green-fg">--&gt; 748</span>     cursor.execute(statement, parameters)
-
-<span class="ansi-red-fg">OperationalError</span>: (sqlite3.OperationalError) no such column: users._company
-[SQL: SELECT users.id AS users_id, users._company AS users__company, users._model AS users__model, users._price AS users__price, users._dob AS users__dob 
-FROM users]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>User with uid --S22-- has been deleted. 
+[{'id': 1, 'company': 'Apple', 'model': 'iPhone 14', 'price': '200', 'dob': '03-20-2023', 'age': 0}, {'id': 2, 'company': 'Apple', 'model': 'iPhone 14 Pro', 'price': '150', 'dob': '03-20-2023', 'age': 0}, {'id': 3, 'company': 'Samsung', 'model': 'Galaxy S23', 'price': '100', 'dob': '03-20-2023', 'age': 0}, {'id': 4, 'company': 'LG', 'model': 'Wing', 'price': '300', 'dob': '03-20-2023', 'age': 0}, {'id': 5, 'company': 'Motorola', 'model': 'Razr', 'price': '250', 'dob': '03-20-2023', 'age': 0}, {'id': 6, 'company': 'Google', 'model': 'Pixel 7', 'price': '50', 'dob': '03-20-2023', 'age': 0}]
+</pre>
 </div>
 </div>
 
