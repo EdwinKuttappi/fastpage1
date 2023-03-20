@@ -11,8 +11,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the second lesson that talks about using programs with Data and SQL based around Big Idea 2.4" />
 <meta property="og:description" content="This is the second lesson that talks about using programs with Data and SQL based around Big Idea 2.4" />
-<link rel="canonical" href="https://edwinkuttappi.github.io/fastpage1/week25/tri3/2023/03/16/AP-unit2-4b.html" />
-<meta property="og:url" content="https://edwinkuttappi.github.io/fastpage1/week25/tri3/2023/03/16/AP-unit2-4b.html" />
+<link rel="canonical" href="https://edwinkuttappi.github.io/fastpage1/week26/tri3/2023/03/16/AP-unit2-4b.html" />
+<meta property="og:url" content="https://edwinkuttappi.github.io/fastpage1/week26/tri3/2023/03/16/AP-unit2-4b.html" />
 <meta property="og:site_name" content="Edwin’s Blog" />
 <meta property="og:image" content="https://edwinkuttappi.github.io/fastpage1/images/compressimage.jpg" />
 <meta property="og:type" content="article" />
@@ -21,7 +21,7 @@
 <meta property="twitter:image" content="https://edwinkuttappi.github.io/fastpage1/images/compressimage.jpg" />
 <meta property="twitter:title" content="Using Programs with Data and SQL" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Abraham"},"dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"This is the second lesson that talks about using programs with Data and SQL based around Big Idea 2.4","headline":"Using Programs with Data and SQL","image":"https://edwinkuttappi.github.io/fastpage1/images/compressimage.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week25/tri3/2023/03/16/AP-unit2-4b.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week25/tri3/2023/03/16/AP-unit2-4b.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Abraham"},"dateModified":"2023-03-16T00:00:00-05:00","datePublished":"2023-03-16T00:00:00-05:00","description":"This is the second lesson that talks about using programs with Data and SQL based around Big Idea 2.4","headline":"Using Programs with Data and SQL","image":"https://edwinkuttappi.github.io/fastpage1/images/compressimage.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week26/tri3/2023/03/16/AP-unit2-4b.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week26/tri3/2023/03/16/AP-unit2-4b.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpage1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://edwinkuttappi.github.io/fastpage1/feed.xml" title="Edwin's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpage1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -84,14 +84,14 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-          <a class="category-tags-link" href="/fastpage1/categories/ap#week25">week25</a>
+          <a class="category-tags-link" href="/fastpage1/categories/ap#week26">week26</a>
         
         &nbsp;
       
@@ -628,11 +628,23 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>In this implementation, do you see procedural abstraction?</li>
-<li>In 2.4a or 2.4b lecture<ul>
-<li>Do you see data abstraction?  Complement this with Debugging example.</li>
-<li>Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.</li>
+<li>[x] Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
+<li>[x] In this implementation, do you see procedural abstraction?<ul>
+<li>By looking at CollegeBoard's procedural abstraction definition, but it refers to the concept of breaking down a program into a set of code blocks or functions that perform specific tasks</li>
+<li>These procedures or functions can be called from various parts of the program as needed, without the calling code having to know the internal details of how the function works. </li>
+<li>Procedural abstraction can be used in this implementation, as there are separate functions for creating, reading, updating, and deleting user records in the database. The menu function acts as a controller that allows the user to choose which operation they want to perform</li>
+<li>For example, in the create() function, it prompts the user to enter the required details, connects to the database, creates a cursor object, executes an SQL command to insert the data into the database, and then closes the cursor and connection objects. This entire process occurs by calling the create() function</li>
+<li>Overall, since there are multiple functions with specific tasks included in this implementation, there is definitely procedural abstraction being used here</li>
+</ul>
+</li>
+<li>[x] In 2.4a or 2.4b lecture<ul>
+<li>Do you see data abstraction?  Complement this with Debugging example.<ul>
+<li>Recalling the College Board criteria, data abstraction is essentially representing something (i.e a program) in a much more simplified, condensed method while hiding its more internal functions</li>
+<li>Looking at this implementation, I do see data abstraction in this implementation. The implementation hides the details of the underlying database operations from the user, providing a simple interface for performing basic CRUD (Create, Read, Update, Delete) operations</li>
+<li>Regarding debugging, one possible example is if the user enters invalid input (e.g., a non-existent uid when updating or deleting a user). An example would be the implementation catches the exception raised by the database operation and prints an error message to the user</li>
+<li>The error message provides a high-level explanation of the problem ("No uid was found in the table"), without revealing the underlying implementation details. This is an example of data abstraction, as the implementation is hiding the details of the database operation (in this case, the SQL query) from the user and providing a simplified, high-level interface for working with the data.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -653,7 +665,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/fastpage1/week25/tri3/2023/03/16/AP-unit2-4b.html" hidden></a>
+</script><a class="u-url" href="/fastpage1/week26/tri3/2023/03/16/AP-unit2-4b.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
