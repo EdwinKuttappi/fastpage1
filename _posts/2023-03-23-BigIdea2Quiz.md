@@ -6,7 +6,7 @@ author: Edwin Abraham
 title: Reflection on the Trimester 2 Final Exam
 description: On February 27th, our Final Exam for Trimester 2 was opened and it was a Multiple Choice Test on CollegeBoard with 50 Questions and this is my reflection as well as any test corrections
 image: /images/codecodecode.png
-categories: [tri3, week25]
+categories: [tri3, week27]
 ---
 
 # Taking the Multiple Choice Test
@@ -30,44 +30,45 @@ I can take a look at the notes I took for each section, especially from the ones
 ## Question 17
 **Topic 2.4**: Using Programs with Data
 
-**Explanation** for Wrong Answer: A, this option is incorrect. Statement III is also correct because under Creative Commons the author can stipulate what kind of modification is allowed by users.
+**Explanation** for Wrong Answer: B, This information can be determined using the data collected, but not the way described in this option. One way to determine the method of payment that was used in the greatest number of transactions during the 7-day period is to sort the data by the method of payment as described. Instead of adding the number of items purchased for each type of payment, a count of each payment type needs to be computed. If the counts are stored in a new field, then the counts can be sorted to find the method of payment used in the greatest number of transactions.
 
-**Explanation** for Correct Answer: C, this option is correct. Statement I is correct because the Creative Commons license is designed to increase the amount of content available to the public for free. Statement III is correct because under Creative Commons the author can stipulate what kind of modification is allowed by users.
+**Explanation** for Correct Answer: D, For each transaction, the data includes the date of the transaction and the number of items purchased in the transaction. By searching the data to find all transactions that occurred on the given date, and then adding the number of items purchased in each of those transactions, the total number of items purchased on a given date can be determined.
 
 ![]({{ site.baseurl }}/images/bigidea2question17.png)
 
 ## Question 21
 **Topic 2.4**: Using Programs with Data
 
-**Explanation** for Wrong Answer: C, this option is incorrect. Compression techniques are not used in the addition of numbers.
+**Explanation** for Wrong Answer: B and C, Filtering by photographer will remove any entries with unknown photographers. Filtering by year will remove any entries with unknown years. Sorting by year will sort the remaining entries in column C from least to greatest, putting the photograph with the lowest year value in the first row of the spreadsheet. This sequence of steps does not remove any entries with an unknown year, so the entry in the first row of the spreadsheet will have a year value of -1.
 
-**Explanation** for Correct Answer: A, this option is correct. The binary representations (in 3 bits) of 5 and 3 are 101 and 011, respectively. If these numbers are added, the result would be 1000. Since only 3 bits are used to represent integers in this example, the result would be stored as 000. This is an example of overflow error.
+**Explanation** for Correct Answer: B and D, Filtering by photographer will remove any entries with unknown photographers. Filtering by year will remove any entries with unknown years. Sorting by year will sort the remaining entries in column C from least to greatest, putting the photograph with the lowest year value in the first row of the spreadsheet. Sorting by year will sort the spreadsheet on column C from least to greatest. Filtering by year will remove any entries with unknown years. Filtering by photographer will remove any entries with unknown photographers. Since the order of the entries is not affected by the filters, the photograph with the lowest year value will be in the first row of the spreadsheet.
 
 ![]({{ site.baseurl }}/images/bigidea2question21.png)
 
 ## Question 23
 **Topic 2.4**: Using Programs with Data
 
-**Explanation** for Wrong Answer: B, this option is correct. The binary representations (in 3 bits) of 5 and 3 are 101 and 011, respectively. If these numbers are added, the result would be 1000. Since only 3 bits are used to represent integers in this example, the result would be stored as 000. This is an example of overflow error.
+**Explanation** for Wrong Answer: N/A, To be counted, a show must be a talk show that airs on Saturday or Sunday. Therefore, the AND operator should be used instead of the first OR operator. To be counted, a show must be a talk show that is on Saturday or Sunday. Therefore, the AND operator should be used instead of the first OR operator. In addition, it is not possible for day to be equal to both "Saturday" and "Sunday", so the AND operator should be an OR operator. It is not possible for day to be equal to both "Saturday" and "Sunday", so the second AND operator should be an OR operator.
 
-**Explanation** for Correct Answer: A, correct. If scoreA is greater than both scoreB and scoreC (the first two IF clauses), then Team A wins. If scoreA is greater than scoreB but not greater than scoreC, then scoreC is greater than both scoreA and scoreB and Team C wins. If scoreB is greater than scoreA (the outer ELSE clause) and scoreC (the IF clause in the outer ELSE), then Team B wins. If scoreB is greater than scoreA but not greater than scoreC, then scoreC is greater than both scoreA and scoreB and Team C wins.
-
+**Explanation** for Correct Answer: B, For a show to be counted, the value of genre must be "talk" and the value of day must be "Saturday" or "Sunday".
 ![]({{ site.baseurl }}/images/bigidea2question23.png)
 
 ## Question 24
 **Topic 2.1**: Binary Numbers
 
-**Explanation** for Wrong Answer: B and D, incorrect. As the size of the list grows, the number of steps needed to sort the list grows at an exponential rate, as the number of steps is equal to 2n for a list of size n. This indicates that the algorithm does not run in a reasonable amount of time.
+**Explanation** for Wrong Answer: N/A, I did not answer this question because I forgot to finish the quiz and the quiz automatically submitted for me. If I did answer this question, I am pretty sure that I would have got it right because I can just change the binary number into decimal, and then add one, and find the binary number of that.
 
-**Explanation** for Correct Answer: A and D, correct. As the size of the list grows, the number of steps needed to sort the list grows at a linear rate, as the number of steps is equal to 10n for a list of size n. This is an example of a polynomial efficiency and indicates that the algorithm runs in a reasonable amount of time.The number of steps for this algorithm is equal to the length of the list squared, as the number of steps is equal to n2 for a list of size n. This is an example of a polynomial efficiency and indicates that the algorithm runs in a reasonable amount of time.
+**Explanation** for Correct Answer: A, the answer should be 1001 0100 because the ID of the previous student is 1001 0011 which converts to 147, and then we add one because that is the ID of the next student, so that is 148. The binary number of 148 is 1001 0100, and this is what Option A is.
 ![]({{ site.baseurl }}/images/bigidea2question24.png)
 
 ## Question 25
 **Topic 2.1**: Binary Numbers
 
-**Explanation** for Wrong Answer: B and D, incorrect. As the size of the list grows, the number of steps needed to sort the list grows at an exponential rate, as the number of steps is equal to 2n for a list of size n. This indicates that the algorithm does not run in a reasonable amount of time.
+**Explanation** for Wrong Answer: N/A, Appending three 0s to a decimal number multiplies it by 1,000. Appending three 0s to the end of a binary number multiplies it by 23. Incorrect. Appending three 0s to the end of a binary number multiplies it by 23, not by 4. Appending three 0s to the end of a binary number multiplies it by 23, not by 3.
 
-**Explanation** for Correct Answer: A and D, correct. As the size of the list grows, the number of steps needed to sort the list grows at a linear rate, as the number of steps is equal to 10n for a list of size n. This is an example of a polynomial efficiency and indicates that the algorithm runs in a reasonable amount of time.The number of steps for this algorithm is equal to the length of the list squared, as the number of steps is equal to n2 for a list of size n. This is an example of a polynomial efficiency and indicates that the algorithm runs in a reasonable amount of time.
+**Explanation** for Correct Answer: C, Appending a 0 to the end of a binary number multiplies the number by 2. Therefore, appending three 0s to the end of a binary number multiples the number by 2 three times, which is the same as multiplying the number by 8.
+
+
 ![]({{ site.baseurl }}/images/bigidea2question25.png)
 
 # Confusing Problems
