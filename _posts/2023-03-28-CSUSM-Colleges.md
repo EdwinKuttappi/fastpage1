@@ -1,5 +1,5 @@
 ---
-toc: True
+toc: true
 author: Edwin Abraham
 layout: post
 title: CSUSM College Majors Talk
