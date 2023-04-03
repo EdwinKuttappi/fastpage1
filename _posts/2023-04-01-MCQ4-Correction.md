@@ -14,7 +14,7 @@ We were assigned a 50 Question Multiple Choice Test in preparation for the AP Ex
 # Test Corrections
 After I submitted the test, I got a 43/50 (86%), and I was surprised that I only got seven problems wrong, most of the questions were easy but I did not know how to answer them some of them. I did get an B, but I should also work on improving those other concepts. This means I should work harder towards trying to understand why I got these questions wrong and remember them. Whenever I got questions wrong, they were usually from the same skill showing that I could use some practice in specific skills. 
 
-![]({{ site.baseurl }}/images/tri2final.png)
+![]({{ site.baseurl }}/images/mcq4.png)
 
 1.A: 1/3 (33.3%)
 
