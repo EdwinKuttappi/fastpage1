@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -184,12 +184,13 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>  
 
 <span class="c1"># What do you notice in the output?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># prints out each unique number only once</span>
+<span class="c1"># does not print out the extra 2 or 1</span>
+<span class="c1"># no duplicates</span>
 
 <span class="c1"># Why do you think Sets are in the same tech talk as Hashmaps/Hashtables?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># it involves storing data using some data structure (dictionary, list, etc.)</span>
+<span class="c1"># Hashmaps/hashtables are also another kind of data structure</span>
 </pre></div>
 
     </div>
@@ -259,8 +260,8 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="c1"># What data structures do you see?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># dictionary for tracks</span>
+<span class="c1"># list for the genre</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -337,6 +338,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The Man
+The Man
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -350,14 +366,28 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">]</span>
 
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># remove the extra taylor swift</span>
+<span class="c1"># make the list into a set using the set function</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -374,14 +404,30 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">19</span><span class="p">:</span> <span class="s2">"All Of The Girls You Loved Before"</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
-<span class="c1"># </span>
+<span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"electropop"</span><span class="p">)</span>
 <span class="c1"># </span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop', 'electropop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+['Pop', 'Synth-pop', 'electropop']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -395,15 +441,47 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
 
 <span class="c1"># Write your own code to print tracks in readable format</span>
 <span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1">#   </span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1: I Forgot That You Existed
+2: Cruel Summer
+3: Lover
+4: The Man
+5: The Archer
+6: I Think He Knows
+7: Miss Americana &amp; The Heartbreak Prince
+8: Paper Rings
+9: Cornelia Street
+10: Death By A Thousand Cuts
+11: London Boy
+12: Soon You'll Get Better (feat. Dixie Chicks)
+13: False God
+14: You Need To Calm Down
+15: Afterglow
+16: Me! (feat. Brendon Urie of Panic! At The Disco)
+17: It's Nice To Have A Friend
+18: Daylight
+19: All Of The Girls You Loved Before
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -427,8 +505,7 @@ window.onload = wrap_img;
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># allow the user to try inputting something again after inputting something invalid</span>
 </pre></div>
 
     </div>
@@ -445,7 +522,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h2>
 <ul>
-<li>Answer <em>ALL</em> questions in the code segments</li>
+<li>[x] Answer <em>ALL</em> questions in the code segments</li>
 <li>Create a diagram or comparison illustration (Canva).<ul>
 <li>What are the pro and cons of using this data structure? </li>
 <li>Dictionary vs List    </li>
