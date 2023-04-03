@@ -116,7 +116,7 @@ This question was a complete guess because I had no idea what each one meant com
 ## Question 30
 ![]({{ site.baseurl }}/images/midtermquestion30.png)
 
-This question was very hard and I did not reallt understand what the question was asking and I had no idea what I had to do. I got this question right but I did not know why it was B and C, all I knew was that it was not A or D because the circles did not line up.
+This question was very hard and I did not really understand what the question was asking and I had no idea what I had to do. I got this question right but I did not know why it was B and C, all I knew was that it was not A or D because the circles did not line up.
 
 # Reflection on the Exam
 Overall, the test was pretty easy and I am happy with ny score, but I should try to get a higher score. If I paid attention a little more, I think I could have understood the questions a bit more I think I went through this test pretty slowly because I did not really understand each question and I had to read it a lot of times. I think I can do well on the AP Exam if I find out what exactly I need to do and keep reviewing the content, spend less time on each problem.
