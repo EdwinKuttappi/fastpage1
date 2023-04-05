@@ -22,6 +22,12 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.4a">2.4a<a class="anchor-link" href="#2.4a"> </a></h1>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -353,8 +359,8 @@ Records exist uid Pixel 7, or error.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Found
- {&#39;id&#39;: 11, &#39;company&#39;: &#39;Samsung&#39;, &#39;model&#39;: &#39;Galaxy S23 Plus&#39;, &#39;price&#39;: &#39;999&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}
+<pre>Created
+ {&#39;id&#39;: 19, &#39;company&#39;: &#39;&#39;, &#39;model&#39;: &#39;&#39;, &#39;price&#39;: &#39;&#39;, &#39;dob&#39;: &#39;03-24-2023&#39;, &#39;age&#39;: 0}
 </pre>
 </div>
 </div>
@@ -379,103 +385,10 @@ Records exist uid Pixel 7, or error.
     <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">phone</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">phone</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># each user adds user.read() to list</span>
     <span class="k">return</span> <span class="n">json_ready</span>
 
-<span class="n">read</span><span class="p">()</span>
+<span class="c1"># read()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{&#39;id&#39;: 1,
-  &#39;company&#39;: &#39;Apple&#39;,
-  &#39;model&#39;: &#39;iPhone 14&#39;,
-  &#39;price&#39;: &#39;200&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 2,
-  &#39;company&#39;: &#39;Apple&#39;,
-  &#39;model&#39;: &#39;iPhone 14 Pro&#39;,
-  &#39;price&#39;: &#39;150&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 3,
-  &#39;company&#39;: &#39;Samsung&#39;,
-  &#39;model&#39;: &#39;Galaxy S23&#39;,
-  &#39;price&#39;: &#39;100&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 4,
-  &#39;company&#39;: &#39;LG&#39;,
-  &#39;model&#39;: &#39;Wing&#39;,
-  &#39;price&#39;: &#39;300&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 5,
-  &#39;company&#39;: &#39;Motorola&#39;,
-  &#39;model&#39;: &#39;Razr&#39;,
-  &#39;price&#39;: &#39;250&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 6,
-  &#39;company&#39;: &#39;Google&#39;,
-  &#39;model&#39;: &#39;Pixel 7&#39;,
-  &#39;price&#39;: &#39;50&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 7,
-  &#39;company&#39;: &#39;Google&#39;,
-  &#39;model&#39;: &#39;Pixel 7 Pro&#39;,
-  &#39;price&#39;: &#39;899&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 8,
-  &#39;company&#39;: &#39;Samsung&#39;,
-  &#39;model&#39;: &#39;ZFold 4&#39;,
-  &#39;price&#39;: &#39;1999&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 9,
-  &#39;company&#39;: &#39;Samsung&#39;,
-  &#39;model&#39;: &#39;ZFlip 4&#39;,
-  &#39;price&#39;: &#39;999&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 10,
-  &#39;company&#39;: &#39;Apple&#39;,
-  &#39;model&#39;: &#39;iPhone 14 Plus&#39;,
-  &#39;price&#39;: &#39;899&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 11,
-  &#39;company&#39;: &#39;Samsung&#39;,
-  &#39;model&#39;: &#39;Galaxy S23 Plus&#39;,
-  &#39;price&#39;: &#39;999&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 12,
-  &#39;company&#39;: &#39;Apple&#39;,
-  &#39;model&#39;: &#39;iPhone 14 Pro Max&#39;,
-  &#39;price&#39;: &#39;1099&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0},
- {&#39;id&#39;: 13,
-  &#39;company&#39;: &#39;Samsung&#39;,
-  &#39;model&#39;: &#39;Galaxy S23 Ultra&#39;,
-  &#39;price&#39;: &#39;1199&#39;,
-  &#39;dob&#39;: &#39;03-20-2023&#39;,
-  &#39;age&#39;: 0}]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -514,8 +427,7 @@ Records exist uid Pixel 7, or error.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>User with uid --Galaxy S23 Plus-- has been deleted. 
-[{&#39;id&#39;: 1, &#39;company&#39;: &#39;Apple&#39;, &#39;model&#39;: &#39;iPhone 14&#39;, &#39;price&#39;: &#39;200&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 2, &#39;company&#39;: &#39;Apple&#39;, &#39;model&#39;: &#39;iPhone 14 Pro&#39;, &#39;price&#39;: &#39;150&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 3, &#39;company&#39;: &#39;Samsung&#39;, &#39;model&#39;: &#39;Galaxy S23&#39;, &#39;price&#39;: &#39;100&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 4, &#39;company&#39;: &#39;LG&#39;, &#39;model&#39;: &#39;Wing&#39;, &#39;price&#39;: &#39;300&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 5, &#39;company&#39;: &#39;Motorola&#39;, &#39;model&#39;: &#39;Razr&#39;, &#39;price&#39;: &#39;250&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 6, &#39;company&#39;: &#39;Google&#39;, &#39;model&#39;: &#39;Pixel 7&#39;, &#39;price&#39;: &#39;50&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 7, &#39;company&#39;: &#39;Google&#39;, &#39;model&#39;: &#39;Pixel 7 Pro&#39;, &#39;price&#39;: &#39;899&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 8, &#39;company&#39;: &#39;Samsung&#39;, &#39;model&#39;: &#39;ZFold 4&#39;, &#39;price&#39;: &#39;1999&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 9, &#39;company&#39;: &#39;Samsung&#39;, &#39;model&#39;: &#39;ZFlip 4&#39;, &#39;price&#39;: &#39;999&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}, {&#39;id&#39;: 10, &#39;company&#39;: &#39;Apple&#39;, &#39;model&#39;: &#39;iPhone 14 Plus&#39;, &#39;price&#39;: &#39;899&#39;, &#39;dob&#39;: &#39;03-20-2023&#39;, &#39;age&#39;: 0}]
+<pre>User with uid ---- has been deleted. 
 </pre>
 </div>
 </div>
@@ -526,6 +438,500 @@ Records exist uid Pixel 7, or error.
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.4b">2.4b<a class="anchor-link" href="#2.4b"> </a></h1>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;instance/sqlite.db&#39;</span> <span class="c1"># this is location of database</span>
+
+<span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
+    
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL queries</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="c1"># Fetch results of Schema</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;PRAGMA table_info(&#39;phones&#39;)&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="c1"># Close the database connection</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">schema</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, &#39;id&#39;, &#39;INTEGER&#39;, 1, None, 1)
+(1, &#39;_company&#39;, &#39;VARCHAR(255)&#39;, 1, None, 0)
+(2, &#39;_model&#39;, &#39;VARCHAR(255)&#39;, 1, None, 0)
+(3, &#39;_price&#39;, &#39;VARCHAR(255)&#39;, 1, None, 0)
+(4, &#39;_dob&#39;, &#39;DATE&#39;, 0, None, 0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL queries</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM phones&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Table is empty&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">read</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, &#39;Apple&#39;, &#39;iPhone 14&#39;, &#39;799&#39;, &#39;2023-03-20&#39;)
+(2, &#39;Apple&#39;, &#39;iPhone 14 Pro&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(3, &#39;Samsung&#39;, &#39;Galaxy S23&#39;, &#39;799&#39;, &#39;2023-03-20&#39;)
+(4, &#39;LG&#39;, &#39;Wing&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(5, &#39;Motorola&#39;, &#39;Razr&#39;, &#39;1399&#39;, &#39;2023-03-20&#39;)
+(6, &#39;Google&#39;, &#39;Pixel 7&#39;, &#39;599&#39;, &#39;2023-03-20&#39;)
+(7, &#39;Google&#39;, &#39;Pixel 7 Pro&#39;, &#39;899&#39;, &#39;2023-03-20&#39;)
+(8, &#39;Samsung&#39;, &#39;ZFold 4&#39;, &#39;1999&#39;, &#39;2023-03-20&#39;)
+(9, &#39;Samsung&#39;, &#39;ZFlip 4&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(10, &#39;Apple&#39;, &#39;iPhone 14 Plus&#39;, &#39;899&#39;, &#39;2023-03-20&#39;)
+(11, &#39;Samsung&#39;, &#39;Galaxy S23 Plus&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(12, &#39;Apple&#39;, &#39;iPhone 14 Pro Max&#39;, &#39;1099&#39;, &#39;2023-03-20&#39;)
+(13, &#39;Samsung&#39;, &#39;Galaxy S23 Ultra&#39;, &#39;1199&#39;, &#39;2023-03-20&#39;)
+(14, &#39;Apple&#39;, &#39;iPhone X&#39;, &#39;999&#39;, None)
+(15, &#39;Google&#39;, &#39;Pixel 6&#39;, &#39;599&#39;, None)
+(16, &#39;Google&#39;, &#39;Pixel 6 Pro&#39;, &#39;899&#39;, None)
+(17, &#39;Apple&#39;, &#39;iPhone XR&#39;, &#39;749&#39;, &#39;2023-03-22&#39;)
+(18, &#39;Samsung&#39;, &#39;Galaxy S22&#39;, &#39;799&#39;, None)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
+    <span class="n">company</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the company:&quot;</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the phone model:&quot;</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the price&quot;</span><span class="p">)</span>
+    <span class="c1"># dob = input(&quot;Enter your date of birth &#39;YYYY-MM-DD&#39;&quot;)</span>
+    
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to insert data into a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO phones (_company, _model, _price) VALUES (?, ?, ?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">company</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
+        
+        <span class="c1"># Commit the changes to the database</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A new smartphone record </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> has been created&quot;</span><span class="p">)</span>
+                
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error while executing the INSERT:&quot;</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">create</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new smartphone record  has been created
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter smartphone model to update&quot;</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter updated price&quot;</span><span class="p">)</span>
+    <span class="c1"># if len(password) &lt; 2:</span>
+    <span class="c1">#     message = &quot;hacked&quot;</span>
+    <span class="c1">#     password = &#39;gothackednewpassword123&#39;</span>
+    <span class="c1"># else:</span>
+    <span class="c1">#     message = &quot;successfully updated&quot;</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to update data in a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;UPDATE phones SET _price = ? WHERE _model = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">model</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># The uid was not found in the table</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No smartphone model called </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> was found in the table&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The row with </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> has been successfully updated with a price of </span><span class="si">{</span><span class="n">price</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error while executing the UPDATE:&quot;</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+        
+    
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">update</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with  has been successfully updated with a price of 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a smartphone model to delete&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL commands</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM phones WHERE _model = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">model</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># The uid was not found in the table</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No smartphone called </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> was found in the table&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># The uid was found in the table and the row was deleted</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The row with </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="s2"> was successfully deleted&quot;</span><span class="p">)</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error while executing the DELETE:&quot;</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+        
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="n">delete</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with  was successfully deleted
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+    <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span>
+        <span class="n">create</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+        <span class="n">read</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;u&#39;</span><span class="p">:</span>
+        <span class="n">update</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span>
+        <span class="n">delete</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;s&#39;</span><span class="p">:</span>
+        <span class="n">schema</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
+        <span class="k">return</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter c, r, u, d, or s&quot;</span><span class="p">)</span> 
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
+        
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># start menu</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perform Jupyter &#39;Run All&#39; prior to starting menu&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, &#39;Apple&#39;, &#39;iPhone 14&#39;, &#39;799&#39;, &#39;2023-03-20&#39;)
+(2, &#39;Apple&#39;, &#39;iPhone 14 Pro&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(3, &#39;Samsung&#39;, &#39;Galaxy S23&#39;, &#39;799&#39;, &#39;2023-03-20&#39;)
+(4, &#39;LG&#39;, &#39;Wing&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(5, &#39;Motorola&#39;, &#39;Razr&#39;, &#39;1399&#39;, &#39;2023-03-20&#39;)
+(6, &#39;Google&#39;, &#39;Pixel 7&#39;, &#39;599&#39;, &#39;2023-03-20&#39;)
+(7, &#39;Google&#39;, &#39;Pixel 7 Pro&#39;, &#39;899&#39;, &#39;2023-03-20&#39;)
+(8, &#39;Samsung&#39;, &#39;ZFold 4&#39;, &#39;1999&#39;, &#39;2023-03-20&#39;)
+(9, &#39;Samsung&#39;, &#39;ZFlip 4&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(10, &#39;Apple&#39;, &#39;iPhone 14 Plus&#39;, &#39;899&#39;, &#39;2023-03-20&#39;)
+(11, &#39;Samsung&#39;, &#39;Galaxy S23 Plus&#39;, &#39;999&#39;, &#39;2023-03-20&#39;)
+(12, &#39;Apple&#39;, &#39;iPhone 14 Pro Max&#39;, &#39;1099&#39;, &#39;2023-03-20&#39;)
+(13, &#39;Samsung&#39;, &#39;Galaxy S23 Ultra&#39;, &#39;1199&#39;, &#39;2023-03-20&#39;)
+(14, &#39;Apple&#39;, &#39;iPhone X&#39;, &#39;999&#39;, None)
+(15, &#39;Google&#39;, &#39;Pixel 6&#39;, &#39;599&#39;, None)
+(16, &#39;Google&#39;, &#39;Pixel 6 Pro&#39;, &#39;899&#39;, None)
+(17, &#39;Apple&#39;, &#39;iPhone XR&#39;, &#39;749&#39;, &#39;2023-03-22&#39;)
+(18, &#39;Samsung&#39;, &#39;Galaxy S22&#39;, &#39;799&#39;, None)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Extra">Extra<a class="anchor-link" href="#Extra"> </a></h1>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;reference https://www.sqlitetutorial.net/sqlite-python/sqlite-python-select/&#39;&#39;&#39;</span>
+<span class="sd">&#39;&#39;&#39;reference https://stackoverflow.com/questions/65401038/python-sqlite3-print-specific-data-only-from-row&#39;&#39;&#39;</span>
+<span class="sd">&#39;&#39;&#39;reference https://www.sqlitetutorial.net/sqlite-select/&#39;&#39;&#39;</span>
+<span class="sd">&#39;&#39;&#39;reference https://www.quackit.com/sqlite/tutorial/select_data.cfm&#39;&#39;&#39;</span>
+<span class="sd">&#39;&#39;&#39;reference https://pynative.com/python-sqlite-select-from-table/&#39;&#39;&#39;</span>
+
+<span class="c1"># !CODE SEGMENT 1</span>
+
+<span class="c1"># def find():</span>
+<span class="c1">#     findCompany = input(&quot;Enter the Name of the Company You Want to Find&quot;)</span>
+<span class="c1">#     if findCompany.lower() == &#39;Apple&#39;:</span>
+<span class="c1">#         print()</span>
+<span class="c1">#         AppleResults = cursor.execute(&quot;PRAGMA table_info(&#39;phones&#39;)&quot;).fetch(_company)</span>
+
+<span class="c1"># !CODE SEGMENT 2</span>
+
+<span class="c1"># import sqlite3</span>
+
+
+<span class="c1"># database = &#39;instance/sqlite.db&#39; # this is location of database</span>
+
+<span class="c1">#     # Connect to the database file</span>
+<span class="c1"># def GetData():</span>
+<span class="c1">#     conn= sqlite3.connect(database)</span>
+<span class="c1">#     cursor = conn.cursor()</span>
+<span class="c1">#     query = (&quot;&quot;&quot;SELECT _company FROM phones WHERE _company = &#39;Apple&#39;&quot;&quot;&quot;)</span>
+<span class="c1">#     cursor.execute(query)</span>
+<span class="c1">#     data = cursor.fetchmany()</span>
+<span class="c1">#     print(data)</span>
+<span class="c1"># GetData()</span>
+
+<span class="c1"># import sqlite3</span>
+<span class="c1"># from sqlite3 import Error</span>
+
+<span class="c1"># !CODE SEGMENT 3</span>
+
+<span class="c1"># def create_connection(db_file):</span>
+<span class="c1">#     &quot;&quot;&quot; create a database connection to a SQLite database &quot;&quot;&quot;</span>
+<span class="c1">#     conn = None</span>
+<span class="c1">#     try:</span>
+<span class="c1">#         conn = sqlite3.connect(db_file)</span>
+<span class="c1">#         print(sqlite3.version)</span>
+<span class="c1">#     except Error as e:</span>
+<span class="c1">#         print(e)</span>
+<span class="c1">#     finally:</span>
+<span class="c1">#         if conn:</span>
+<span class="c1">#             conn.close()</span>
+
+<span class="c1"># if __name__ == &#39;__main__&#39;:</span>
+<span class="c1">#     create_connection(r&quot;///sqlite.db&quot;)</span>
+
+<span class="k">def</span> <span class="nf">find_by_company</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">company</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="n">company</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Input a company&quot;</span><span class="p">)</span>
+        <span class="n">phone</span> <span class="o">=</span> <span class="n">Phone</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_company</span><span class="o">=</span><span class="n">company</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">phone</span> <span class="c1"># returns user object</span>
+<span class="n">Phone</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb Cell 18</span> in <span class="ansi-cyan-fg">&lt;cell line: 57&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=54&#39;&gt;55&lt;/a&gt;</span>         phone = Phone.query.filter_by(_company=company).first()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=55&#39;&gt;56&lt;/a&gt;</span>     return phone # returns user object
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-03-18-DatabaseTrial.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=56&#39;&gt;57&lt;/a&gt;</span> Phone.read()
+
+<span class="ansi-red-fg">TypeError</span>: read() missing 1 required positional argument: &#39;self&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://raw.githubusercontent.com/EdwinKuttappi/fastpage1/master/images/selectmetadata.png" alt="SQLiteplan"></p>
+
+</div>
+</div>
+</div>
 </div>
  
 
