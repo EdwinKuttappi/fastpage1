@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      19 min read
     
 </span></p>
 
@@ -381,6 +381,21 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total plate appearances: 21
+On-base percentage: 0.857
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -424,6 +439,23 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The 25th percentile height is 192.5 cm.
+The 50th percentile height is 198.0 cm.
+The 75th percentile height is 202.0 cm.
+There are 2 players in the top 10% tallest.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -455,6 +487,66 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb Cell 18</span> in <span class="ansi-cyan-fg">&lt;cell line: 9&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> x = np.array([])
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> # Calculate the percentile rank of x
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> y = np.percentile(x, [1,2,3])
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> # Print the results
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X23sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> print("", percentiles[0], "")
+
+File <span class="ansi-green-fg">&lt;__array_function__ internals&gt;:5</span>, in <span class="ansi-cyan-fg">percentile</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/function_base.py:3867</span>, in <span class="ansi-cyan-fg">percentile</span><span class="ansi-blue-fg">(a, q, axis, out, overwrite_input, interpolation, keepdims)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3865</span> if not _quantile_is_valid(q):
+<span class="ansi-green-intense-fg ansi-bold">   3866</span>     raise ValueError("Percentiles must be in the range [0, 100]")
+<span class="ansi-green-fg">-&gt; 3867</span> return _quantile_unchecked(
+<span class="ansi-green-intense-fg ansi-bold">   3868</span>     a, q, axis, out, overwrite_input, interpolation, keepdims)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/function_base.py:3986</span>, in <span class="ansi-cyan-fg">_quantile_unchecked</span><span class="ansi-blue-fg">(a, q, axis, out, overwrite_input, interpolation, keepdims)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3983</span> def _quantile_unchecked(a, q, axis=None, out=None, overwrite_input=False,
+<span class="ansi-green-intense-fg ansi-bold">   3984</span>                         interpolation='linear', keepdims=False):
+<span class="ansi-green-intense-fg ansi-bold">   3985</span>     """Assumes that q is in [0, 1], and is an ndarray"""
+<span class="ansi-green-fg">-&gt; 3986</span>     r, k = _ureduce(a, func=_quantile_ureduce_func, q=q, axis=axis, out=out,
+<span class="ansi-green-intense-fg ansi-bold">   3987</span>                     overwrite_input=overwrite_input,
+<span class="ansi-green-intense-fg ansi-bold">   3988</span>                     interpolation=interpolation)
+<span class="ansi-green-intense-fg ansi-bold">   3989</span>     if keepdims:
+<span class="ansi-green-intense-fg ansi-bold">   3990</span>         return r.reshape(q.shape + k)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/function_base.py:3564</span>, in <span class="ansi-cyan-fg">_ureduce</span><span class="ansi-blue-fg">(a, func, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3561</span> else:
+<span class="ansi-green-intense-fg ansi-bold">   3562</span>     keepdim = (1,) * a.ndim
+<span class="ansi-green-fg">-&gt; 3564</span> r = func(a, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">   3565</span> return r, keepdim
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/function_base.py:4098</span>, in <span class="ansi-cyan-fg">_quantile_ureduce_func</span><span class="ansi-blue-fg">(***failed resolving arguments***)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4093</span> if np.issubdtype(a.dtype, np.inexact):
+<span class="ansi-green-intense-fg ansi-bold">   4094</span>     # may contain nan, which would sort to the end
+<span class="ansi-green-intense-fg ansi-bold">   4095</span>     ap.partition(concatenate((
+<span class="ansi-green-intense-fg ansi-bold">   4096</span>         indices_below.ravel(), indices_above.ravel(), [-1]
+<span class="ansi-green-intense-fg ansi-bold">   4097</span>     )), axis=0)
+<span class="ansi-green-fg">-&gt; 4098</span>     n = np.isnan(ap[-1])
+<span class="ansi-green-intense-fg ansi-bold">   4099</span> else:
+<span class="ansi-green-intense-fg ansi-bold">   4100</span>     # cannot contain nan
+<span class="ansi-green-intense-fg ansi-bold">   4101</span>     ap.partition(concatenate((
+<span class="ansi-green-intense-fg ansi-bold">   4102</span>         indices_below.ravel(), indices_above.ravel()
+<span class="ansi-green-intense-fg ansi-bold">   4103</span>     )), axis=0)
+
+<span class="ansi-red-fg">IndexError</span>: index -1 is out of bounds for axis 0 with size 0</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -569,6 +661,22 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'1.4.2'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -605,7 +713,7 @@ Pandas is like a helper that helps you to remember where each toy is located. So
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># Load the CSV file into a Pandas DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/Users/josh/Repository-1/nba_player_statistics.csv'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'/_notebooks/files/nba_player_statistics.csv'</span><span class="p">)</span>
 <span class="c1"># Filter the DataFrame to only include stats for a specific player (in this case, Jimmy Butler)</span>
 <span class="n">player_name</span> <span class="o">=</span> <span class="s1">'Jimmy Butler'</span>
 <span class="n">player_stats</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'NAME'</span><span class="p">]</span> <span class="o">==</span> <span class="n">player_name</span><span class="p">]</span>
@@ -615,6 +723,95 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb Cell 28</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X36sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X36sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> # Load the CSV file into a Pandas DataFrame
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X36sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> df = pd.read_csv('/_notebooks/files/nba_player_statistics.csv')
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X36sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> # Filter the DataFrame to only include stats for a specific player (in this case, Jimmy Butler)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X36sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> player_name = 'Jimmy Butler'
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
+<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
+<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
+<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
+<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
+<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
+<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
+<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
+<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
+<span class="ansi-green-intense-fg ansi-bold">    677</span> )
+<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
+<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
+<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
+<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
+<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
+<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
+<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
+<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
+<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
+<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
+<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
+<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
+<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
+<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
+<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
+<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
+<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
+<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
+<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
+<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
+<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
+<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
+<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
+<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
+<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
+<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
+<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
+<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
+<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
+<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
+<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
+<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
+<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
+<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/_notebooks/files/nba_player_statistics.csv'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -673,6 +870,94 @@ Pandas is like a helper that helps you to remember where each toy is located. So
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb Cell 31</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> df = pd.read_csv('/Users/josh/Repository-1/nba_player_statistics.csv')
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> # Load CSV file into a Pandas DataFrame
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/edwin/vscode/fastpage1/_notebooks/2023-04-25-group3lesson.ipynb#X42sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> player_name = input("Enter player name: ")
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
+<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
+<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
+<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
+<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
+<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
+<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
+<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
+<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
+<span class="ansi-green-intense-fg ansi-bold">    677</span> )
+<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
+<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
+<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
+<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
+<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
+<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
+<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
+<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
+<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
+<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
+<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
+<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
+<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
+<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
+<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
+<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
+<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
+<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
+<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
+<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
+<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
+<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
+<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
+<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
+<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
+<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
+<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
+<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
+<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
+<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
+<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
+<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
+<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
+<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/Users/josh/Repository-1/nba_player_statistics.csv'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
