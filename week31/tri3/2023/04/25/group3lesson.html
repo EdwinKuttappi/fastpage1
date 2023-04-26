@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      23 min read
     
 </span></p>
 
@@ -1051,7 +1051,10 @@ Standard Deviation Minutes:  12.844102823170283
 <a class="anchor" href="#Printing-a-CSV-File-(0.5)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Printing a CSV File (0.5)<a class="anchor-link" href="#Printing-a-CSV-File-(0.5)"> </a>
 </h4>
 <ul>
-<li>Use this link <a href="https://github.com/ali-ce/datasets">https://github.com/ali-ce/datasets</a> to select csv file of a topic you are interested in, or you may find one online.</li>
+<li>Use this link <a href="https://github.com/ali-ce/datasets">https://github.com/ali-ce/datasets</a> to select csv file of a topic you are interested in, or you may find one online.<ul>
+<li>Products.csv from CES 2015</li>
+</ul>
+</li>
 <li>Once you select your topic make sure it is a csv file and then you want to press on the button that says raw.</li>
 <li>After that copy that information and create a file with a name and .csv at the end and paste your information.</li>
 <li>Below is a start that you can use for your hacks.</li>
@@ -1084,12 +1087,388 @@ Standard Deviation Minutes:  12.844102823170283
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># read the CSV file</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"blank.csv"</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"files/Products.csv"</span><span class="p">)</span> <span class="c1">#.sort_values(by=['HQ'], ascending=False)</span>
 <span class="c1"># display the data in a table</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                                            Product  \
+0                                     iHealth Align   
+1                                           Pacif-i   
+2                                       SleepPhones   
+3                                       Ozbot Bit's   
+4                                              Noke   
+5                                   Quitbit Lighter   
+6                             The Eye Tribe Tracker   
+7                                     Swiftpoint GT   
+8                            Water Sensor and Valve   
+9                                  Narrative Clip 2   
+10                                        The Slate   
+11                                      Smart Socks   
+12                              ZUtA Pocket Printer   
+13                                      iCam HD Pro   
+14                               micoach Smart Ball   
+15                 Levitating Air2 Wireless Speaker   
+16                        QS1 Quantum Security Case   
+17             The 94Fifty Smart Sensoor Basketball   
+18                                         The Dash   
+19                                         Melomind   
+20                                     Baby Monitor   
+21                       Smart Home Security System   
+22                                      DroneMobile   
+23                                  Full HD 360 cam   
+24  Fidelio B5 Wireless Surround-on-Demand Soundbar   
+25                                        Haiku Fan   
+26                                          Scanify   
+27                                          IO HAWK   
+28                             Whirlpool HybridCare   
+29            Sony a7S Full Frame Mirrorless Camera   
+30                                      Elite SC-89   
+31                        Samsung 105-inch UN105S9B   
+32                                    WakaWaka Base   
+33                                          iKettle   
+34                                      Parrot RNB6   
+35                                  Connected Pedal   
+36                           Smart Mirror Prototype   
+37                                        NightHawk   
+38                                        Tao Chair   
+39                                     Food Printer   
+40                              Venue 8 7000 Series   
+41                                  Estelon Extreme   
+42                                            Quell   
+43                                          Rolkers   
+44                                   Snap Lightbulb   
+45                                        Baby Gigl   
+46                       Mercedes Benz F 015 Luxury   
+47                                 Qualcomm WiPower   
+48                 Multi-function Air light (Z-Air)   
+49                         Samsung Galaxy Note Edge   
+
+                                                Image  \
+0   http://www.cesweb.org/CES/media/2014/Innovatio...   
+1   http://bluemaestro.com/wp-content/uploads/2014...   
+2   http://www.sleepphones.com/sites/default/files...   
+3   http://www.ozobot.com/wp-content/uploads/revsl...   
+4   http://cdn.shopify.com/s/files/1/0276/6013/t/2...   
+5   https://www.filepicker.io/api/file/OTnMAeTcSf3...   
+6   http://www.cesweb.org/CES/media/2014/Innovatio...   
+7   http://www.cesweb.org/CES/media/2014/Innovatio...   
+8   https://s3.amazonaws.com/ksr/assets/002/097/89...   
+9   http://getnarrative.com/assets/images/clip-bla...   
+10  https://s3.amazonaws.com/ksr/assets/000/647/76...   
+11  http://cdn2.bigcommerce.com/n-d57o0b/jtyld/pro...   
+12  http://www.cesweb.org/CES/media/2014/Innovatio...   
+13  http://www.cesweb.org/CES/media/2014/Innovatio...   
+14  http://demandware.edgesuite.net/sits_pod14-adi...   
+15  http://i.dailymail.co.uk/i/pix/2015/01/05/246B...   
+16  https://www.vysk.com/images/qs1-product/QS1-Bl...   
+17  http://www.cesweb.org/CES/media/2014/Innovatio...   
+18  http://cdn.shopify.com/s/files/1/0393/7549/pro...   
+19  http://www.melomind.com/wp-content/uploads/201...   
+20  http://www.cesweb.org/CES/media/2014/Innovatio...   
+21  http://media.bestofmicro.com/F/V/472315/origin...   
+22  http://www.dronemobile.com/static/img/products...   
+23  https://s3.amazonaws.com/ksr/assets/002/033/12...   
+24  http://www.cesweb.org/CES/media/2014/Innovatio...   
+25  https://store.bigasssolutions.com/media/catalo...   
+26  http://www.cesweb.org/CES/media/2014/Innovatio...   
+27  http://nebula.wsimg.com/obj/QjQ1RDRCOUY2REMxOU...   
+28  http://www.cesweb.org/CES/media/2014/Innovatio...   
+29  http://www.cesweb.org/CES/media/2014/Innovatio...   
+30  http://www.cesweb.org/CES/media/2014/Innovatio...   
+31  http://www.cesweb.org/CES/media/2014/Innovatio...   
+32  http://nl.waka-waka.com/media/thunderclap-(tod...   
+33  http://cdn.shopify.com/s/files/1/0712/3461/pro...   
+34  http://www.cesweb.org/CES/media/2014/Innovatio...   
+35  http://cnet2.cbsistatic.com/hub/i/r/2015/01/05...   
+36  http://www.augmentedrealitytrends.com/wp-conte...   
+37  http://www.cesweb.org/CES/media/2014/Innovatio...   
+38  http://taochair.envisionarydesign.com/wp-conte...   
+39  http://3dprint.com/wp-content/uploads/2014/11/...   
+40  http://www.cesweb.org/CES/media/2014/Innovatio...   
+41  http://www.cesweb.org/CES/media/2014/Innovatio...   
+42  http://www.quellrelief.com/img/product_03_desk...   
+43  http://www.rollkers.com/wp-content/uploads/201...   
+44  http://www.legitreviews.com/wp-content/uploads...   
+45  http://www.slowcontrol.com/en/wp-content/uploa...   
+46  https://www.mercedes-benz.com/wp-content/uploa...   
+47  http://www.cesweb.org/CES/media/2014/Innovatio...   
+48  http://www.cesweb.org/CES/media/2014/Innovatio...   
+49  http://www.cesweb.org/CES/media/2014/Innovatio...   
+
+                           Company                      Product Category  \
+0                      iHealth Lab                      Health &amp; Fitness   
+1                      BlueMaestro                Baby, Health &amp; Fitness   
+2                   Acoustic Sheep               Music, Health &amp; Fitness   
+3                          Evollve                              Robotics   
+4                       Fuz Design                              Security   
+5                          Quitbit                      Health &amp; Fitness   
+6                    The Eye Tribe                           Eye Tracker   
+7                       Swiftpoint                  Computer Accessories   
+8                             Edyn                                  Home   
+9                    Get Narrative                                Camera   
+10                            ISKN                    Mobile Accessories   
+11                        Sensoria                      Health &amp; Fitness   
+12                       ZUtA Labs                  Computer Accessories   
+13                        Amaryllo                                Camera   
+14                          adidas                      Health &amp; Fitness   
+15                       Axxess CE               Music, Health &amp; Fitness   
+16                            Vysk          Mobile Accessories, Security   
+17  InfoMotion Sports Technologies                      Health &amp; Fitness   
+18                           Bragi               Music, Health &amp; Fitness   
+19                         myBrain                      Health &amp; Fitness   
+20                      Sproutling                Baby, Health &amp; Fitness   
+21                           Myfox                              Security   
+22                        Firstech                              Security   
+23                        GIROPTIC                                Camera   
+24                         Philips                                 Music   
+25                         Big Ass                                  Home   
+26                           Fuel3                           3D Printing   
+27                         IO HAWK                             Transport   
+28                       Whirlpool                                  Home   
+29                            Sony                                Camera   
+30                         Pioneer                         Entertainment   
+31                         Samsung                                 Video   
+32                        WakaWaka    Portable Power, Mobile Accessories   
+33                         Smarter                                  Home   
+34                          PARROT                             Transport   
+35                 Connected Cycle  Tansport, Health &amp; Fitness, Security   
+36                       Panasonic                                Beauty   
+37                      AudioQuest                                 Music   
+38                    Tao Wellness                                  Home   
+39                     XYZPrinting                           3D Printing   
+40                            Dell                                Mobile   
+41               Alfred &amp; Partners                                 Music   
+42                     NeuroMetrix                      Health &amp; Fitness   
+43                         Rolkers                             Transport   
+44                         Sengled                                  Home   
+45            Slow Control Company                Baby, Health &amp; Fitness   
+46                   Mercedes Benz                             Transport   
+47                        Qualcomm                        Portable Power   
+48                          Zalman                                  Home   
+49                         Samsung                                Mobile   
+
+                                          Description  \
+0   This powerful glucose meter plugs directly int...   
+1   With a temperature sensor built into the pacif...   
+2   Relieve stress and listen to music with wonder...   
+3   As seen on Wall Street Journal, Forbes, CNET a...   
+4   The world's first bluetooth padlock. Noke is a...   
+5   Quitbit is a lighter that tracks all your smok...   
+6   The Eye Tribe Tracker - this small device repr...   
+7   The first mouse allowing truly natural touch g...   
+8   The Edyn Garden Sensor tracks light, humidity,...   
+9   The Narrative Clip is a tiny, automatic camera...   
+10  The Slate digitizes your sketches, drawings an...   
+11  Sensoria® socks are infused with proprietary 1...   
+12  We re-imagined the printer to fit today's "on-...   
+13  iCam HD Pro is Amaryllo's newest entry to the ...   
+14  Smart Ball is a soccer ball with an integrated...   
+15  Simply put, the Levitating Air2 Wireless Speak...   
+16  Locks down an iPhone’s microphones to prevent ...   
+17  The 94Fifty® Smart Sensor Basketball Glassware...   
+18  Wireless in hear headphones. 4GB MP3 Player. M...   
+19  The connected headset to get rid of stress. Pu...   
+20  Sproutling is the first baby monitor that sens...   
+21  Myfox Security System comes with 1 IntelliTAG™...   
+22  DroneMobile gives you the peace of mind, conve...   
+23  The 360cam from GIROPTIC is the first ultra hi...   
+24  Philips Fidelio B5 wireless surround soundbar ...   
+25  Haiku® with SenseME™ technology monitors tempe...   
+26  The Fuel3D scanner is an affordable handheld 3...   
+27  The IO HAWK is the next evolution in the way t...   
+28  The new Whirlpool® HybridCare™ clothes dryer w...   
+29  World’s smallest full-frame interchangeable le...   
+30  Pioneer Elite SC-89 9.2-channel A/V receiver i...   
+31  Samsung's 105-inch UN105S9B is the World's fir...   
+32  The WakaWaka Base is the next step in the evol...   
+33  iKettle is the first Wi-fi kettle that can be ...   
+34  Android 2-DIN Infotainment System that enhance...   
+35  Connected Cycle pedal is the first ever connec...   
+36  An interactive mirror (prototype) that can che...   
+37  NightHawk is a semi-open, over-ear headphone w...   
+38  The embedded sensors inside the chair's armres...   
+39  3D Pinter transforming ingredients into cooked...   
+40  Innovation in its thinnest form: The new Dell ...   
+41  The monumental sculpture of a speaker, standin...   
+42  Quell is the only wearable pain relief of its ...   
+43  Rollkers is a transportation accessory that in...   
+44  Indoor/Outdoor LED lamp with integrated 720p H...   
+45  Smart Bottle holder to protect your baby’s hea...   
+46  One core theme of the innovative interior conc...   
+47  Qualcomm’s WiPower™ enables wireless charging ...   
+48  Z-Air is a ceiling fan with concealed blades, ...   
+49  The Galaxy Note Edge blends the best of the No...   
+
+                      Starting Price                    Company HQ  \
+0                             $16.95     California, United States   
+1                             $39.00                United Kingdom   
+2                             $39.95   Pennsylvania, United States   
+3                             $49.99     California, United States   
+4                             $59.99           Utah, United States   
+5                             $99.00  Massachusetts, United States   
+6                             $99.00                       Denmark   
+7                            €109.00                   New Zealand   
+8                            $159.98     California, United States   
+9                            $199.00                        Sweden   
+10                           €199.00                        France   
+11                           $199.00     Washington, United States   
+12                           $199.00       Illinois, United States   
+13                           $199.90                   Netherlands   
+14                           €200.00                       Germany   
+15                           $200.00       New York, United States   
+16                           $229.99          Texas, United States   
+17                           €249.95           Ohio, United States   
+18                           $299.00                       Germany   
+19                           $299.00                         Spain   
+20                              $299     California, United States   
+21                           $299.99                        France   
+22                           $449.99     Washington, United States   
+23                           $499.00                        France   
+24                           €799.00                   Netherlands   
+25                         $1,045.00       Kentucky, United States   
+26                         $1,490.00                United Kingdom   
+27                         $1,799.99                 United States   
+28                         $1,899.00       Michigan, United States   
+29                         $2,499.99                         Japan   
+30                         $3,000.00                         Japan   
+31                         €3,199.00                   South Korea   
+32  $89.00 (for Kickstarter backers)                   Netherlands   
+33                            £99.99                United Kingdom   
+34                               NaN                        France   
+35                               NaN                        France   
+36                               NaN                         Japan   
+37                               NaN     California, United States   
+38                               NaN         Nevada, United States   
+39                               NaN                         China   
+40                               NaN          Texas, United States   
+41                               NaN                       Estonia   
+42                               NaN  Massachusetts, United States   
+43                               NaN                        France   
+44                               NaN                         China   
+45                               NaN                        France   
+46                               NaN                       Germany   
+47                               NaN     California, United States   
+48                               NaN                   South Korea   
+49                               NaN                   South Korea   
+
+   CES Innovation Award Honoree  \
+0           Best of Innovations   
+1                           NaN   
+2                           NaN   
+3                           NaN   
+4           Best of Innovations   
+5                           NaN   
+6           Best of Innovations   
+7           Best of Innovations   
+8           Best of Innovations   
+9                           NaN   
+10                          NaN   
+11                          NaN   
+12          Best of Innovations   
+13          Best of Innovations   
+14          Best of Innovations   
+15          Best of Innovations   
+16                          NaN   
+17          Best of Innovations   
+18          Best of Innovations   
+19                          NaN   
+20          Best of Innovations   
+21                          NaN   
+22                          NaN   
+23                          NaN   
+24          Best of Innovations   
+25                          NaN   
+26          Best of Innovations   
+27                          NaN   
+28          Best of Innovations   
+29          Best of Innovations   
+30          Best of Innovations   
+31          Best of Innovations   
+32                          NaN   
+33                          NaN   
+34          Best of Innovations   
+35                          NaN   
+36                          NaN   
+37          Best of Innovations   
+38                          NaN   
+39                          NaN   
+40          Best of Innovations   
+41          Best of Innovations   
+42                          NaN   
+43                          NaN   
+44          Best of Innovations   
+45                          NaN   
+46                          NaN   
+47          Best of Innovations   
+48          Best of Innovations   
+49          Best of Innovations   
+
+                                             Homepage  
+0   http://www.ihealthlabs.com/glucometer/ihealth-...  
+1       http://bluemaestro.com/pacifi-smart-pacifier/  
+2   http://www.sleepphones.com/store/sleepphones-s...  
+3                              http://www.ozobot.com/  
+4                    http://fuzdesigns.com/pages/Noke  
+5                          http://quitbitlighter.com/  
+6                            https://theeyetribe.com/  
+7   http://eu.swiftpoint.com/shop/Swiftpoint+GT+Pr...  
+8                               https://www.edyn.com/  
+9                            http://getnarrative.com/  
+10                           http://store-eu.iskn.co/  
+11  http://store.sensoriafitness.com/sensoria-fitn...  
+12                           http://www.zutalabs.com/  
+13  http://www.amaryllo.eu/n40822store/icam-shopca...  
+14               http://micoach.adidas.com/smartball/  
+15                          http://www.axxessce.com/#  
+16                      https://www.vysk.com/qs1-shop  
+17  http://www.94fifty.nl/nl/smart-sensor-basketba...  
+18                              http://www.bragi.com/  
+19                           http://www.melomind.com/  
+20                         http://www.sproutling.com/  
+21  http://www.getmyfox.com/us_en/store/myfox-secu...  
+22                        http://www.dronemobile.com/  
+23                           http://www.giroptic.com/  
+24  http://www.philips.nl/c-p/B5_12/fidelio-soundb...  
+25        https://store.bigasssolutions.com/fans.html  
+26                               https://fuel-3d.com/  
+27                                http://iohawk.com//  
+28  http://www.whirlpool.com/-[WED99HEDC]-1022543/...  
+29  http://store.sony.com/a7s-full-frame-mirrorles...  
+30  http://www.pioneerelectronics.com/PUSA/Home/AV...  
+31  http://www.samsung.com/nl/consumer/tv-audio-vi...  
+32  http://nl.waka-waka.com/nieuws/2014/10/wakawak...  
+33  http://store.smarter.am/collections/frontpage/...  
+34  http://blog.parrot.com/2015/01/05/ces-2015-par...  
+35                         http://connectedcycle.com/  
+36  http://news.panasonic.com/press/news/data/2015...  
+37                   http://nighthawk.audioquest.com/  
+38                               http://taochair.com/  
+39  http://www.cnet.com/products/xyzprinting-food-...  
+40  http://www.dell.com/learn/us/en/19/campaigns/l...  
+41  http://www.estelon.com/wp-content/themes/estel...  
+42                        http://www.quellrelief.com/  
+43                           http://www.rollkers.com/  
+44                            http://www.sengled.com/  
+45           http://www.slowcontrol.com/en/baby-glgl/  
+46  https://www.mercedes-benz.com/en/mercedes-benz...  
+47          https://www.qualcomm.com/products/wipower  
+48        https://www.youtube.com/watch?v=yugX3WCALrE  
+49  http://www.samsung.com/global/microsite/galaxy...  
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
