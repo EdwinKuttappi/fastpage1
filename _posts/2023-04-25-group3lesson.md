@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 summary: Reviewing Data Analysis.
-title: My Own Database Trial
+title: Data Analysis Lesson
 toc: true
 categories: [week31, tri3]
 image: /images/.jpg
