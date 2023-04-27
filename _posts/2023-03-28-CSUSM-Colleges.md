@@ -2,6 +2,7 @@
 toc: true
 author: Edwin Abraham
 layout: post
+image: /images/CSUSM.png
 title: CSUSM College Majors Talk
 description: On March 28th, 2023, two representatives from CSUSM came to our classroom and talked about college and majors at CSUSM
 categories: [extra, tri3, week27]
