@@ -17,7 +17,10 @@ On December 17th, 2022, I made my 500th Commit🥳😁🥳🎉
 On April 6th, 2023, I made my 2500th Workflow Run🥳😁🥳🎉
 ![]({{ site.baseurl }}/images/2500workflow.png)
 
-Next Milestone: 750 Commits
+On April 28th, 2023, I made my 750th COmmit Run🥳😁🥳🎉
+![]({{ site.baseurl }}/images/750thcommit.png)
+
+Next Milestone: 5000 Workflow Runs
 
 # About Edwin
 <iframe src="https://challonge.com/sanmayouthcarroms2023/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
