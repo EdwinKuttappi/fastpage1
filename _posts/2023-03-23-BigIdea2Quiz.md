@@ -5,7 +5,7 @@ layout: post
 author: Edwin Abraham
 title: Reflection on the Trimester 2 Final Exam
 description: On February 27th, our Final Exam for Trimester 2 was opened and it was a Multiple Choice Test on CollegeBoard with 50 Questions and this is my reflection as well as any test corrections
-image: /images/codecodecode.png
+image: /images/codecodecode1.png
 categories: [tri3, week27]
 ---
 

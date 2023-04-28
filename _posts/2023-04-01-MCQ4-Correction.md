@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Reflection on the Multiple Choice 4 Exam
 description: On March 24th, a Exam for Trimester 3 and reviewing for the AP Exam was opened and it was a Multiple Choice Test on CollegeBoard with 50 Questions and this is my reflection as well as any test corrections
-image: /images/codecodecode.png
+image: /images/codecodecode2.png
 categories: [tri3, week28]
 ---
 
