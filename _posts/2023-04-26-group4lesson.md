@@ -97,12 +97,14 @@ layout: notebook
 <h2 id="Check-In">Check-In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
 <li>What is an IP address?<ul>
 <li>An IP Address is similar to how phone numbers works, an IP Address is a unique address, just like how each person has their own phone number</li>
+<li>Each device has their own unique IP Address</li>
 </ul>
 </li>
 <li>What is a TCP port?<ul>
 <li>Hardware ports are ports you can plug a wire into</li>
 <li>Ports are numbers such as 80 or even 65000</li>
-<li></li>
+<li>This stands for Transmission Control Protocol</li>
+<li>It can decide how the data is sent</li>
 </ul>
 </li>
 </ol>
@@ -288,25 +290,52 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-<h3 id="Load-Balancing">Load Balancing<a class="anchor-link" href="#Load-Balancing"> </a></h3><div class="highlight"><pre><span></span><span class="k">upstream</span> <span class="s">example.com</span> <span class="p">{</span>
-    <span class="kn">server</span> <span class="s">server1.example.com</span><span class="p">;</span>
-    <span class="kn">server</span> <span class="s">server1.example.com</span><span class="p">;</span>
+<h3 id="Load-Balancing">Load Balancing<a class="anchor-link" href="#Load-Balancing"> </a></h3><div class="highlight"><pre><span></span><span class="k">upstream</span> <span class="s">dataformat.com</span> <span class="p">{</span>
+    <span class="kn">server</span> <span class="s">server1.dataformat.com</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="s">server1.dataformat.com</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 <h3 id="HTTP-Headers">HTTP Headers<a class="anchor-link" href="#HTTP-Headers"> </a></h3><div class="highlight"><pre><span></span><span class="k">server</span> <span class="p">{</span>
-    <span class="kn">add_header</span> <span class="s">X-Cool-Header</span> <span class="s">&quot;I</span> <span class="s">love</span> <span class="s">APCSP!&quot;</span><span class="p">;</span>
+    <span class="kn">add_header</span> <span class="s">X-Cool-Header</span> <span class="s">&quot;DATA</span> <span class="s">TYPE&quot;</span><span class="p">;</span>
 
     <span class="kn">location</span> <span class="s">/pages</span> <span class="p">{</span>
-        <span class="kn">add_header</span> <span class="s">X-Cooler-Header</span> <span class="s">&quot;This</span> <span class="s">is</span> <span class="s">my</span> <span class="s">secret</span> <span class="s">header!&quot;</span><span class="p">;</span>
+        <span class="kn">add_header</span> <span class="s">X-Cooler-Header</span> <span class="s">&quot;This</span> <span class="s">is</span> <span class="s">my</span> <span class="s">secret</span> <span class="s">header</span> <span class="s">with</span> <span class="s">Data</span> <span class="s">Types!&quot;</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 <h2 id="Check-In">Check In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
-<li>Research 1 HTTP header and describe, in detail, its purpose.</li>
+<li>Research 1 HTTP header and describe, in detail, its purpose.<ul>
+<li>I tried researching it, and I am not really sure what it is, but I think that Content-Type is a HTTP header</li>
+<li>I think this is important because it is used to identify the type of data format or media is being used to send the HTTP message body such as text</li>
+</ul>
+</li>
 <li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</li>
-<li>Explain the purpose of the load balancing performed by NGINX</li>
+</ol>
+<ul>
+<li><p>Not sure if I did this right</p>
+<div class="highlight"><pre><span></span><span class="k">//</span> <span class="s">Inform</span> <span class="s">server</span> <span class="s">about</span> <span class="s">original</span> <span class="s">client</span>
+      <span class="s">proxy_set_header</span> <span class="s">Content-Type</span> <span class="s">&quot;application/json&quot;</span><span class="p">;</span>
+      <span class="k">add_header</span> <span class="s">X-Frame-Options</span> <span class="s">&quot;SAMEORIGIN&quot;</span><span class="p">;</span>
+      <span class="k">proxy_set_header</span>        <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
+
+      <span class="k">//</span> <span class="s">Forward</span> <span class="s">all</span> <span class="s">requests</span> <span class="s">transparently</span> <span class="s">to</span> <span class="s">the</span> <span class="s">server</span> <span class="s">running</span> <span class="no">on</span> <span class="s">our</span> <span class="s">computer</span>
+      <span class="s">proxy_pass</span>              <span class="s">http://localhost:9099</span><span class="p">;</span>
+</pre></div>
+</li>
+</ul>
+<ol>
+<li>Explain the purpose of the load balancing performed by NGINX<ul>
+<li>The purpose of load balancing by NGINX is to distribute everything across multiple backend servers</li>
+<li>It sits between the clients and the backend servers, receiving requests from clients and forwarding it to a backend server</li>
+<li>It helps with NGINX so that it can ensure that web applications are highly available, scalable, and performant even during lots of traffic</li>
+</ul>
+</li>
 <li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
 </ol>
+<ul>
+<li>Not sure how exactly to do this, but I will try</li>
+<li>I tried it 3 different ways</li>
+</ul>
 
 </div>
 </div>
@@ -318,11 +347,12 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span> <span class="o">+</span> <span class="n">aws</span><span class="o">+</span> <span class="s2">&quot;/products&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span><span class="o">+</span><span class="n">aws</span><span class="o">+</span><span class="s2">&quot;/products&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -335,7 +365,72 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The secret header is: ...
+<pre>The secret header is: {&#39;Server&#39;: &#39;nginx/1.18.0 (Ubuntu)&#39;, &#39;Date&#39;: &#39;Fri, 28 Apr 2023 15:04:38 GMT&#39;, &#39;Content-Type&#39;: &#39;text/html&#39;, &#39;Transfer-Encoding&#39;: &#39;chunked&#39;, &#39;Connection&#39;: &#39;keep-alive&#39;, &#39;Last-Modified&#39;: &#39;Thu, 20 Apr 2023 20:42:12 GMT&#39;, &#39;X-Cooler-Header&#39;: &#39;This is my secret header!&#39;, &#39;Content-Encoding&#39;: &#39;gzip&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">socket</span>
+<span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gethostbyname</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span> <span class="o">+</span> <span class="n">aws</span><span class="o">+</span> <span class="s2">&quot;/products&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span> <span class="o">+</span> <span class="n">aws</span> <span class="o">+</span> <span class="s2">&quot;/products&quot;</span><span class="p">)</span>
+
+<span class="c1"># Get the value of the secret header, if it exists</span>
+<span class="n">secret_header</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;secret&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">secret_header</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="n">secret_header</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is not present in the response.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The secret header is not present in the response.
 </pre>
 </div>
 </div>
@@ -352,7 +447,15 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
 <li>Complete the above check-in questions and change the hosts (0.1)</li>
 <li>Complete the above code-segment to retrieve the secret header (0.1)</li>
 </ul>
-<h2 id="Bonus-(0.05)">Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a></h2><p>Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
+<h2 id="Bonus-(0.05)">Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a></h2><p><div style="position: relative; width: 100%; height: 0; padding-top: 66.6667%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhZ0IsoCA&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhZ0IsoCA&#x2F;watch?utm_content=DAFhZ0IsoCA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">LAYERS OF ABSTRACTION</a> by Edwin Abraham
+Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
 
 </div>
 </div>
@@ -365,11 +468,11 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
 <li>CORS allows us to protect websites and online services</li>
 <li>Today, there are many cyber attacks that are happening to websites, but CORS, an advanced security tool and technique like Certbot and Cross-Origin Security, the website owners and developers are better able to protect their websites</li>
 <li>CORS allows and blocks access from other domains</li>
-<li>CORS is a set of techniques used to prevent web pages from accessing resources on other domains without permission.</li>
+<li>CORS is a set of techniques used to prevent web pages from accessing resources on other domains without permission</li>
 </ul>
 </li>
 <li>Describe how you would be able to implement CORS into your own websites<ul>
-<li>I would be able to implement CORS into my own website maybe through my backend. I am aware that we did something with CORS in our flasks to help us with our backend.</li>
+<li>I would be able to implement CORS into my own website maybe through my backend. I am aware that we did something with CORS in our flasks to help us with our backend</li>
 </ul>
 </li>
 <li>Describe why you would want to implement CORS into your own websites<ul>
@@ -391,13 +494,30 @@ Total: 0.2 points</li>
 <li>"Sudo" elevates your access to commands</li>
 </ul>
 </li>
-<li><h2 id="What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?">What are some commands which allow us to look at how the storage of a machine is set up as?<a class="anchor-link" href="#What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?"> </a></h2></li>
-<li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
-<li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
-<li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
+<li>What are some commands which allow us to look at how the storage of a machine is set up as?<ul>
+<li>There are some commands we can use to look at the storage of the machine</li>
+<li>We can use "df" which displays information about disk storage space usage, including the available space, used space, and the file system types</li>
+<li>The "du" command is used to estimate the file and directory space usage, providing a summary of the sizes of individual files or directories</li>
+<li>"lsblk" is used to list information about block devices, including disks and their partitions in the storage</li>
+</ul>
+</li>
+<li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?<ul>
+<li>Using a web browser to download a zip file manually from the KASM website</li>
+<li>It can also be used as a download manager app</li>
+<li>It can also be used for different lines such as wget</li>
+</ul>
+</li>
+<li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?<ul>
+<li>This is a command that installs and configures the KASM software</li>
+<li>It could include downloading necessary files and setting up configuration options</li>
+</ul>
+</li>
+<li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.
+Deploying KASM requires knowledge of using the command line, managing software packages, and security networks. KASM is related to firewalls and other things like setting up firewalls, user permissions, and integrating KASM with other security tools. Using KASM with other tools allows us to increase the functionality of those tools and make them more efficient, and perform better</li>
 </ol>
 <p>Total: 0.2 points</p>
-<h1 id="AWS/RDS-Hacks">AWS/RDS Hacks<a class="anchor-link" href="#AWS/RDS-Hacks"> </a></h1><p>See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
+<h1 id="AWS/RDS-Hacks-(Cancelled)">AWS/RDS Hacks (Cancelled)<a class="anchor-link" href="#AWS/RDS-Hacks-(Cancelled)"> </a></h1><p>PARTIALLY DONE
+See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
 <ul>
 <li>Create your own database in the EC2 I have created (ec2-database-connect)<ul>
 <li>name it with your first and last name (example: aditya-nawandhar) (0.1)</li>
