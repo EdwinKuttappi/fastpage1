@@ -14,14 +14,14 @@
 <link rel="canonical" href="https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html" />
 <meta property="og:url" content="https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html" />
 <meta property="og:site_name" content="Edwin’s Blog" />
-<meta property="og:image" content="https://edwinkuttappi.github.io/fastpage1/images/.jpg" />
+<meta property="og:image" content="https://edwinkuttappi.github.io/fastpage1/images/CORS.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-04-26T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://edwinkuttappi.github.io/fastpage1/images/.jpg" />
+<meta property="twitter:image" content="https://edwinkuttappi.github.io/fastpage1/images/CORS.png" />
 <meta property="twitter:title" content="DevOps Lesson" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Abraham"},"dateModified":"2023-04-26T00:00:00-05:00","datePublished":"2023-04-26T00:00:00-05:00","description":"The lesson taught by Group 4 about DevOps Resources","headline":"DevOps Lesson","image":"https://edwinkuttappi.github.io/fastpage1/images/.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Abraham"},"dateModified":"2023-04-26T00:00:00-05:00","datePublished":"2023-04-26T00:00:00-05:00","description":"The lesson taught by Group 4 about DevOps Resources","headline":"DevOps Lesson","image":"https://edwinkuttappi.github.io/fastpage1/images/CORS.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html"},"url":"https://edwinkuttappi.github.io/fastpage1/week31/tri3/2023/04/26/group4lesson.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpage1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://edwinkuttappi.github.io/fastpage1/feed.xml" title="Edwin's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpage1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -152,7 +152,11 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#CORS-Hacks">CORS Hacks </a></li>
-<li class="toc-entry toc-h1"><a href="#KASM-Hacks">KASM Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#KASM-Hacks">KASM Hacks </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?">What are some commands which allow us to look at how the storage of a machine is set up as? </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#AWS/RDS-Hacks">AWS/RDS Hacks </a></li>
 </ul><!--
 #################################################
@@ -532,14 +536,26 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schem
 <a class="anchor" href="#CORS-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>CORS Hacks<a class="anchor-link" href="#CORS-Hacks"> </a>
 </h1>
 <ol>
-<li>Explain what CORS is and what it stands for</li>
-<li>Describe how you would be able to implement CORS into your own websites</li>
+<li>Explain what CORS is and what it stands for<ul>
+<li>CORS stands for Cross-Origin Resource Sharing</li>
+<li>CORS allows us to protect websites and online services</li>
+<li>Today, there are many cyber attacks that are happening to websites, but CORS, an advanced security tool and technique like Certbot and Cross-Origin Security, the website owners and developers are better able to protect their websites</li>
+<li>CORS allows and blocks access from other domains</li>
+<li>CORS is a set of techniques used to prevent web pages from accessing resources on other domains without permission.</li>
+</ul>
+</li>
+<li>Describe how you would be able to implement CORS into your own websites<ul>
+<li>I would be able to implement CORS into my own website maybe through my backend. I am aware that we did something with CORS in our flasks to help us with our backend.</li>
+</ul>
+</li>
 <li>Describe why you would want to implement CORS into your own websites<ul>
-<li>We should implement CORS into our websites because this can help protect our sites</li>
+<li>We should implement CORS into our websites because this can help protect our sites, and we should do it for our group website</li>
+<li>Implementing CORS in our group website would be helpful to do as a security measure for our website, especially if we will have a lot of data in the backend</li>
 </ul>
 </li>
 <li>How could use CORS to benefit yourself in the future?<ul>
-<li>We could use CORS in our group project websites
+<li>We could use CORS in our group project websites</li>
+<li>I want to try and make my own website, so by implementing CORS, I can make sure that no one else tries to do something to my website
 Total: 0.2 points</li>
 </ul>
 </li>
@@ -548,8 +564,15 @@ Total: 0.2 points</li>
 <a class="anchor" href="#KASM-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a>
 </h1>
 <ol>
-<li>What is the purpose of "sudo" when running commands in terminal?</li>
-<li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
+<li>What is the purpose of "sudo" when running commands in terminal?<ul>
+<li>The purpose of running "sudo" for commands in terminal is to make sure that you are running the terminal as an admin</li>
+<li>This means that you are able to run some commands that not everyone is able to if they are not in "sudo" mode</li>
+<li>"Sudo" elevates your access to commands</li>
+</ul>
+</li>
+<li><h2 id="What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?">
+<a class="anchor" href="#What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What are some commands which allow us to look at how the storage of a machine is set up as?<a class="anchor-link" href="#What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?"> </a>
+</h2></li>
 <li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
 <li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
 <li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
