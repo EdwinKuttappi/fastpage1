@@ -1,10 +1,10 @@
 ---
 keywords: fastai
-summary: Reviewing Data Analysis.
+summary: Reviewing Data Analysis
 title: Data Analysis Lesson
 toc: true
 categories: [week31, tri3]
-image: /images/.jpg
+image: /images/CSV.png
 badges: true
 comments: true
 author: Edwin Abraham

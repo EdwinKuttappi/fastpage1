@@ -4,7 +4,7 @@ summary: Learning about DevOps Materials
 title: DevOps Lesson
 toc: true
 categories: [week31, tri3]
-image: /images/.jpg
+image: /images/CORS.png
 badges: true
 comments: true
 author: Edwin Abraham
@@ -360,21 +360,38 @@ Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="CORS-Hacks">CORS Hacks<a class="anchor-link" href="#CORS-Hacks"> </a></h1><ol>
-<li>Explain what CORS is and what it stands for</li>
-<li>Describe how you would be able to implement CORS into your own websites</li>
+<li>Explain what CORS is and what it stands for<ul>
+<li>CORS stands for Cross-Origin Resource Sharing</li>
+<li>CORS allows us to protect websites and online services</li>
+<li>Today, there are many cyber attacks that are happening to websites, but CORS, an advanced security tool and technique like Certbot and Cross-Origin Security, the website owners and developers are better able to protect their websites</li>
+<li>CORS allows and blocks access from other domains</li>
+<li>CORS is a set of techniques used to prevent web pages from accessing resources on other domains without permission.</li>
+</ul>
+</li>
+<li>Describe how you would be able to implement CORS into your own websites<ul>
+<li>I would be able to implement CORS into my own website maybe through my backend. I am aware that we did something with CORS in our flasks to help us with our backend.</li>
+</ul>
+</li>
 <li>Describe why you would want to implement CORS into your own websites<ul>
-<li>We should implement CORS into our websites because this can help protect our sites</li>
+<li>We should implement CORS into our websites because this can help protect our sites, and we should do it for our group website</li>
+<li>Implementing CORS in our group website would be helpful to do as a security measure for our website, especially if we will have a lot of data in the backend</li>
 </ul>
 </li>
 <li>How could use CORS to benefit yourself in the future?<ul>
-<li>We could use CORS in our group project websites
+<li>We could use CORS in our group project websites</li>
+<li>I want to try and make my own website, so by implementing CORS, I can make sure that no one else tries to do something to my website
 Total: 0.2 points</li>
 </ul>
 </li>
 </ol>
 <h1 id="KASM-Hacks">KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a></h1><ol>
-<li>What is the purpose of "sudo" when running commands in terminal?</li>
-<li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
+<li>What is the purpose of "sudo" when running commands in terminal?<ul>
+<li>The purpose of running "sudo" for commands in terminal is to make sure that you are running the terminal as an admin</li>
+<li>This means that you are able to run some commands that not everyone is able to if they are not in "sudo" mode</li>
+<li>"Sudo" elevates your access to commands</li>
+</ul>
+</li>
+<li><h2 id="What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?">What are some commands which allow us to look at how the storage of a machine is set up as?<a class="anchor-link" href="#What-are-some-commands-which-allow-us-to-look-at-how-the-storage-of-a-machine-is-set-up-as?"> </a></h2></li>
 <li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
 <li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
 <li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
