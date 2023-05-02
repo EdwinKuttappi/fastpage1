@@ -70,6 +70,13 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+1. T
+2. F
+3. F
+4. T
+5. F
+6. F
+7. T
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -87,9 +94,16 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - HTTP is a protocol used by the world wide web
     - The world wide web uses the internet
 
-- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
+<div style="position: relative; width: 100%; height: 0; padding-top: 66.6667%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhZ0IsoCA&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFhZ0IsoCA&#x2F;watch?utm_content=DAFhZ0IsoCA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">LAYERS OF ABSTRACTION</a> by Edwin Abraham
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
