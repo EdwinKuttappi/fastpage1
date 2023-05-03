@@ -157,7 +157,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Lesson-Quiz">Lesson Quiz </a></li>
 <li class="toc-entry toc-h3"><a href="#Binary-Conversions-Practice">Binary Conversions Practice </a></li>
 <li class="toc-entry toc-h3"><a href="#Binary-Search-Questions">Binary Search Questions </a></li>
-<li class="toc-entry toc-h3"><a href="#Extra-Credit:">Extra Credit: </a></li>
+<li class="toc-entry toc-h3"><a href="#Extra-Credit:">Extra Credit: </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Extra-Binary-Code">Extra Binary Code </a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Hacks-Scoring">Hacks Scoring </a></li>
@@ -586,13 +590,55 @@ window.onload = wrap_img;
 <ul>
 <li>write the best rap line (determined during the lesson by group)</li>
 </ul>
-<p>Binary has got 0's and 1's
-use binary search a megaton
-This concept is for everyone</p>
+<p>Binary has got 0's and 1's</p>
+<p>use binary search a megaton</p>
+<p>This concept is for everyone</p>
+<h4 id="Extra-Binary-Code">
+<a class="anchor" href="#Extra-Binary-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Binary Code<a class="anchor-link" href="#Extra-Binary-Code"> </a>
+</h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter an integer: "</span><span class="p">))</span>
+
+<span class="c1"># Uses bin to convert into decimal into binary</span>
+<span class="n">binary</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">decimal</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+
+<span class="c1"># Output the binary</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The binary equivalent of </span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">binary</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Output the decimal</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The decimal equivalent of </span><span class="si">{</span><span class="n">binary</span><span class="si">}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">decimal</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The binary equivalent of 10 is: 1010
+The decimal equivalent of 1010 is: 10
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
