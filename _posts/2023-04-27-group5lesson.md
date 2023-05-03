@@ -947,13 +947,24 @@ Razr
 <h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><ul>
 <li>Of the above code segments, which is a list and which is a dictionary?<ul>
 <li>The list is the code segment with [] and the dictionary code segment is the one with {}</li>
+<li>The 2nd students is a list and the 1st one is a dictionary.</li>
 </ul>
 </li>
-<li>What is a dictionary and how is it used? </li>
-<li>What is a 2D Array?</li>
-<li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
+<li>What is a dictionary and how is it used?<ul>
+<li>A dictionary is a 1D array which stores key-value pairs. The keys must be unique to store values</li>
 </ul>
-<h2 id="Manipulating-Dictionaries">Manipulating Dictionaries<a class="anchor-link" href="#Manipulating-Dictionaries"> </a></h2>
+</li>
+<li>What is a 2D Array?<ul>
+<li>A 2D Array is data structure which uses multiple lists to create a multi-dimensional data structure. The 2D Arrays must have rows and columns</li>
+</ul>
+</li>
+<li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?<ul>
+<li>2D Arrays are different from 1D Arrays or Lists because they require users to input 2 parameters to get a specific value instead of just 1. 2D Arrays can be used for things like games like Tic Tac Toe and representing matrices
+## Manipulating Dictionaries</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -1009,6 +1020,158 @@ Razr
 <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="n">grocery_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total cost: $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_cost</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Dictionary-Hacks">Dictionary Hacks<a class="anchor-link" href="#Dictionary-Hacks"> </a></h2><p><img src="https://raw.githubusercontent.com/EdwinKuttappi/fastpage1/master/images/DictionaryDeleteKey.png" alt="DictionaryDelete"></p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">phone</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an item for your phone list (or &#39;stop&#39;)&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">phone</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the price for </span><span class="si">{}</span><span class="s2">: &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">phone</span><span class="p">)))</span>
+        <span class="n">dictionary</span><span class="p">[</span><span class="n">phone</span><span class="p">]</span> <span class="o">=</span> <span class="n">rating</span>
+
+<span class="n">average</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your phone list:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">phone</span><span class="p">,</span> <span class="n">rating</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">phone</span><span class="p">,</span> <span class="n">rating</span><span class="p">))</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">dictionary</span><span class="o">.</span><span class="n">values</span><span class="p">())</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average Price: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">average</span><span class="p">))</span>
+    
+    <span class="n">action</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to do to the dictionary? (add/remove/done) &quot;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;add&quot;</span><span class="p">:</span>
+        <span class="n">phone</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the phone you would like to add&quot;</span><span class="p">)</span>
+        <span class="n">rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the price of </span><span class="si">{}</span><span class="s2">: &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">phone</span><span class="p">)))</span>
+        <span class="n">dictionary</span><span class="p">[</span><span class="n">phone</span><span class="p">]</span> <span class="o">=</span> <span class="n">rating</span>
+        <span class="n">average</span> <span class="o">+=</span> <span class="n">rating</span>
+    
+        <span class="n">phone</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the name of the phone to remove&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">phone</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+            <span class="n">average</span> <span class="o">-=</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">phone</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">phone</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Phone not found&quot;</span><span class="p">)</span>
+    
+    <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your phone list:
+- iPhone 14: 799.0
+- Galaxy S23: 799.0
+Average Price: 799.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2D-Array-Hacks">2D Array Hacks<a class="anchor-link" href="#2D-Array-Hacks"> </a></h1>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number of rows: &quot;</span><span class="p">))</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number of columns: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Create an empty 2D array with the specified number of rows and columns</span>
+<span class="n">Array</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">columns</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">)]</span>
+
+<span class="c1"># Print the 2D array</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">Array</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number of rows: &quot;</span><span class="p">))</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number of columns: &quot;</span><span class="p">))</span>
+
+<span class="n">image_path</span> <span class="o">=</span> <span class="s2">&quot;/home/edwin/vscode/fastpage1/images/aws.png&quot;</span>  <span class="c1"># Replace with your own image file path</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">image_data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">Array</span> <span class="o">=</span> <span class="p">[[</span><span class="n">image_data</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">columns</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">Array</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">image_data</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;aws.png&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">image_data</span><span class="p">)</span>
 </pre></div>
 
     </div>
