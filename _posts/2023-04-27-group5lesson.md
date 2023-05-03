@@ -476,22 +476,135 @@ orange
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hacks-(0.3)">Hacks (0.3)<a class="anchor-link" href="#Hacks-(0.3)"> </a></h2><ul>
 <li>Make your own list and manipulate it via accessing specific elements, adding or removing elements, etc.</li>
-<li>Extra: Make an interactable visualization that can manipulate elements in a list such as the one demonstrated in our flask repository</li>
+<li>Extra: Make an Interactive visualization that can manipulate elements in a list such as the one demonstrated in our flask repository</li>
 </ul>
 
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">foods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;pizza&quot;</span><span class="p">,</span> <span class="s2">&quot;pineapple&quot;</span><span class="p">,</span> <span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;burger&quot;</span><span class="p">,</span> <span class="s2">&quot;cookie&quot;</span><span class="p">,</span> <span class="s2">&quot;cake&quot;</span><span class="p">,</span> <span class="s2">&quot;ice cream&quot;</span><span class="p">,</span> <span class="s2">&quot;brownie&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;watermelon&#39;, &#39;apple&#39;, &#39;pizza&#39;, &#39;pineapple&#39;, &#39;chicken&#39;, &#39;burger&#39;, &#39;cookie&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1"># Accessing Lists</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="c1"># Slicing Lists</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+<span class="c1"># Modifying Lists</span>
+<span class="n">foods</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;naan&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>watermelon
+burger
+[&#39;watermelon&#39;, &#39;apple&#39;, &#39;pizza&#39;, &#39;pineapple&#39;, &#39;chicken&#39;]
+[&#39;watermelon&#39;, &#39;apple&#39;, &#39;naan&#39;, &#39;pineapple&#39;, &#39;chicken&#39;, &#39;burger&#39;, &#39;cookie&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">foods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;chicken tikka&quot;</span><span class="p">)</span>
+<span class="c1"># Adding and Removing List Items</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+<span class="n">foods</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;butter chicken&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+<span class="n">foods</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;cookie&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+<span class="n">foods</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+<span class="c1"># Clearing Lists</span>
+<span class="n">foods</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">foods</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;watermelon&#39;, &#39;apple&#39;, &#39;naan&#39;, &#39;pineapple&#39;, &#39;chicken&#39;, &#39;burger&#39;, &#39;cookie&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;, &#39;chicken tikka&#39;]
+[&#39;watermelon&#39;, &#39;apple&#39;, &#39;naan&#39;, &#39;pineapple&#39;, &#39;chicken&#39;, &#39;butter chicken&#39;, &#39;burger&#39;, &#39;cookie&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;, &#39;chicken tikka&#39;]
+[&#39;watermelon&#39;, &#39;apple&#39;, &#39;naan&#39;, &#39;pineapple&#39;, &#39;chicken&#39;, &#39;butter chicken&#39;, &#39;burger&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;, &#39;chicken tikka&#39;]
+[&#39;watermelon&#39;, &#39;apple&#39;, &#39;naan&#39;, &#39;pineapple&#39;, &#39;butter chicken&#39;, &#39;burger&#39;, &#39;cake&#39;, &#39;ice cream&#39;, &#39;brownie&#39;, &#39;chicken tikka&#39;]
+[]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Iteration-(Alex)">Iteration (Alex)<a class="anchor-link" href="#Iteration-(Alex)"> </a></h2><p>What is iteration?</p>
-<ul>
-<li>In programming, iteration refers to the process of repeating a set of instructions until a specific condition is met. This can be achieved using loop structures like for loops and while loops.</li>
-</ul>
-<p>For Loops</p>
-<ul>
-<li>A for loop is used to iterate over a sequence (e.g. a list, tuple, string, etc.) and execute a set of statements for each item in the sequence. Here's the basic syntax of a for loop in Python:</li>
-</ul>
+<h3 id="Extra-Hack">Extra Hack<a class="anchor-link" href="#Extra-Hack"> </a></h3><blockquote><p>I decided to make my visualization using scratch, here is the project found here</p>
+</blockquote>
 
 </div>
 </div>
@@ -675,13 +788,17 @@ d
 <span class="c1"># List Related to CPT Project is about smartphones</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">phones</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">smartphone_model</span> <span class="ow">in</span> <span class="n">phones</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">smartphone_model</span><span class="p">)</span>
+<span class="c1"># For Loop</span>
+<span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">phones</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 
-<span class="k">while</span> <span class="n">smartphone_model</span> <span class="o">==</span> <span class="s2">&quot;Pixel 7&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;WOW, COOL PHONE&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># While Loop</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">phones</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">phones</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -707,7 +824,19 @@ iPhone 14 Pro Max
 Wing
 ZFlip 4
 Razr
-10
+
+Galaxy S23
+Galaxy S23 Plus
+Galaxy S23 Ultra
+Pixel 7
+Pixel 7 Pro
+iPhone 14
+iPhone 14 Plus
+iPhone 14 Pro
+iPhone 14 Pro Max
+Wing
+ZFlip 4
+Razr
 </pre>
 </div>
 </div>
@@ -816,8 +945,11 @@ Razr
 <pre><code>students = ['advay', 'amay', 'rohin', 'alex', 'ethan']</code></pre>
 <hr>
 <h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><ul>
-<li>Of the above code segments, which is a list and which is a dictionary?</li>
-<li>What is a dictionary and how is it used?</li>
+<li>Of the above code segments, which is a list and which is a dictionary?<ul>
+<li>The list is the code segment with [] and the dictionary code segment is the one with {}</li>
+</ul>
+</li>
+<li>What is a dictionary and how is it used? </li>
 <li>What is a 2D Array?</li>
 <li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
 </ul>
