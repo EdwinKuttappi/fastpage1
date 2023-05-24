@@ -118,6 +118,183 @@ Note: you may need to restart the kernel to use updated packages.
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterthemes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already satisfied: jupyterthemes in /home/edwin/anaconda3/lib/python3.9/site-packages (0.20.0)
+Requirement already satisfied: jupyter-core in /home/edwin/anaconda3/lib/python3.9/site-packages (from jupyterthemes) (4.9.2)
+Requirement already satisfied: ipython&gt;=5.4.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jupyterthemes) (8.2.0)
+Requirement already satisfied: lesscpy&gt;=0.11.2 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jupyterthemes) (0.15.1)
+Requirement already satisfied: notebook&gt;=5.6.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jupyterthemes) (6.4.8)
+Requirement already satisfied: matplotlib&gt;=1.4.3 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jupyterthemes) (3.5.1)
+Requirement already satisfied: backcall in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (0.2.0)
+Requirement already satisfied: pickleshare in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (0.7.5)
+Requirement already satisfied: decorator in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (5.1.1)
+Requirement already satisfied: stack-data in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (0.2.0)
+Requirement already satisfied: matplotlib-inline in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (0.1.2)
+Requirement already satisfied: jedi&gt;=0.16 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (0.18.1)
+Requirement already satisfied: pygments&gt;=2.4.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (2.11.2)
+Requirement already satisfied: setuptools&gt;=18.5 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (61.2.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (3.0.20)
+Requirement already satisfied: pexpect&gt;4.3 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (4.8.0)
+Requirement already satisfied: traitlets&gt;=5 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipython&gt;=5.4.1-&gt;jupyterthemes) (5.1.1)
+Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jedi&gt;=0.16-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (0.8.3)
+Requirement already satisfied: ply in /home/edwin/anaconda3/lib/python3.9/site-packages (from lesscpy&gt;=0.11.2-&gt;jupyterthemes) (3.11)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (3.0.4)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (4.25.0)
+Requirement already satisfied: numpy&gt;=1.17 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (1.21.5)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (2.8.2)
+Requirement already satisfied: packaging&gt;=20.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (21.3)
+Requirement already satisfied: pillow&gt;=6.2.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (9.0.1)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (1.3.2)
+Requirement already satisfied: cycler&gt;=0.10 in /home/edwin/anaconda3/lib/python3.9/site-packages (from matplotlib&gt;=1.4.3-&gt;jupyterthemes) (0.11.0)
+Requirement already satisfied: prometheus-client in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (0.13.1)
+Requirement already satisfied: ipykernel in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (6.9.1)
+Requirement already satisfied: nbconvert in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (6.4.4)
+Requirement already satisfied: jinja2 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (3.1.2)
+Requirement already satisfied: nbformat in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (5.3.0)
+Requirement already satisfied: Send2Trash&gt;=1.8.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (1.8.0)
+Requirement already satisfied: ipython-genutils in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (0.2.0)
+Requirement already satisfied: tornado&gt;=6.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (6.1)
+Requirement already satisfied: jupyter-client&gt;=5.3.4 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (6.1.12)
+Requirement already satisfied: nest-asyncio&gt;=1.5 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (1.5.5)
+Requirement already satisfied: argon2-cffi in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (21.3.0)
+Requirement already satisfied: pyzmq&gt;=17 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (22.3.0)
+Requirement already satisfied: terminado&gt;=0.8.3 in /home/edwin/anaconda3/lib/python3.9/site-packages (from notebook&gt;=5.6.0-&gt;jupyterthemes) (0.13.1)
+Requirement already satisfied: ptyprocess&gt;=0.5 in /home/edwin/anaconda3/lib/python3.9/site-packages (from pexpect&gt;4.3-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (0.7.0)
+Requirement already satisfied: wcwidth in /home/edwin/anaconda3/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (0.2.5)
+Requirement already satisfied: six&gt;=1.5 in /home/edwin/anaconda3/lib/python3.9/site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib&gt;=1.4.3-&gt;jupyterthemes) (1.16.0)
+Requirement already satisfied: argon2-cffi-bindings in /home/edwin/anaconda3/lib/python3.9/site-packages (from argon2-cffi-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (21.2.0)
+Requirement already satisfied: cffi&gt;=1.0.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (1.15.0)
+Requirement already satisfied: pycparser in /home/edwin/anaconda3/lib/python3.9/site-packages (from cffi&gt;=1.0.1-&gt;argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (2.21)
+Requirement already satisfied: debugpy&lt;2.0,&gt;=1.0.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from ipykernel-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (1.5.1)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jinja2-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (2.1.2)
+Requirement already satisfied: defusedxml in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.7.1)
+Requirement already satisfied: entrypoints&gt;=0.2.2 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.4)
+Requirement already satisfied: testpath in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.5.0)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (1.5.0)
+Requirement already satisfied: beautifulsoup4 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (4.11.1)
+Requirement already satisfied: nbclient&lt;0.6.0,&gt;=0.5.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.5.13)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.8.4)
+Requirement already satisfied: jupyterlab-pygments in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.1.2)
+Requirement already satisfied: bleach in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (4.1.0)
+Requirement already satisfied: fastjsonschema in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbformat-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (2.15.1)
+Requirement already satisfied: jsonschema&gt;=2.6 in /home/edwin/anaconda3/lib/python3.9/site-packages (from nbformat-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (4.4.0)
+Requirement already satisfied: attrs&gt;=17.4.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (21.4.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,&gt;=0.14.0 in /home/edwin/anaconda3/lib/python3.9/site-packages (from jsonschema&gt;=2.6-&gt;nbformat-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.18.0)
+Requirement already satisfied: soupsieve&gt;1.2 in /home/edwin/anaconda3/lib/python3.9/site-packages (from beautifulsoup4-&gt;nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (2.3.1)
+Requirement already satisfied: webencodings in /home/edwin/anaconda3/lib/python3.9/site-packages (from bleach-&gt;nbconvert-&gt;notebook&gt;=5.6.0-&gt;jupyterthemes) (0.5.1)
+Requirement already satisfied: asttokens in /home/edwin/anaconda3/lib/python3.9/site-packages (from stack-data-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (2.0.5)
+Requirement already satisfied: executing in /home/edwin/anaconda3/lib/python3.9/site-packages (from stack-data-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (0.8.3)
+Requirement already satisfied: pure-eval in /home/edwin/anaconda3/lib/python3.9/site-packages (from stack-data-&gt;ipython&gt;=5.4.1-&gt;jupyterthemes) (0.2.2)
+Note: you may need to restart the kernel to use updated packages.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="pip-install---upgrade-jupyterthemes">pip install --upgrade jupyterthemes<a class="anchor-link" href="#pip-install---upgrade-jupyterthemes"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jt -l
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Available Themes: 
+   chesterish
+   grade3
+   gruvboxd
+   gruvboxl
+   monokai
+   oceans16
+   onedork
+   solarizedd
+   solarizedl
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jt -t grade3
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jt -t onedork -T -N -kl
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -230,10 +407,10 @@ Note: you may need to restart the kernel to use updated packages.
 
 
 
-<div id="2d6eee1d-2be1-4c6c-907e-250f7a1a837b"></div>
+<div id="a7fa236f-00f5-4ec2-95b3-dfceb3690009"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#2d6eee1d-2be1-4c6c-907e-250f7a1a837b');
+var element = $('#a7fa236f-00f5-4ec2-95b3-dfceb3690009');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -306,10 +483,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="88ed3d56-c801-4b34-b3f5-7b74e365d443"></div>
+<div id="0ed81c44-559e-4fd8-9998-7453f84dc2cd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#88ed3d56-c801-4b34-b3f5-7b74e365d443');
+var element = $('#0ed81c44-559e-4fd8-9998-7453f84dc2cd');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -391,10 +568,10 @@ element.text(msg);
 
 
 
-<div id="98c75b18-3f06-4175-b8dc-ba21c64c14d7"></div>
+<div id="ac5adc92-cd3e-4f5a-a82e-cf9a0aaf43ec"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#98c75b18-3f06-4175-b8dc-ba21c64c14d7');
+var element = $('#ac5adc92-cd3e-4f5a-a82e-cf9a0aaf43ec');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -502,10 +679,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="d42164d8-a54f-47e1-8d44-8ee43313a299"></div>
+<div id="f8ca0a2e-f546-4dfb-b0d6-6594a35bb9d7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d42164d8-a54f-47e1-8d44-8ee43313a299');
+var element = $('#f8ca0a2e-f546-4dfb-b0d6-6594a35bb9d7');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -752,10 +929,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="635f5e74-5453-4f43-82ac-366742e655da"></div>
+<div id="8a34f104-2327-46a4-a37e-5b50f6d48571"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#635f5e74-5453-4f43-82ac-366742e655da');
+var element = $('#8a34f104-2327-46a4-a37e-5b50f6d48571');
 console.log("Person objects");
 
 /* class: Person
@@ -973,10 +1150,10 @@ student.logIt(); // log to console
 
 
 
-<div id="98273cd9-6775-4dad-904a-d0877d029edb"></div>
+<div id="68dc12a9-bed8-4b65-88aa-208e5c25d4dd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#98273cd9-6775-4dad-904a-d0877d029edb');
+var element = $('#68dc12a9-bed8-4b65-88aa-208e5c25d4dd');
 console.log("Classroom object");
 
 /* class: Person
@@ -1165,10 +1342,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="485984b6-f422-4e92-b0e6-11d62e8f1ecd"></div>
+<div id="9ff96c1e-ad15-4be9-9cb7-179c6c4acfa7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#485984b6-f422-4e92-b0e6-11d62e8f1ecd');
+var element = $('#9ff96c1e-ad15-4be9-9cb7-179c6c4acfa7');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1335,7 +1512,7 @@ for (var row of classroom) {
 <li>Consider what you need to work on to be stronger developer</li>
 <li>Show something creative or unique, no cloning</li>
 <li>Be ready to talk to Teacher for 5 to 10 minutes. Individually!!!</li>
-<li>Show in Jupyter Notebook during discussion, show Theme and ChatGPT</li>
+<li>[x] Show in Jupyter Notebook during discussion, show Theme and ChatGPT</li>
 <li>Have a runtime final in GithHub Pages (or Fastpage)</li>
 </ul>
 </blockquote>
