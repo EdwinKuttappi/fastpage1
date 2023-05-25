@@ -251,10 +251,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="2f9e12b1-78a8-4ef8-998e-4701ff199bc5"></div>
+<div id="456773b2-bc72-4def-9abc-22984445860d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#2f9e12b1-78a8-4ef8-998e-4701ff199bc5');
+var element = $('#456773b2-bc72-4def-9abc-22984445860d');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -310,88 +310,78 @@ element.append(arr2D);
 <span class="sd"> * Creator: Nighthawk Coding Society</span>
 <span class="sd"> * Mini Lab Name: Hello Series, featuring Monkey Jumpers Poem</span>
 <span class="sd">&quot;&quot;&quot;</span>
-
 <span class="kn">import</span> <span class="nn">time</span> <span class="c1"># used for delay</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>  <span class="c1"># jupyter specific clear</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>    
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="c1"># ANSI Color Codes</span>
     <span class="n">Red</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[31m&quot;</span>
     <span class="n">Green</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[32m&quot;</span>
     <span class="n">Yellow</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[33m&quot;</span>
     <span class="n">Blue</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[34m&quot;</span>
     <span class="n">Magenta</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[35m&quot;</span>
-
     <span class="sd">&quot;&quot;&quot; 2D array data assignment &quot;&quot;&quot;</span>
     <span class="n">monkeys</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span>
             <span class="n">Red</span><span class="p">,</span>
             <span class="s2">&quot;ʕง ͠° ͟ل͜ ͡°)ʔ &quot;</span><span class="p">,</span>  <span class="c1"># [0][0] eyes</span>
-            <span class="s2">&quot;  </span><span class="se">\\</span><span class="s2">_⏄_/  &quot;</span><span class="p">,</span>  <span class="c1"># [0][1] chin</span>
-            <span class="s2">&quot;  --0--   &quot;</span><span class="p">,</span>  <span class="c1"># [0][2] body</span>
-            <span class="s2">&quot;  ⎛   ⎞   &quot;</span>  <span class="c1"># [0][3] legs</span>
+            <span class="s2">&quot;   </span><span class="se">\\</span><span class="s2">_⏄_/  &quot;</span><span class="p">,</span>  <span class="c1"># [0][1] chin</span>
+            <span class="s2">&quot;   --0--  &quot;</span><span class="p">,</span>  <span class="c1"># [0][2] body</span>
+            <span class="s2">&quot;   ⎛   ⎞  &quot;</span>  <span class="c1"># [0][3] legs</span>
         <span class="p">],</span>
         <span class="p">[</span>
             <span class="n">Green</span><span class="p">,</span>
             <span class="s2">&quot; ʕ༼ ◕_◕ ༽ʔ &quot;</span><span class="p">,</span>  <span class="c1"># [1][0]</span>
-            <span class="s2">&quot;  </span><span class="se">\\</span><span class="s2">_⎏_/  &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;  ++1++  &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;   ⌋ ⌊   &quot;</span>
+            <span class="s2">&quot;     \_⎏_/   &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;      ++1++  &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;      ⌋ ⌊   &quot;</span>
         <span class="p">],</span>
         <span class="p">[</span>
             <span class="n">Yellow</span><span class="p">,</span>
-            <span class="s2">&quot; ʕ(▀ ⍡ ▀)ʔ&quot;</span><span class="p">,</span>  <span class="c1"># [2][0]</span>
-            <span class="s2">&quot;  </span><span class="se">\\</span><span class="s2">_⎐_/ &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;  &lt;-2-&gt;  &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;  〈  〉 &quot;</span>
+            <span class="s2">&quot; ʕ(▀ ⍡ ▀)ʔ &quot;</span><span class="p">,</span>  <span class="c1"># [2][0]</span>
+            <span class="s2">&quot;   </span><span class="se">\\</span><span class="s2">_⎐_/   &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;    &lt;-2-&gt;   &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;     〈  〉   &quot;</span>
         <span class="p">],</span>
         <span class="p">[</span>
             <span class="n">Blue</span><span class="p">,</span>
-            <span class="s2">&quot;ʕ ͡° ͜ʖ ° ͡ʔ&quot;</span><span class="p">,</span>  <span class="c1"># [3][0]</span>
-            <span class="s2">&quot;  </span><span class="se">\\</span><span class="s2">_⍾_/  &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;  ==3==  &quot;</span><span class="p">,</span>
-            <span class="s2">&quot;  _/ </span><span class="se">\\</span><span class="s2">_  &quot;</span>
+            <span class="s2">&quot; ʕ ͡° ͜ʖ ° ͡ʔ &quot;</span><span class="p">,</span>  <span class="c1"># [3][0]</span>
+            <span class="s2">&quot;   \_⍾_/  &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;   ==3==   &quot;</span><span class="p">,</span>
+            <span class="s2">&quot;    _/ </span><span class="se">\\</span><span class="s2">_  &quot;</span>
         <span class="p">],</span>
         <span class="p">[</span>
             <span class="n">Magenta</span><span class="p">,</span>
             <span class="s2">&quot;  (◕‿◕✿) &quot;</span><span class="p">,</span>  <span class="c1"># [4][0]</span>
-            <span class="s2">&quot;  </span><span class="se">\\</span><span class="s2">_⍾_/ &quot;</span><span class="p">,</span>  <span class="c1"># [4][1]</span>
-            <span class="s2">&quot;  ==4==  &quot;</span><span class="p">,</span>  <span class="c1"># [4][2]</span>
-            <span class="s2">&quot;  _/ </span><span class="se">\\</span><span class="s2">_ &quot;</span>  <span class="c1"># [4][3]</span>
+            <span class="s2">&quot;    \_⍾_/    &quot;</span><span class="p">,</span>  <span class="c1"># [4][1]</span>
+            <span class="s2">&quot;    ==4==   &quot;</span><span class="p">,</span>  <span class="c1"># [4][2]</span>
+            <span class="s2">&quot;    _/ \_  &quot;</span>  <span class="c1"># [4][3]</span>
         <span class="p">]</span>
     <span class="p">]</span>
-
     <span class="sd">&quot;&quot;&quot; 2D array program logic &quot;&quot;&quot;</span>
     <span class="c1"># cycles through 2D array backwards</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nursery Rhyme&quot;</span><span class="p">)</span>  <span class="c1"># identification message</span>
-
         <span class="c1"># this print statement shows current count of Monkeys</span>
         <span class="c1"># concatenation (+) of the loop variable and string to form a countdown message</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; little monkeys jumping on the bed...&quot;</span><span class="p">)</span>
-
         <span class="c1"># cycle through monkeys that are left in poem countdown</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># cycles through remaining monkeys in countdown</span>
-
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>  <span class="c1"># cycles through remaining monkeys in countdown</span>
             <span class="c1"># cycles through monkey part by part</span>
-            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">])):</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
                 <span class="c1"># prints specific part of the monkey from the 2D cell</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
-
+                <span class="n">sentence</span> <span class="o">+=</span> <span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+            <span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
             <span class="c1"># this new line gives separation between stanza of poem</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u001b</span><span class="s2">[0m&quot;</span><span class="p">)</span>  <span class="c1"># reset color</span>
-            
+          <span class="c1"># reset color</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
     <span class="c1"># out of all the loops, prints finishing messages</span>
     <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No more monkeys jumping on the bed&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;0000000000000000000000000000000000&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;             THE END              &quot;</span><span class="p">)</span>
-
-
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span>
 </pre></div>
