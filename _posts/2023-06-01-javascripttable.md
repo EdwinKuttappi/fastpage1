@@ -27,9 +27,9 @@ tags: [week35, tri3]
     <thead id="flaskHead">
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>DOB</th>
-            <th>Age</th>
+            <th>Phone</th>
+            <th>Company</th>
+            <th>Price</th>
         </tr>
     </thead>
     <tbody id="flaskBody"></tbody>
