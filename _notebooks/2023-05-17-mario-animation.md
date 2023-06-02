@@ -4,6 +4,7 @@
 - categories: [week34, tri3]
 - image: /images/javascript.png
 - badges: true
+- permalink: /frontend/sprite
 - comments: true
 - author: Edwin Abraham
 - description: Working with 2D elements and working with animations
