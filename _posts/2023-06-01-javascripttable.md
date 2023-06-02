@@ -38,7 +38,7 @@ tags: [week35, tri3]
 <script>
     $
     $(document).ready(function() {
-    fetch('https://flask.nighthawkcodingsociety.com/api/users/', { mode: 'cors' })
+    fetch('https://playgroundproject.duckdns.org/api/edwin/', { mode: 'cors' })
     .then(response => {
       if (!response.ok) {
         throw new Error('API response failed');
@@ -50,9 +50,9 @@ tags: [week35, tri3]
         $
         $('#flaskBody').append('<tr><td>' + 
             row.id + '</td><td>' + 
-            row.name + '</td><td>' + 
-            row.dob + '</td><td>' + 
-            row.age + '</td></tr>');
+            row.company + '</td><td>' + 
+            row.model + '</td><td>' + 
+            row.price + '</td></tr>');
             }
             $
       $("#flaskTable").DataTable();
