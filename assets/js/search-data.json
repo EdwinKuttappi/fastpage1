@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "My JavaScript Table",
-            "content": ". ID Name DOB Age .",
+            "content": ". ID Phone Company Price .",
             "url": "https://edwinkuttappi.github.io/fastpage1/frontend/jquery",
             "relUrl": "/frontend/jquery",
             "date": " • Jun 1, 2023"
