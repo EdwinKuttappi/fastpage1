@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "My JavaScript Table",
-            "content": ". ID Phone Company Price .",
+            "content": ". ID Company Model Price .",
             "url": "https://edwinkuttappi.github.io/fastpage1/frontend/jquery",
             "relUrl": "/frontend/jquery",
             "date": " • Jun 1, 2023"
