@@ -34,6 +34,7 @@ tags: [week35, tri3]
     </thead>
     <tbody id="flaskBody"></tbody>
 </table>
+<br>
 <form action="javascript:create_user()">
     <p><label>
         Company:
