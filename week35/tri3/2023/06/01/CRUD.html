@@ -92,6 +92,7 @@ window.onload = wrap_img;
 <table id="flaskTable" class="table table-striped nowrap" style="width:100%">
     <thead id="flaskHead">
         <tr>
+            <!--Table Metadata-->
             <th>ID</th>
             <th>Company</th>
             <th>Model</th>
@@ -118,6 +119,7 @@ window.onload = wrap_img;
     </p>
 </form>
 <script>
+  //fetch API
     $
     $(document).ready(function() {
     fetch('https://playgroundproject.duckdns.org/api/edwin/', { mode: 'cors' })
@@ -146,16 +148,13 @@ window.onload = wrap_img;
 </script>
 
 <script>
-  // prepare HTML result container for new output
+  // Get the result 
   const resultContainer = document.getElementById("result");
-  // prepare URL's to allow easy switch from deployment and localhost
+  // url made as variable for easy access
   var url = "https://playgroundproject.duckdns.org/api/edwin/"
-  //
   // Load users on page entry
   read_users();
-  //
-  //
-  // Display User Table, data is fetched from Backend Database
+  // Fetching Data from my API from Backend
   function read_users() {
     const read_options = {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
@@ -201,8 +200,7 @@ window.onload = wrap_img;
     });
   }
   function create_user(){
-    //Validate Password (must be 6-20 characters in len)
-    //verifyPassword("click");
+    // body variable and getting values from backend
     const body = {
         id: document.getElementById("id").value,
         company: document.getElementById("company").value,
@@ -243,6 +241,7 @@ window.onload = wrap_img;
   function add_row(data) {
     const tr = document.createElement("tr");
     const id = document.createElement("td");
+    // variables for table data
     const company = document.createElement("td");
     const model = document.createElement("td");
     const price = document.createElement("td");
@@ -252,6 +251,7 @@ window.onload = wrap_img;
     model.innerHTML = data.model;
     price.innerHTML = data.price;
     // add HTML to container
+    // add each piece of data to a new row
     tr.appendChild(id);
     tr.appendChild(company);
     tr.appendChild(model);
