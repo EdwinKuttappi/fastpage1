@@ -407,10 +407,10 @@ Note: you may need to restart the kernel to use updated packages.
 
 
 
-<div id="f2614877-0c45-4224-a8e2-05adb0fedd34"></div>
+<div id="a3b05f22-f984-485e-aed7-ff7aa9fc27c1"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f2614877-0c45-4224-a8e2-05adb0fedd34');
+var element = $('#a3b05f22-f984-485e-aed7-ff7aa9fc27c1');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -483,10 +483,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="8c2e4368-62e2-46eb-8f6c-df2981b68083"></div>
+<div id="9f81cde7-f4a0-47bb-b334-bb302365a129"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8c2e4368-62e2-46eb-8f6c-df2981b68083');
+var element = $('#9f81cde7-f4a0-47bb-b334-bb302365a129');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -568,10 +568,10 @@ element.text(msg);
 
 
 
-<div id="4f09be85-11e7-4285-a68c-7b745107078c"></div>
+<div id="155e9bf4-6661-416c-9729-dfd6dbbdcada"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4f09be85-11e7-4285-a68c-7b745107078c');
+var element = $('#155e9bf4-6661-416c-9729-dfd6dbbdcada');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -679,10 +679,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="eb25a093-6097-4b16-8a11-7a952dc960f9"></div>
+<div id="9892c0f1-aee4-4865-96cf-e46b48a1243a"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#eb25a093-6097-4b16-8a11-7a952dc960f9');
+var element = $('#9892c0f1-aee4-4865-96cf-e46b48a1243a');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -929,10 +929,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="0a6710cd-e35a-4fc3-881b-a48254e1b127"></div>
+<div id="82f52927-192f-4b57-be54-4d669c6e6ddc"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#0a6710cd-e35a-4fc3-881b-a48254e1b127');
+var element = $('#82f52927-192f-4b57-be54-4d669c6e6ddc');
 console.log("Person objects");
 
 /* class: Person
@@ -1150,10 +1150,10 @@ student.logIt(); // log to console
 
 
 
-<div id="1a1d4a0a-4fdb-4c68-9ebf-a60718b177d6"></div>
+<div id="1a1368b5-0867-4cf1-8b40-01b7de9d6aa1"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#1a1d4a0a-4fdb-4c68-9ebf-a60718b177d6');
+var element = $('#1a1368b5-0867-4cf1-8b40-01b7de9d6aa1');
 console.log("Classroom object");
 
 /* class: Person
@@ -1342,10 +1342,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="6bebb4aa-8170-4b86-abe9-86d5dc7a2ab1"></div>
+<div id="e57de319-63a4-4475-9a9c-610dd57f6fbd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#6bebb4aa-8170-4b86-abe9-86d5dc7a2ab1');
+var element = $('#e57de319-63a4-4475-9a9c-610dd57f6fbd');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
